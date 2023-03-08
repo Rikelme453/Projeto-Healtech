@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Mar-2023 às 13:47
+-- Tempo de geração: 08-Mar-2023 às 14:22
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -45,6 +45,38 @@ INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`) VALUES
 ('luan00@gmail.com', '12345', 'bolinha', NULL),
 ('luan001@gmail.com', 'luan123', 'bolinha2', '2023-03-07'),
 ('aureliocarros2010@gmail.com', 'muito1234456', 'Aurélio Silva', '2006-01-15');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tbupload`
+--
+
+CREATE TABLE `tbupload` (
+  `id` int(11) NOT NULL,
+  `path` varchar(255) NOT NULL,
+  `data_upload` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `tbupload`
+--
+ALTER TABLE `tbupload`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `tbupload`
+--
+ALTER TABLE `tbupload`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
