@@ -25,7 +25,6 @@
 </head>
 <body>
 
-Luan
 
 <nav class="menu3">
     <div class="navbar">
@@ -57,6 +56,10 @@ Luan
       </div>
     </div>
   </nav>
+
+  <div class="texto">
+    <h1>Isso é um teste com texto</h1>
+  </div>
 
   <br><br><br><br><br>
 </body>
