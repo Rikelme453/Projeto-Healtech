@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+width:100%;
+min-height: 100vh;
+background-attachment: fixed;
+background: rgb(0,163,236);
+background: linear-gradient(90deg, rgba(0,163,236,1) 0%, rgba(4,185,174,1) 51%);
+				
+}
+.menu3{
+    background-color: #616161;
+}
+
+b{
+  color: white;
+}
+
+h1{
+
+color: white;
+
+}
+
+h3{
+
+color:white;
+text-align: center;
+width: 100%;
+border-radius: 5px;
+
+}
+
+h4{
+
+  Font-size: 20px;
+  color: black;
+
+}
+
+.email{
+    text-align: center;
+}
+
+.txt{
+    color: white;
+}
+
+.txt2{
+    font-size: 25px;
+    color: gray;
+}
+
+p{
+    height: 100%;
+}
+
+
+
+f1{
+
+color: black;
+
+}
+
+
+
+.menu2{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}  
+
+
+
+.buttons{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+  width: 115px;
+  font-size: 20px;
+  height: 10px;
+  text-align: center;
+  background-color:white;
+  border-radius: 10px;
+}
+
+
+img{
+  border-radius: 10px;
+  
+}
+
+.fts{
+
+width: 150px;
+height: 150px;
+
+}
+
+.fts:hover{
+
+
+}
+
+.fotos{
+
+
+display: flex;
+float: center;
+margin-left: 100PX
+
+
+
+}
+.p1{
+  padding: 2px;
+  margin-top: 15px;
+  text-align: center;
+
+
+}
+
+#fotos{
+    margin-top: 5px;
+    overflow-x: hidden;
+    height:250px;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#fotos ul li{
+
+    margin-right:4px;
+    cursor: pointer;
+    width:150px;
+    height:190px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+				
+.p2{
+  padding: 2px;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+
+}
+
+.pimg{
+  padding: 2px;
+  color: white;
+
+}
+
+.bu{
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #948f8f, #616161);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.bu:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #b0b0b0, #8f8f8f);
+}
+
+.footer-bottom-area{
+  background-color: white;
+}
+
+.container{
+  background-color: white;
+}
+
+.navbar{
+    margin-left: 100%;
+}
+
+.sair{
+    width: 100px;
+    background: rgb(180,58,103);
+    background: linear-gradient(90deg, rgba(180,58,103,1) 0%, rgba(253,29,29,1) 50%, rgba(252,170,69,1) 98%);
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.voltar{
+    width: 100px;
+    background: rgb(15,115,21);
+    background: linear-gradient(90deg, rgba(15,115,21,1) 0%, rgba(9,117,121,1) 35%, rgba(0,255,55,1) 100%);
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+
