@@ -25,7 +25,6 @@
 </head>
 <body>
 
-
 <nav class="menu3">
     <div class="navbar">
       <i class='bx bx-menu'></i>
@@ -56,11 +55,14 @@
       </div>
     </div>
   </nav>
-
-  <div class="texto">
-    <h1>Isso é um teste com texto</h1>
-  </div>
+  
 
   <br><br><br><br><br>
+
+  <main class="conteudo-principal">
+    <div class="banner">
+      <img src="IMAGENS/Banner index.png" alt="">
+    </div>
+  </main>
 </body>
 </html>
