@@ -55,7 +55,14 @@
       </div>
     </div>
   </nav>
+  
 
   <br><br><br><br><br>
+
+  <main class="conteudo-principal">
+    <div class="banner">
+      <img src="IMAGENS/Banner index.png" alt="">
+    </div>
+  </main>
 </body>
 </html>
