@@ -15,8 +15,6 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
 }else{
     header('Location: login.php');
 }
-
-
 ?>
 
 <!-- Teste -->
@@ -69,7 +67,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
       <form>
     </div>
   </nav>
-
+  
   <br><br><br><br><br>
 
 
@@ -77,18 +75,9 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
     <h1 class="txt"><?php echo "<br>" . $logado; if($user != ""){
       echo "<br>" . "Usúario: " .  $user;
       }else{
-
+          
       }?></h1>
     <h3 class="txt2">Você está logado!</h3>
 </div>
-
-<div>
-<form method="POST" enctype="multipart/form-data"> 
-   <label for="conteudo">Enviar imagem:</label>
-   <input type="file" name="pegar" accept="image/*">    
-     <button type="submit">Enviar imagem</button>
-</form>
-</div>
-
   </body>
 </html>

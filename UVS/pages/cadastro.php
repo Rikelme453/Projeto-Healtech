@@ -38,12 +38,7 @@
                 <input class="form-control" type="password" name="senha" id="senha"
                     placeholder="insira a senha">
                 <div class="underline"></div>
-            </div>
-            
-          
-            
-                
-               
+            </div> 
             </div>
 
             <input type="submit" value="Cadastrar-se">

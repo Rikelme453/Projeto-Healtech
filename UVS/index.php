@@ -61,8 +61,28 @@
 
   <main class="conteudo-principal">
     <div class="banner">
-      <img src="IMAGENS/Banner index.png" alt="">
+      <img class="index1" src="IMAGENS/Banner_index.png" alt="">
     </div>
+
+    <?php 
+    if(isset($_POST['mandar'])){
+     $arquivo = $_FILES['pegar'];
+     $arquivoNovo = explode(".",$arquivo['name']);
+     if($arquivoNovo[sizeof($arquivoNovo)-1]!='jpg'){
+         echo('Não é possivel enviar esse tipo de arquivo');
+     }else{
+        echo 'Vamos proseguir';
+        move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
+     }
+    }
+?>
+
+<form action="" method="POST" enctype="multipart/form-data"> 
+   <label for="conteudo">Enviar imagem:</label>
+   <input type="file" name="pegar" accept="image/*">    
+   <button type="submit" name="mandar">Enviar imagem</button>
+</form>
+
   </main>
 </body>
 </html>
