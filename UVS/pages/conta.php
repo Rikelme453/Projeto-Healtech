@@ -79,5 +79,24 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
       }?></h1>
     <h3 class="txt2">Você está logado!</h3>
 </div>
+
+<form action="" method="POST" enctype="multipart/form-data"> 
+   <label for="conteudo">Enviar imagem:</label>
+   <input type="file" name="pegar" accept="image/*">    
+   <button type="submit" name="mandar">Enviar imagem</button>
+</form>
+
+<?php 
+    if(isset($_POST['mandar'])){
+     $arquivo = $_FILES['pegar'];
+     $arquivoNovo = explode(".",$arquivo['name']);
+     if($arquivoNovo[sizeof($arquivoNovo)-1]!='jpg'){
+         echo('Não é possivel enviar esse tipo de arquivo');
+     }else{
+        echo 'Vamos proseguir';
+        move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
+     }
+    }
+?>
   </body>
 </html>
