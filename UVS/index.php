@@ -58,17 +58,17 @@
       
     <p id="text2">MEDICINA E SEU ESTILO DE VIDA<p>
     <hr id="linha2">
-           <div id="adm" >
+           <div id="a1" >
            <img src="" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
 
-          <div id="info" >
+          <div id="a2" >
             <img src="" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
 
-          <div id="agro" >
+          <div id="a3" >
             <img src="" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
