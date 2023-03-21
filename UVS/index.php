@@ -30,7 +30,7 @@
     <div class="navbar">
       <i class='bx bx-menu'></i>
       <img class="img" src="./IMAGENS/site_logo.png" ></img>
-        <p id="text">Unidade Virtual de Saúde<p>
+        <p id="text">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="#">HOME</a></li>
@@ -53,11 +53,11 @@
 
   <br><br>
   <main class="conteudo-principal">
-    <hr id="linha1">
+  
       <img class="index1" src="IMAGENS/Banner_index.png" alt="">
       
     <p id="text2">MEDICINA E SEU ESTILO DE VIDA<p>
-    <hr id="linha2">
+   
            <div id="a1" >
            <img src="./IMAGENS/idosos_texto1.jpg" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
@@ -76,9 +76,11 @@
   <aside>.</aside>
 
    <section class="rodape">
-     <img id="imagem1" src="./IMAGENS/healtec_logo.png" width="200px"></img>
-      <hr>
-     <img id="imagem2" src="./IMAGENS/site_logo.png" width="200px"></img>
+     <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
+     <p>wfvwu</p>
+     <img id="imagem2" src="./IMAGENS/instagram_logo.png" width="25%"></img>
+     <img id="imagem3" src="./IMAGENS/facebook_logo.png" width="25%"></img>
+
    </section>
 
   <footer>

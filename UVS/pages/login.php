@@ -12,9 +12,7 @@
 <body>
   <div class="login1">
 
-   <img id="imagem1" src="../IMAGENS/healtec_logo.png" width="200px"></img>
-    <hr>
-    <img id="imagem2" src="../IMAGENS/site_logo.png" width="200px"></img>
+   <img id="imagem1" src="../IMAGENS/logo.png" width="70%" ></img>
      <h3>Seja Bem Vindo!!<h3>
      <p>Efetue o login para acessar o site</p>
   </div>

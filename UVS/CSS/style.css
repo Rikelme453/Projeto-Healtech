@@ -10,8 +10,9 @@ body{
    box-shadow:0px 10px 20px #676565;
 }
 .img{
-    width: 100px;
-    height: 100px;
+    width: 8%;
+    height: 100%;
+    margin-left: 4%;
 }
 #text{
     color: aliceblue;
@@ -23,22 +24,14 @@ body{
     color:  #545454;
     width: 20%;
     margin: 1%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .index1{
     width: 100%;
-    margin-top: 0%;
-    
-}
-#linha1{
-    height: 8px;
-    background-color: #93C94A;
-}
-#linha2{
-    height: 3px;
-    width: 79%;
-    margin-left: 21%;
-    background-color: #93C94A;
+    margin-top: 2%;
+    background-color: #c94a4a;
+    border-bottom: #93C94A solid ;
+    border-top: #93C94A solid;
 }
 #a1{
   
@@ -84,18 +77,6 @@ body{
   .rodape{
     background-color: #808080;
   }
-
-  #imagem1{
-    margin-right:1%;
-    top: 100%;
-    margin: 0 auto;
-    left: 10%;
-  }
-
-  #imagem2{
-    top: 100%;
-    margin: 0 auto;
-}
  
   footer{
     background-color: #505050;
