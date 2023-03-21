@@ -59,23 +59,30 @@
     <p id="text2">MEDICINA E SEU ESTILO DE VIDA<p>
     <hr id="linha2">
            <div id="a1" >
-           <img src="" width="286px" height="286px" >
+           <img src="./IMAGENS/idosos_texto1.jpg" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
 
           <div id="a2" >
-            <img src="" width="286px" height="286px" >
+            <img src="./IMAGENS/cerebro_humano.png.webp" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
 
           <div id="a3" >
-            <img src="" width="286px" height="286px" >
+            <img src="./IMAGENS/dois-ciclismo.jpg" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
   </main>
   <aside>.</aside>
 
-   <section class="rodape">o</section>
-  <footer>r</footer>
+   <section class="rodape">
+     <img id="imagem1" src="./IMAGENS/healtec_logo.png" width="200px"></img>
+      <hr>
+     <img id="imagem2" src="./IMAGENS/site_logo.png" width="200px"></img>
+   </section>
+
+  <footer>
+    io
+  </footer>
 </body>
 </html>

@@ -48,7 +48,7 @@ body{
     width: 286px;
     position: relative;
     float: left;
-    margin-left: 8%;
+    margin-left: 12%;
     border: 2px solid rgb(24, 23, 23);
     cursor: pointer;
    
@@ -59,7 +59,7 @@ body{
     background: linear-gradient(0deg, rgba(149,157,152,1) 0%, rgba(151,157,156,1) 48%, rgba(109,204,152,1) 100%);
     width: 286px;
     float: left;
-    margin-left:8%;
+    margin-left:10%;
     border: 2px solid rgb(24, 23, 23);
     cursor: pointer;
    
@@ -71,7 +71,7 @@ body{
     background: linear-gradient(0deg, rgba(149,157,152,1) 0%, rgba(151,157,156,1) 48%, rgba(109,204,152,1) 100%);
     width: 286px;
     float: left;
-    margin-left:8%;
+    margin-left:10%;
     border: 2px solid rgb(24, 23, 23);
     cursor: pointer;
   
@@ -84,6 +84,19 @@ body{
   .rodape{
     background-color: #808080;
   }
+
+  #imagem1{
+    margin-right:1%;
+    top: 100%;
+    margin: 0 auto;
+    left: 10%;
+  }
+
+  #imagem2{
+    top: 100%;
+    margin: 0 auto;
+}
+ 
   footer{
     background-color: #505050;
     margin: 0%;
