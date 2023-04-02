@@ -76,10 +76,13 @@
   <aside>.</aside>
 
    <section class="rodape">
-     <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
-     <p>wfvwu</p>
      <img id="imagem2" src="./IMAGENS/instagram_logo.png" width="25%"></img>
      <img id="imagem3" src="./IMAGENS/facebook_logo.png" width="25%"></img>
+
+     <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
+     <p>wfvwu</p>
+    
+     
 
    </section>
 
