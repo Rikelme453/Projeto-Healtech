@@ -26,8 +26,6 @@ mysqli_close($conexao);
 ?>
 
 
-
-
 <!DOCTYPE html>
 
 <html>
@@ -35,7 +33,7 @@ mysqli_close($conexao);
     <link href="../CSS/compras.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/fundo.css" rel="stylesheet" type="text/css" />
     <link rel='icon' type='image/jpg' href="../imagens/iconsite.png">
-    <title>Vercy | Concluido</title>
+    <title>UVS | Concluido</title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
