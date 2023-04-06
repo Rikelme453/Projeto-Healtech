@@ -60,11 +60,7 @@ p{
 f1{
 
 color: black;
-
 }
-
-
-
 .menu2{
   position: relative;
   margin: 0px;
@@ -188,6 +184,15 @@ margin-left: 100PX
     margin-left: 100%;
 }
 
+.tabela{
+  background-color: cadetblue;
+  margin-left: 15%;
+  border: solid rgb(112, 107, 107);
+  width: 70%;
+}
+ td{
+     border:solid rgb(112, 107, 107) 1px;
+}
 .sair{
     width: 100px;
     background: rgb(180,58,103);
