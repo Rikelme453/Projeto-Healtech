@@ -5,8 +5,9 @@ body{
 
 .menu3{
    max-height: 100%;
-   background: rgb(13,177,222);
-   background: linear-gradient(90deg, rgba(13,177,222,1) 0%, rgba(52,201,113,1) 47%, rgba(0,213,255,1) 95%);
+   background: rgb(47, 173, 207);
+   background-color: ;
+   /* background: linear-gradient(90deg, rgba(13,177,222,1) 0%, rgba(52,201,113,1) 47%, rgba(0,213,255,1) 95%); */
    box-shadow:0px 10px 20px #676565;
 }
 .img{
@@ -20,29 +21,27 @@ body{
     margin-right: 10%;
 }
 #text2{
-    font-size: 16px;
-    color:  #545454;
-    width: 20%;
+    font-size: 25px;
+    color:  #000000;
     margin: 1%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 .index1{
     width: 100%;
     margin-top: 2%;
     background-color: #c94a4a;
-    border-bottom: #93C94A solid ;
-    border-top: #93C94A solid;
+    border-bottom: #48c883  solid ;
+    border-top: #48c883 solid;
 }
 #a1{
   
  
     background: rgb(149,157,152);
     background: linear-gradient(0deg, rgba(149,157,152,1) 0%, rgba(151,157,156,1) 48%, rgba(109,204,152,1) 100%);
-    width: 286px;
     position: relative;
     float: left;
-    margin-left: 12%;
-    border: 2px solid rgb(24, 23, 23);
+    margin-left: 55%;
     cursor: pointer;
    
   }

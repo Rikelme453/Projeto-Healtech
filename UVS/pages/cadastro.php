@@ -25,16 +25,16 @@
         <div class="input-field">
                 <label>Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
-                    placeholder="insira o nome">
+                    placeholder="insira o nome" required>
                 <label>Data de Nascimento:</label>
                 <input class="form-control" type="date" name="data" id="data" 
-                    placeholder="Insira a data">
+                    placeholder="Insira a data" required>
                 <label>Email do Usuário:</label>
                 <input class="form-control" type="text" name="email" id="email"
-                    placeholder="insira o email">
+                    placeholder="insira o email" required>
                 <label>Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
-                    placeholder="insira a senha">
+                    placeholder="insira a senha" required>
                 <div class="underline"></div>
             </div> 
             </div>

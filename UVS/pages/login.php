@@ -22,12 +22,12 @@
         <form name="form1" method="post" action="verificarLogin.php" onsubmit="return valida_form()">
             <div class="input-field">
                 <input class="form-control"  type="text" name="email" id="username"
-                    placeholder="Email do Usuário">
+                    placeholder="Email do Usuário" required>
                 <div class="underline"></div>
             </div><br>
             <div class="input-field">
                 <input class="form-control"  type="password" name="senha" id="password"
-                    placeholder="Senha do Usuário">
+                    placeholder="Senha do Usuário" required>
                 <div class="underline"></div>
             </div>
 

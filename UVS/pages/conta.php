@@ -25,7 +25,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
          echo('Não é possivel enviar esse tipo de arquivo');
      }else{
         echo 'Vamos proseguir';
-        move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
+        move_uploaded_file($arquivo['tmp_name'],'upload/'.$arquivo['name']);
      }
     }
   ?>
@@ -105,7 +105,6 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
 <table class="tabela">
         <tr>
           <td>Email do Usuário</td>
-          <td>Senha do Usuário</td>
           <td>Nome do Usuário</td>
           <td>Data de Nascimento</td>
           <td>id<td>
@@ -113,7 +112,6 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
             <?php while($dado = $conn -> fetch_array()){ ?>
         <tr>
           <td><?php echo $dado["email"]; ?></td>
-          <td><?php echo $dado["senha"]; ?></td>
           <td><?php echo $dado["nome"];  ?></td>
           <td><?php echo $dado["data"];  ?></td>
           <td><?php echo $dado["id"];  ?></td>
@@ -131,11 +129,12 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
 
 
 
-<form action="" method="POST" enctype="multipart/form-data"> 
-   <label for="conteudo">Enviar imagem:</label>
+
+<form action="#" method="POST" enctype="multipart/form-data"> 
+   
    <input type="file" name="pegar" accept="image/*">    
-   <button type="submit" name="mandar">Enviar imagem</button>
+   <input type="submit" name="mandar" value="Enviar imagem">
+
 </form>
- 
   </body>
 </html>

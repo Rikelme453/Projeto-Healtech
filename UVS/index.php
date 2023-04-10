@@ -56,10 +56,10 @@
   
       <img class="index1" src="IMAGENS/Banner_index.png" alt="">
       
-    <p id="text2">MEDICINA E SEU ESTILO DE VIDA<p>
+    <p id="text2">Medicina e Estilo de Vida<p>
    
            <div id="a1" >
-           <img src="./IMAGENS/idosos_texto1.jpg" width="286px" height="286px" >
+           <img src="./IMAGENS/home1.jpg" height="700px" width="500px">
             <h2 class="section-titulo"></h2>
           </div>
 
@@ -72,6 +72,8 @@
             <img src="./IMAGENS/dois-ciclismo.jpg" width="286px" height="286px" >
             <h2 class="section-titulo"></h2>
           </div>
+
+
   </main>
   <aside>.</aside>
 
