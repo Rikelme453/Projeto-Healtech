@@ -101,7 +101,10 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
       }?></h1>
     <h3 class="txt2">Você está logado!</h3>
 </div>
-   
+   <div class="box-search">
+      <input type="search" placeholder="Pesquisar">
+   </div>
+
 <table class="tabela">
         <tr>
           <td>Email do Usuário</td>
