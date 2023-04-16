@@ -78,7 +78,9 @@ body{
   }
 
   .legenda{
-    color: #cecece;
+    color: #f8f8f8;
+    font-size: 15px;
+    
   }
  
   footer{
