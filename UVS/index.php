@@ -35,7 +35,7 @@
        <ul class="links">
           <li><a href="#">HOME</a></li>
           <li><a href="pages/medicamentos.php">MEDICAMENTOS</a></li>
-          <li><a href="#">MÉDICOS</li>
+          <li><a href="pages/medicos.php">MÉDICOS</li>
           <li><a href="#">CAMPANHAS E PÚBLICAÇÕES</li>
            
           <li>
@@ -148,8 +148,6 @@
      
 </div>
 
-     
-  
     
   </footer>
 </body>
