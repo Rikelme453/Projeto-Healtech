@@ -90,3 +90,18 @@ body{
     margin-top: 2%;
   }
   
+  .planos-img{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .plano-c{
+    width: 290px;
+    margin: 10px 10px;
+    border: 2px solid gray;
+    background-color: #C8C8C8;
+  }

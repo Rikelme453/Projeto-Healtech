@@ -34,7 +34,7 @@
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="#">HOME</a></li>
-          <li><a href="#">MEDICAMENTOS</a></li>
+          <li><a href="pages/medicamentos.php">MEDICAMENTOS</a></li>
           <li><a href="#">MÉDICOS</li>
           <li><a href="#">CAMPANHAS E PÚBLICAÇÕES</li>
            
@@ -54,24 +54,42 @@
   <br><br>
   <main class="conteudo-principal">
   
-      <img class="index1" src="IMAGENS/Banner_index.png" alt="">
+      <img class="index1" src="IMAGENS/unidade-virtual.png" alt="">
       
-    <p id="text2">Medicina e Estilo de Vida<p>
-   
-           <div id="a1" >
-           <img src="./IMAGENS/home1.jpg" height="700px" width="500px">
-            <h2 class="section-titulo"></h2>
+    <p id="text2">MEDICINA E ESTILO DE VIDA<p> 
+      
+    <hr>
+
+        <section class="imagens">
+
+          <div class="planos-img">
+            <div class="plano-c">
+            <img src="IMAGENS/idosos_texto1.jpg" alt="" width="286px" height="286px">
+            <h2>TEXTO 1</h2>
+            <p>Lorem ipsum dolor </p>
+            </div>
+          
+
+          <div class="planos-img">
+            <div class="plano-c">
+            <img src="IMAGENS/dois-ciclismo.jpg" alt="" width="286px" height="286px">
+            <h2>TEXTO 2</h2>
+            <p>Lorem ipsum dolor </p>
+            </div>
           </div>
 
-          <div id="a2" >
-            <img src="./IMAGENS/cerebro_humano.png.webp" width="286px" height="286px" >
-            <h2 class="section-titulo"></h2>
+          <div class="planos-img">
+            <div class="plano-c">
+            <img src="IMAGENS/cerebro_humano.png.webp" alt="" width="286px" height="286px">
+            <h2>TEXTO 2</h2>
+            <p>Lorem ipsum dolor </p>
+            </div>
           </div>
+          </div>
+       
+  
 
-          <div id="a3" >
-            <img src="./IMAGENS/dois-ciclismo.jpg" width="286px" height="286px" >
-            <h2 class="section-titulo"></h2>
-          </div>
+          </section>
 
 
   </main>
@@ -82,14 +100,14 @@
      <img id="imagem3" src="./IMAGENS/facebook_logo.png" width="25%"></img>
 
      <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
-     <p>wfvwu</p>
+     <p></p>
     
      
 
    </section>
 
   <footer>
-    io
+    
   </footer>
 </body>
 </html>
