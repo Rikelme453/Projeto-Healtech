@@ -74,6 +74,11 @@ body{
 
   .rodape{
     background-color: #808080;
+  
+  }
+
+  .legenda{
+    color: #cecece;
   }
  
   footer{
@@ -104,4 +109,18 @@ body{
     margin: 10px 10px;
     border: 2px solid gray;
     background-color: #C8C8C8;
+  }
+
+  .caixa{
+   background-color: #505050;  
+   display: flex;
+  }
+  .heal{
+    color:antiquewhite;
+  
+
+  }
+  .quem-somos{
+    margin-right: 500px;
+    color: #0a0a0a;
   }

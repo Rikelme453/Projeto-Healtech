@@ -65,48 +65,91 @@
           <div class="planos-img">
             <div class="plano-c">
             <img src="IMAGENS/idosos_texto1.jpg" alt="" width="286px" height="286px">
-            <h2>TEXTO 1</h2>
-            <p>Lorem ipsum dolor </p>
+            <h2>Saúde da pessoa idosa</h2>
+            <p>O Estatuto do Idoso (Lei nº 10.741/2003) é uma iniciativa inovadora na 
+              garantia de direitos da pessoa idosa, 
+              fruto de forte mobilização da sociedade, e abrange as seguintes dimensões:
+                  direito à vida;
+                  à liberdade;
+                  ao respeito;
+                  à dignidade;
+                  à alimentação;
+                  à saúde;
+                  à convivência familiar;
+                  à convivência comunitária. 
+                
+                  Em 2013, comemoraram-se os 10 anos do Estatuto, com o reconhecimento de avanços significativos 
+                  no campo dos direitos, mas ainda existam lacunas de atenção por parte das políticas públicas. 
+                  Nesse mesmo ano foi lançado o Decreto Presidencial Compromisso Nacional para o Envelhecimento Ativo,
+                  coordenado pela Secretaria 
+                  dos Direitos Humanos e com a participação de doze ministérios, incluindo o Ministério da Saúde.</p>
             </div>
           
 
           <div class="planos-img">
             <div class="plano-c">
             <img src="IMAGENS/dois-ciclismo.jpg" alt="" width="286px" height="286px">
-            <h2>TEXTO 2</h2>
-            <p>Lorem ipsum dolor </p>
+            <h2>Atividade para a vida</h2>
+            <p>A atividade física é simplesmente o movimento do corpo que consome energia: andar, subir 
+              escadas, jogar futebol, trabalhar no jardim ou dançar a noite toda são alguns 
+              exemplos de exercícios. 
+                A prática regular das atividades é capaz de promover inúmeras vantagens para o corpo 
+                humano: melhora a circulação sanguínea, fortalece o sistema imunológico, diminui o 
+                risco de doenças cardíacas e auxilia na manutenção ou perda de peso. 
+                A obesidade e a falta de atividade física constituem um papel importante no número de mortes ocasionadas pelo câncer, 
+                sendo classificadas como fatores de risco modificáveis. 
+                Considerada uma epidemia mundial pela Organização Mundial da Saúde, 
+                a obesidade é uma das principais responsáveis por doenças crônicas como 
+                hipertensão, dislipidemia, doenças cardiovasculares, diabetes e câncer.
+
+  </p>
             </div>
           </div>
 
           <div class="planos-img">
             <div class="plano-c">
             <img src="IMAGENS/cerebro_humano.png.webp" alt="" width="286px" height="286px">
-            <h2>TEXTO 2</h2>
-            <p>Lorem ipsum dolor </p>
+            <h2>Saúde Mental</h2>
+            <p>A reabilitação psicossocial é compreendida como um conjunto de ações que buscam o fortalecimento, a inclusão e o exercício de direitos de cidadania de pacientes e familiares, mediante a criação e o desenvolvimento de iniciativas articuladas com os recursos do território nos campos do trabalho, habitação, educação, cultura, segurança e direitos humanos.
+
+            MANUTENÇÃO DA SAÚDE MENTAL
+            Praticar hábitos saudáveis e adotar um estilo de vida de qualidade, ajudam a manter a saúde mental em dia. 
+
+            Jamais se isole;
+            Consulte o médico regularmente;
+            Faça o tratamento terapêutico adequado;
+            Mantenha o físico e o intelectual ativos;
+            Pratique atividades físicas;
+            Tenha alimentação saudável;
+            Reforce os laços familiares e de amizades. </p>
             </div>
           </div>
-          </div>
-       
-  
+              </div>
 
           </section>
-
-
-  </main>
-  <aside>.</aside>
+</main>
+  <footer>
 
    <section class="rodape">
      <img id="imagem2" src="./IMAGENS/instagram_logo.png" width="25%"></img>
      <img id="imagem3" src="./IMAGENS/facebook_logo.png" width="25%"></img>
 
      <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
-     <p></p>
-    
-     
-
+     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
+  
    </section>
 
-  <footer>
+   <div class="caixa">
+   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
+  
+<b><p class="heal">&copy; Healtec2023</p></b>
+
+      
+     
+</div>
+
+     
+  
     
   </footer>
 </body>
