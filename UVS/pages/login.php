@@ -31,10 +31,9 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="submit" name="submit" value="Login">
+            <input type="submit" name="submit" value="Login" id="enviar" onclick="Apresentar()">
             <p class="link">Não tem uma conta?<a href="cadastro.php">Registre-se</a></p> 
         </form>
     </main>
-
 </body>
 </html>
