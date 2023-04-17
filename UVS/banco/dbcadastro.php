@@ -60,38 +60,7 @@ mysqli_close($conexao);
 
       		" height="50px" width="50px">
 
-      <f1><?php
-
-
-      		if($email_tmp != "" or $senha_tmp != ""){
-      			if($email_tmp != ""){
-							if($senha_tmp != ""){
-								if($conn == "sim"){
-      						echo $msg;
-      						$caminho = "nlog";
-      					}else{
-      						echo $erro;
-      			}
-
-						}else{
-							$msg = "É necessário ter uma senha!";
-							$caminho = "log";
-							echo $msg;
-						}
-						}else{
-							$msg = "É necessário ter um email!";
-							$caminho = "log";
-							echo $msg;
-				}
-					}else{
-						$msg = "É necessário ter um email e senha!";
-							$caminho = "log";
-							echo $msg;
-					}
-
-
-      		
-      		?>
+      <f1>
       </f1>
 
 
