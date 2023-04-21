@@ -5,7 +5,7 @@ body{
 
 .menu3{
    max-height: 100%;
-   background: rgb(47, 173, 207);
+   background: rgb(48, 158, 158);
    /* background: linear-gradient(90deg, rgba(13,177,222,1) 0%, rgba(52,201,113,1) 47%, rgba(0,213,255,1) 95%); */
 
 }
@@ -73,7 +73,7 @@ body{
   }
 
   .rodape{
-    background-color: #808080;
+    background-color: #3a59ad;
   
   }
 
@@ -84,7 +84,7 @@ body{
   }
  
   footer{
-    background-color: #505050;
+    background-color: #263f94;
     margin: 0%;
     height: auto;
   }
@@ -114,7 +114,7 @@ body{
   }
 
   .caixa{
-   background-color: #505050;  
+   background-color: #263f94;
    display: flex;
   }
   .heal{
@@ -124,5 +124,5 @@ body{
   }
   .quem-somos{
     margin-right: 500px;
-    color: #0a0a0a;
+    color: #ffffff;
   }

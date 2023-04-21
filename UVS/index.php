@@ -29,7 +29,7 @@
 <nav class="menu3">
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <img class="img" src="./IMAGENS/site_logo.png" ></img>
+      <img class="img" src="./IMAGENS/uvs-logo.png" alt="Logo da uvs" ></img>
         <p id="text">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
@@ -132,7 +132,7 @@
 
    <section class="rodape">
      <img id="imagem2" src="./IMAGENS/instagram_logo.png" width="25%"></img>
-     <img id="imagem3" src="./IMAGENS/facebook_logo.png" width="25%"></img>
+    
 
      <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
      <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
