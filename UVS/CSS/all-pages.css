@@ -126,7 +126,7 @@ cursor: pointer;
     
 }
 
-input{
+.esfera{
     display: none;
 }
 .bar{
@@ -158,10 +158,55 @@ input{
 
 }
 
-.uvs-noticias-abertura{
-  display: flex;
-  align-items: center;
+/*Formatação do conteúdo de notícias*/
 
-  justify-content: center;
-    
+.texto-principais-noticias{
+    color: #004AAD;   
+    display: block;
+}
+
+.noticias-wraper{
+    display: flex;
+    width: 100%;
+
+}
+.noticia-chave{
+    width: 40%;
+    background-color: #78899e;
+    padding-top: 20%;
+    border: soild white;
+    position: relative;
+}
+
+
+.noticia-preview{
+    color: #666666;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+    font-family: _MONTSERRAT_BOLD_;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.categoria{
+    color: #067a83;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+.borda-catego{
+    color: #067a83;
+    display: block;
+    width: 40px;
+    height: 3px;
+}
+
+.legenda-noticia{
+    color: #666666;
+    font-weight: bold;
 }

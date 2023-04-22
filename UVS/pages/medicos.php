@@ -102,8 +102,7 @@
 
    <section class="rodape">
      <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
-     <img id="imagem3" src="../IMAGENS/facebook_logo.png" width="25%"></img>
-
+    
      <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
      <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
   

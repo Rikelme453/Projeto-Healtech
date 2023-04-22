@@ -24,6 +24,8 @@
 
 </head>
 <body class="noticias-body">
+
+<header>
 <nav class="menu3">
 
     <div class="navbar">
@@ -49,6 +51,7 @@
       </div>
     </div>
   </nav>
+</header>
   <br><br>
   
   <hr class="divisao-elementos">
@@ -62,9 +65,9 @@
       
       <div class="slider">
           <div class="slides">
-              <input type="radio" name="slide" id="radio1">
-              <input type="radio" name="slide" id="radio2">
-              <input type="radio" name="slide" id="radio3">
+              <input class="esferas" type="radio" name="slide" id="radio1">
+              <input class="esferas" type="radio" name="slide" id="radio2">
+              <input class="esferas" type="radio" name="slide" id="radio3">
 
             <div class="slide">
             <div class="slide s1">
@@ -93,6 +96,7 @@
     
       </div>
       </div>
+      <!--Notícias-->
 
       <main>
         <div class="texto-principais-noticias">
@@ -101,13 +105,142 @@
         </div>
         <hr class="barra-azul">
 
-        <div class="noticias-em-destaque">
-            <div class="noticia-principal">
+        <section class="noticias-1">
+          <div class="center">
 
+            <div class="noticias-wraper">
+
+              <div style="background-image: url('https://matriculas.estacio.br/blog/wp-content/uploads/2022/04/Gestao-em-saude-confira-os-cursos-de-graduacao-e-pos-na-area-696x505.jpg')" class="noticia-chave">
+
+                  <div class="noticia-preview">
+                    <div class="categoria">
+                      SAÚDE
+                      <span class="borda-catego"></span>
+                    </div>
+
+                    <div class="legenda-noticia">
+                        Veja algumas dicas de como se cuidar bem
+                      </div>
+
+                   <div> 
+                    </div>
+                  </div>
+              </div>
             </div>
-        </div>
+
+            <div class="outras-noticias">
+              
+              <div class="outra-noticia-1">
+              <h3>Uma notícia</h3>
+              </div>
+
+              <div class="outra-noticia-1">
+              <h3>Uma notícia</h3>
+              </div>
+
+              <div class="outra-noticia-1">
+              <h3>Uma notícia</h3>
+              </div>
+            </div>
+
+            <div class="subnoticias">
+
+              <div class="sub-noticias-1">
+                <h3>Outras notícas</h3>
+
+              </div>
+
+              <div class="sub-noticias-1">
+                <h3>Outras notícas</h3>
+                
+              </div>
+
+              <div class="sub-noticias-1">
+                <h3>Outras notícas</h3>
+                
+              </div>
+
+              <div class="sub-noticias-1">
+                <h3>Outras notícas</h3>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="previsao-tempo">
+          <div class="titul-tempo">
+            <h1>PREVISÃO DO TEMPO</h1>
+          </div>
+
+          <hr class="barra-azul">
+
+            <div class="tempo-1">
+              <div class="caixa-tempo">
+                <h3>View previsão</h3>
+              </div>
+
+              <div class="confira-tempo">
+                <h3>Confira a previsão do tempo em sua região</h3>
+                <legend>Beba água</legend>
+                <a href="#">Confira</a>
+              </div>
+            </div>
+        </section>
+
+        <section class="enquetes-1">
+          <div class="enquentes-indice">
+            <div class="enquete">
+              <h1>ENQUETES</h1>
+              <hr>
+            </div>
+          </div>
+        </section>
+
+        <section class="chat-1">
+          <div class="chat-comunitario">
+
+            <div class="chat-titulo">
+              <h1>CHAT COMUNITÁRIO</h1>
+              <hr class="barra-azul">
+            </div>
+
+            <div class="chat-all">
+                    <div class="barra-comentario">
+                      <h3>Comentários</h3>
+                      <input type="text" name="comentario" id="comentarios">
+                    </div>
+            </div>
+
+            <div class="mensagens">
+                  <p>Mensagemns aqui</p>
+            </div>
+          </div>
+        </section>
 
       </main>
+
+      <footer>
+
+   <section class="rodape">
+     <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
+    
+
+     <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
+     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
+  
+   </section>
+
+   <div class="caixa">
+   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
+  
+<b><p class="heal">&copy; Healtec2023</p></b>
+
+      
+     
+</div>
+
+  </footer>
   
 
 
