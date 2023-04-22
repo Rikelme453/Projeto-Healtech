@@ -127,4 +127,30 @@ body{
     color: #ffffff;
   }
 
+/*Responsividade do site*/
 
+
+@media screen and (max-width: 768px){
+ .index1{
+  width: 100%; 
+}
+
+ #text2{
+    font-size: 15px;
+    text-align: center;
+ }
+
+  .planos-img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+  }
+}
+
+@media screen and (max-width: 600px){
+
+    footer{
+      display: none;
+    }
+}
