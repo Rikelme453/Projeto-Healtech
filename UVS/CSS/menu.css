@@ -180,7 +180,12 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 .navbar .bx-menu{
   display: none;
+  
 }
+
+/*Responsividade do menu*/
+
+
 @media (max-width:920px) {
   nav .navbar{
     max-width: 100%;
