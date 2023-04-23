@@ -1,8 +1,19 @@
-/*Documento css para as páginas onde os usuários irão usar*/
+/*Documento CSS de todas as páginas - Healtec 2023
+--------------------------------------------------------------------------------------------------------------
+/
 
-/*Formatação da página de medicamentos*/
+/*SUMÁRIO*
+--------------------------------------------------------------------------------------------------------------
 
-/*INICIO*/
+1-Página de medicamentos;
+2-Página de notícias; 
+3-
+/
+
+
+/*1- Página de medicamentos*/
+
+/*INÍCIO*/
 
 body{
     background: rgb(255, 255, 255);
@@ -79,9 +90,117 @@ cursor: pointer;
     border: solid 2px black;
 }
 
+.remedios{
+    background-color: #e2ba37;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.remedios-disponiveis{
+    width: 90%;
+    height: 100%;
+    background-color: blueviolet;
+
+}
+
+.remedio-c{
+    background-color: #a7a7a7;
+    width: 20%;
+    height: 100%;
+    border: 2px solid #a7a7a7;
+    border-radius: 20px;
+}
+
+.caixa-remedio{
+    width: 230px;
+    height: 250px;
+  
+}
+
+.descricao-remedio{
+    text-align: center;
+}
+
+.botao-remedio{
+    background-color:  #7ED957;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    height: 5%;
+    cursor: pointer;
+  
+}
+
+/*Janela da descrição dos remedios*/
+
+.janela-remedio{
+    background-color: rgba(8, 8, 8, 0.8);
+    display: none;
+    position: fixed;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.conteudo-janela{
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+
+}
+
+.remedio-descricao-imagem{
+    text-align: center;
+    
+}
+
+.remedio-dados{
+    font-weight: bold;
+    color: #424242;
+}
+
+.botao-reservar{
+    background-color: #1B1749;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
 /*FIM*/
 
-/*Formatação da página de notícias*/
+/*Formatação página de médicos*/
+
+.tabela-medicos{
+    background-color: #c94a4a;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tabela-caixa{
+    width: 50%;
+    height: 80%;
+    background-color: #78899e;
+
+    
+}
+
+/* 2- Formatação da página de notícias*/
 
 .divisao-elementos{
     border: none;
@@ -89,7 +208,7 @@ cursor: pointer;
 }
    
 .conteudo-slide{
-    display: flex;
+ 
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -102,10 +221,7 @@ cursor: pointer;
     width: 800px;
     height: 500px;
     top: 50%;
-    left: 50%;
-    
-    
-  
+    left: 50%;  
 }
 
 .slides{
@@ -210,3 +326,4 @@ cursor: pointer;
     color: #666666;
     font-weight: bold;
 }
+

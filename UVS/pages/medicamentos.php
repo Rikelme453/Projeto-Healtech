@@ -9,7 +9,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../CSS/all-pages.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Página de medicamentos</title>
 
     <!--Menu formatação-->
@@ -17,6 +19,9 @@
 
      <!-- Bootstrap -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!-- JavaScript-->
+     <script src="../JS/janela.js"></script>
 
 </head>
 <body>
@@ -77,7 +82,77 @@
            
          </datalist>
        </form>
+       
+       <section class="remedios">
+         <div class="remedios-disponiveis">
+
+            <div clss="medicamentos">
+                <div class="remedio-c">
+
+                  <img class="caixa-remedio" src="../IMAGENS/dipirona.png" alt="dipirona">
+
+                  <div class="descricao-remedio">
+                    Dipirona sodica
+                  </div>
+
+                  <div class="botao-remedio">
+
+                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao')"> DISPONÍVEL</button>
+
+                    </div>
+
+                    <div id="vis-descricao" class="janela-remedio">
+                          <div class="conteudo-janela">
+
+                            <div class="remedio-descricao-imagem">
+                              <img src="../IMAGENS/dipirona.png" alt="dipirona">
+                            </div>
+
+                            <div class="remedio-dados">
+                              <p>Nome do medicamento: </p>
+                              <p>Fabricante: </p>
+                              <p>Quantidade disponivel</p>
+                            </div>
+
+                            <div class="botao-reservar">
+                              <button class="botao-reservar" onclick="reservarDescricao('vis-descricao')">RESERVAR MEDICAMENTO</button>
+                            </div>
+                          </div>
+                  </div>
+                 
+                </div>
+                </div>
+
+               
+            </div>
+
+                 
+         </div>
+       </section>
     </main>
+
+    <footer>
+
+   <section class="rodape">
+     <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
+    
+
+     <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
+     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
+  
+   </section>
+
+   <div class="caixa">
+   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
+  
+<b><p class="heal">&copy; Healtec2023</p></b>
+
+      
+     
+</div>
+
+    
+  </footer>
 
    
 </body>

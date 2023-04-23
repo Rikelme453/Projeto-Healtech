@@ -94,6 +94,14 @@
        </div>
       </div>
 
+      <section>
+        <div class="tabela-medicos">
+          <div class="tabela-caixa">
+          TABELA DE MÉDICOS AQUI
+          </div>
+        </div>
+      </section>
+
     </main>
 
 
