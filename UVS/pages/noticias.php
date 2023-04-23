@@ -52,50 +52,55 @@
     </div>
   </nav>
 </header>
+
+  
   <br><br>
   
   <hr class="divisao-elementos">
 
-            <div class="uvs-noticias-abertura">
-                <img src="../IMAGENS/uvs-noticias-logo.png" alt="uvs notícias logomarca">
+  <div class="uvs-noticias-abertura">
+                <h2>UVS NOTÍCIAS</h2>
+                <img class="logo-noticias" src="../IMAGENS/uvs-noticias-logo.png" alt="uvs notícias logomarca">
             </div>
 
-      <div class="conteudo-slide">
-          
-      
-      <div class="slider">
-          <div class="slides">
-              <input class="esferas" type="radio" name="slide" id="radio1">
-              <input class="esferas" type="radio" name="slide" id="radio2">
-              <input class="esferas" type="radio" name="slide" id="radio3">
+  <!--Tempo barra-->
+  <div class="tempo-barra">
+  <div id="ww_a108bd38e4893" v='1.3' loc='auto' a='{"t":"ticker","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/pt/" id="ww_a108bd38e4893_u" target="_blank">Previsão do tempo widget</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_a108bd38e4893"></script>
+  </div>
+
+           
+
+             <!--Slides-->
+
+      <div class="slideshow">
+        <div class="slides">
+            <input class="caixas-display" type="radio" name="slide" id="slide1" checked>
+            <input class="caixas-display" type="radio" name="slide" id="slide2">
+            <input class="caixas-display" type="radio" name="slide" id="slide3">
+
+            <div class="slide s1">
+                <img src="../IMAGENS/campanha-1.png" alt="">
+            </div>
 
             <div class="slide">
-            <div class="slide s1">
-            <img src="../IMAGENS/campanha-1.png" alt="uvs notícias introdução">
-              
-          </div>
+                <img src="../IMAGENS/campanha-2.png" alt="">
+            </div>
 
-          <div class="slide">
-              <img src="../IMAGENS/campanha-2.png" alt="campanha 1">
-          </div>
+            <div class="slide">
+                <img src="../IMAGENS/campanha-3.png" alt="">
+            </div>
 
-          <div class="slide">
-              <img src="../IMAGENS/campanha-3.png" alt="campanha 2">
+            <div class="barra-navegacao">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                
+            </div>
 
-          </div>
-          </div>
-      </div>
+        </div>
 
-      <div class="navegacao">
-     
-          <label class="bar" for="radio1"></label>
-          <label class="bar" for="radio2"></label>
-          <label class="bar" for="radio3"></label>
-        
-      </div>
-    
-      </div>
-      </div>
+    </div>
+    <br><br>
       <!--Notícias-->
 
       <main>
@@ -110,7 +115,8 @@
 
             <div class="noticias-wraper">
 
-              <div style="background-image: url('https://matriculas.estacio.br/blog/wp-content/uploads/2022/04/Gestao-em-saude-confira-os-cursos-de-graduacao-e-pos-na-area-696x505.jpg')" class="noticia-chave">
+              <div class="noticia-chave">
+                             
 
                   <div class="noticia-preview">
                     <div class="categoria">
@@ -189,7 +195,9 @@
 
             <div class="tempo-1">
               <div class="caixa-tempo">
-                <h3>View previsão</h3>
+              <!--Widget previsão do tempo-->
+              <div id="ww_df8c506e10713" v='1.3' loc='auto' a='{"t":"horizontal","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/pt/" id="ww_df8c506e10713_u" target="_blank">Previsão do tempo widget</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_df8c506e10713"></script>
+              
               </div>
               
 
