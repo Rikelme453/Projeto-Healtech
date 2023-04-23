@@ -92,8 +92,14 @@
        <div class="titulo-1">
        <h1><b>Informações sobre a rotina dos profissionais de <br> saúde de sua unidade</b></h1>
        </div>
+
+</div>
+         
+  </main>
+
       </div>
 
+<<<<<<< HEAD
       <section>
         <div class="tabela-medicos">
           <div class="tabela-caixa">
@@ -101,6 +107,8 @@
           </div>
         </div>
       </section>
+=======
+>>>>>>> main
 
     </main>
 

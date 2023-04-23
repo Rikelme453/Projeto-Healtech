@@ -66,23 +66,23 @@
 
         <form name="form1" method="post" action="saveEdit.php" onsubmit="return valida_form()">
         <div class="input-field">
-                <label>Nome do Usuário:</label>
+                <label>Nome do Profissional:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
                     placeholder="insira o nome" value=<?php echo $nome; ?>>
-                <label>Data de Nascimento:</label>
-                <input class="form-control" type="date" name="data" id="data" 
-                    placeholder="Insira a data" value=<?php echo $data; ?>>
-                <label>Email do Usuário:</label>
-                <input class="form-control" type="text" name="email" id="email"
-                    placeholder="insira o email" value=<?php echo $email; ?>>
-                <label>Senha do Usuário:</label>
-                <input class="form-control" type="password" name="senha" id="senha"
-                    placeholder="insira a senha" value=<?php echo $senha; ?>>
+                <label>Formação/Especialização:</label>
+                <input class="form-control" type="text" name="formacao" id="formacao" 
+                    placeholder="Insira a formação" value=<?php echo $formacao; ?>>
+                <label>Dias de Atendimento:</label>
+                <input class="form-control" type="text" name="dias" id="dias"
+                    placeholder="insira os dias" value=<?php echo $dias; ?>>
+                <label>Horários de Atendimento:</label>
+                <input class="form-control" type="text" name="horarios" id="horarios"
+                    placeholder="insira os horários" value=<?php echo $horario; ?>>
                 <div class="underline"></div>
             </div> 
             </div>
             <input type="hidden" name="id" value=<?php echo $id;?>>
-            <input type="submit" value="Alterar" name="alterar" >
+            <input type="submit"  name="alterar2" value="Alterar">
 
 
         </form>   
