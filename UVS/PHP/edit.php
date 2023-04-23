@@ -82,7 +82,7 @@
             </div> 
             </div>
             <input type="hidden" name="id" value=<?php echo $id;?>>
-            <input type="submit"  name="alterar" id="alterar">
+            <input type="submit" value="Alterar" name="alterar" >
 
 
         </form>   
