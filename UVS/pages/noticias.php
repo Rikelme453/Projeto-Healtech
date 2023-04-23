@@ -101,10 +101,10 @@
       <main>
         <div class="texto-principais-noticias">
             <h2>Confira as principais notícias</h2>
-           
+            <div class="barra-horizontal"></div>
+               
         </div>
-        <hr class="barra-azul">
-
+      
         <section class="noticias-1">
           <div class="center">
 
@@ -121,17 +121,23 @@
                     <div class="legenda-noticia">
                         Veja algumas dicas de como se cuidar bem
                       </div>
-
                    <div> 
-                    </div>
-                  </div>
+                    </div>  
+                  </div>        
               </div>
-            </div>
 
-            <div class="outras-noticias">
+              <div class="barra-vertical"></div>
+                   <!--Outras notícias-->
+
+              <div class="outras-noticias">
               
               <div class="outra-noticia-1">
-              <h3>Uma notícia</h3>
+              <h3>Uma Noticia</h3>
+            
+              </div>
+
+              <div class="outra-noticia-1">
+              <h3>Uma noticias</h3>
               </div>
 
               <div class="outra-noticia-1">
@@ -142,43 +148,50 @@
               <h3>Uma notícia</h3>
               </div>
             </div>
-
+            </div>
+            
+            <!--Subnotícias-->
             <div class="subnoticias">
 
               <div class="sub-noticias-1">
                 <h3>Outras notícas</h3>
-
+                <div class="sub-legendas">
+                  Assunto
+            </div>
               </div>
 
               <div class="sub-noticias-1">
                 <h3>Outras notícas</h3>
+                <div class="sub-legendas">
+                  Assunto
+            </div>
                 
               </div>
 
               <div class="sub-noticias-1">
                 <h3>Outras notícas</h3>
-                
-              </div>
-
-              <div class="sub-noticias-1">
-                <h3>Outras notícas</h3>
+                <div class="sub-legendas">
+                  Assunto
+            </div>
                 
               </div>
             </div>
+            
           </div>
         </section>
 
         <section class="previsao-tempo">
           <div class="titul-tempo">
-            <h1>PREVISÃO DO TEMPO</h1>
+            <h1 class="titul-tempo">PREVISÃO DO TEMPO</h1>
           </div>
 
-          <hr class="barra-azul">
+              <div class="barra-horizontal-previsao-tempo"></div>
 
             <div class="tempo-1">
               <div class="caixa-tempo">
                 <h3>View previsão</h3>
               </div>
+              
 
               <div class="confira-tempo">
                 <h3>Confira a previsão do tempo em sua região</h3>
@@ -190,9 +203,10 @@
 
         <section class="enquetes-1">
           <div class="enquentes-indice">
+          
             <div class="enquete">
               <h1>ENQUETES</h1>
-              <hr>
+    
             </div>
           </div>
         </section>
@@ -202,7 +216,7 @@
 
             <div class="chat-titulo">
               <h1>CHAT COMUNITÁRIO</h1>
-              <hr class="barra-azul">
+             
             </div>
 
             <div class="chat-all">

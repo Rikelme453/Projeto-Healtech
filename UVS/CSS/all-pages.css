@@ -91,7 +91,7 @@ cursor: pointer;
 }
 
 .remedios{
-    background-color: #e2ba37;
+    /*background-color: #e2ba37;*/
     width: 100%;
     height: 70vh;
     display: flex;
@@ -103,7 +103,7 @@ cursor: pointer;
 .remedios-disponiveis{
     width: 90%;
     height: 100%;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 
 }
 
@@ -269,18 +269,24 @@ cursor: pointer;
 
 /*Formatação dos conteúdos da página de notícias*/
 
-.barra-azul{
-    background: rgb(4, 58, 173);
+.barra-horizontal{
+
+    width: 300px;
+    border: 2px solid  rgb(4, 58, 173);;
+    margin-right: 20px;
+ 
 
 }
-
-/*Formatação do conteúdo de notícias*/
 
 .texto-principais-noticias{
     color: #004AAD;   
     display: block;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-
+.noticias-1{
+    margin-top: 50px;
+}
 .noticias-wraper{
     display: flex;
     width: 100%;
@@ -292,6 +298,7 @@ cursor: pointer;
     padding-top: 20%;
     border: soild white;
     position: relative;
+    margin-left: 20px;
 }
 
 
@@ -327,3 +334,120 @@ cursor: pointer;
     font-weight: bold;
 }
 
+.outras-noticias{
+    display: flex;
+    /*background-color: #4884c8;*/
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 40px;
+   
+}
+
+.barra-vertical{
+    height: 520px;
+    border-right: 2px solid rgb(19, 19, 19);
+    margin-left: 30px;
+}
+
+.outra-noticia-1{
+    background-color: rgb(94, 94, 94);
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white ;
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.subnoticias{
+    /*background-color: #c94a4a;*/
+    margin-top: 20px;
+    display: flex;
+  
+
+}
+
+.sub-noticias-1{
+    flex-wrap: wrap;
+    width: 12%;
+    padding-top: 2%;
+    margin-left: 20px;
+    background-color: #848486;
+    background-size: cover;
+}
+
+/*Formatação previsão do tempo*/
+
+.previsao-tempo{
+    margin-top: 90px;
+    background-color: #d67d16;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titul-tempo{
+    font-size: 32px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.barra-horizontal-previsao-tempo{
+    width: 100px;
+    border: 2px solid  rgb(4, 58, 173);;
+    display: block;
+
+}
+
+.tempo-1{
+    background-color: crimson;
+    display: flex;
+     margin-left: 20px;
+     margin-right: 20px;
+}
+
+.caixa-tempo{
+    background-color: rgb(119, 228, 18);
+    padding-top: 30%;
+    margin-top: 20px;
+    border: 3px solid #060329;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.confira-tempo{
+    background-color: darkgreen;
+    display: flex;
+    width: 50%;
+    padding-top: 30%;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    
+}
+
+.enquetes-1{
+    background-color: blueviolet;
+    margin-top: 60px;
+    padding-top: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.enquentes-indice{
+    background-color: rgb(127, 127, 214);
+}
+
+/*Bate papo do site*/
+
+.chat-1{
+    background-color: gold;
+    margin-top: 40px;
+    padding-top: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
