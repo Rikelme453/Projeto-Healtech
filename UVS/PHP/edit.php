@@ -18,18 +18,13 @@
      $nome = $user_data['nome'];
      $data = $user_data['data'];
      $senha = $user_data['senha'];
-  
-    /* $sqlInsert = "UPDATE tbubs
-     SET nome='$nome',senha='$senha',email='$email', data ='$data_nasc',cidade='$cidade',estado='$estado',endereco='$endereco'
-     WHERE id=$id";
-     $result = $conexao->query($sqlInsert);   */
-     
+   
         }
+       
       }
     }else{
         header('Location:../pages/conta.php');
     }
- 
    
 ?>
 
@@ -56,25 +51,25 @@
     <main class="container">
         <h2>UVS | Cadastro</h2>
 
-        <form name="form1" method="post" action="../pages/conta.php" onsubmit="return valida_form()">
+        <form name="form1" method="post" action="saveEdit.php" onsubmit="return valida_form()">
         <div class="input-field">
                 <label>Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
-                    placeholder="insira o nome" value=<?php echo $nome;?>>
+                    placeholder="insira o nome" value=<?php echo $nome; ?>>
                 <label>Data de Nascimento:</label>
                 <input class="form-control" type="date" name="data" id="data" 
-                    placeholder="Insira a data" value=<?php echo $data;?>>
+                    placeholder="Insira a data" value=<?php echo $data; ?>>
                 <label>Email do Usuário:</label>
                 <input class="form-control" type="text" name="email" id="email"
-                    placeholder="insira o email" value=<?php echo $email;?>>
+                    placeholder="insira o email" value=<?php echo $email; ?>>
                 <label>Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
-                    placeholder="insira a senha" value=<?php echo $senha;?>>
+                    placeholder="insira a senha" value=<?php echo $senha; ?>>
                 <div class="underline"></div>
             </div> 
             </div>
             <input type="hidden" name="id" value=<?php echo $id;?>>
-            <input type="submit" value="Alterar">
+            <input type="submit"  value="Alterar" id="alterar">
 
 
         </form>   
