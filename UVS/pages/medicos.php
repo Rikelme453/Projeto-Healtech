@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!---Fontes do google-->
+    
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../CSS/all-pages.css">
+    
     <title>Médicos</title>
 
      <!--Menu formatação-->
@@ -17,11 +20,13 @@
      <!--Rodapé formatação-->
      <link rel="stylesheet" href="../CSS/style.css">
 
-    <!-- Bootstrap -->
+    <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
-<body>
+  <body>
+
+<!--Menu de navegação-->
     
 <nav class="menu3">
     <div class="navbar">
@@ -47,15 +52,20 @@
 
   <br><br>
 
-  <main>
-  <div class="banner-medicos">
+    <!--Conteúdo da página de médicos-->
+
+    <main>
+        <!--Banner-->
+
+        <div class="banner-medicos">
            <img src="../IMAGENS/medica.png" alt="medicos" class="index1">
        </div>
 
        <hr>
 
-       <div class="titulo-1">
-       <h1><b>ROTINA DE MÉDICOS <br> NO SISTEMA</b></h1>
+        <!--Texto informativo-->
+        <div class="titulo-1">
+          <h1><b>ROTINA DE MÉDICOS <br> NO SISTEMA</b></h1>
        </div>
 
        <div class="texto-informativo">
@@ -67,7 +77,11 @@
             Integer tristique quam in gravida condimentum. Integer quam urna, <br>ultricies lobortis scelerisque vitae, 
             suscipit eget massa. Proin ultricies rutrum nisl nec venenatis. .</p>
        </div>
+
         <br>
+
+        <!--Informações sobre os médicos -->
+
        <div class="titulo-1">
          <h1><b>INFORMAÇÕES</b></h1>
        </div>
@@ -78,16 +92,23 @@
        <div class="titulo-1">
        <h1><b>Informações sobre a rotina dos profissionais de <br> saúde de sua unidade</b></h1>
        </div>
+
 </div>
          
   </main>
 
+      </div>
+
+
+    </main>
+
+
+  <!--Rodapé do site-->
   <footer>
 
    <section class="rodape">
      <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
-     <img id="imagem3" src="../IMAGENS/facebook_logo.png" width="25%"></img>
-
+    
      <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
      <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
   
@@ -97,12 +118,8 @@
    <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
   
 <b><p class="heal">&copy; Healtec2023</p></b>
-
-      
      
-</div>
-
-    
+  </div>  
   </footer>
 </body>
 </html>

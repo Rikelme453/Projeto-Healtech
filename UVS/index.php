@@ -36,7 +36,7 @@
           <li><a href="#">HOME</a></li>
           <li><a href="pages/medicamentos.php">MEDICAMENTOS</a></li>
           <li><a href="pages/medicos.php">MÉDICOS</li>
-          <li><a href="#">CAMPANHAS E PÚBLICAÇÕES</li>
+          <li><a href="pages/noticias.php">CAMPANHAS E PÚBLICAÇÕES</li>
            
           <li>
             <a href="#">CONTA</a>

@@ -5,7 +5,7 @@
 /*INICIO*/
 
 body{
-    background: rgb(217,226,228);
+    background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(217,226,228,1) 5%, rgba(217,226,228,1) 75%);
 }
 /*Formatação do menu nav bar, baseado na formatação da página inicial*/
@@ -28,7 +28,6 @@ body{
 }
 
 hr{
-  
     border: none;
     background: orangered;
     height: 2px;
@@ -82,6 +81,132 @@ cursor: pointer;
 
 /*FIM*/
 
-.texto-informativo{
+/*Formatação da página de notícias*/
+
+.divisao-elementos{
+    border: none;
+
+}
+   
+.conteudo-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: #48c883  solid;
+
+   
+}
+.slider{
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
     
+    
+  
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+}
+
+.slide{
+    width: 33%;
+    transition: .6s;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 10px;
+    left: 44%;
+    display: flex;
+    
+}
+
+.esfera{
+    display: none;
+}
+.bar{
+    width: 50px;
+    height: 15px;
+    border: 2px solid rgb(68, 64, 64);
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer; 
+    transform: .5s ease;
+    
+}
+.bar:hover{
+    background-color: #676565;
+}
+
+#radio1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .s1{
+    margin-left: -33%;
+}
+
+/*Formatação dos conteúdos da página de notícias*/
+
+.barra-azul{
+    background: rgb(4, 58, 173);
+
+}
+
+/*Formatação do conteúdo de notícias*/
+
+.texto-principais-noticias{
+    color: #004AAD;   
+    display: block;
+}
+
+.noticias-wraper{
+    display: flex;
+    width: 100%;
+
+}
+.noticia-chave{
+    width: 40%;
+    background-color: #78899e;
+    padding-top: 20%;
+    border: soild white;
+    position: relative;
+}
+
+
+.noticia-preview{
+    color: #666666;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+    font-family: _MONTSERRAT_BOLD_;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.categoria{
+    color: #067a83;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+.borda-catego{
+    color: #067a83;
+    display: block;
+    width: 40px;
+    height: 3px;
+}
+
+.legenda-noticia{
+    color: #666666;
+    font-weight: bold;
 }

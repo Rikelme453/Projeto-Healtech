@@ -1,6 +1,7 @@
 body{
     background: rgb(217,226,228);
     background: linear-gradient(90deg, rgba(217,226,228,1) 5%, rgba(217,226,228,1) 75%);
+ 
 }
 
 .menu3{
@@ -9,6 +10,7 @@ body{
    /* background: linear-gradient(90deg, rgba(13,177,222,1) 0%, rgba(52,201,113,1) 47%, rgba(0,213,255,1) 95%); */
 
 }
+
 .img{
     width: 8%;
     height: 100%;
@@ -126,3 +128,47 @@ body{
     margin-right: 500px;
     color: #ffffff;
   }
+
+/*Responsividade do site*/
+
+@media screen and (max-width: 768px)
+{
+  .index1{
+    width: 100%;
+  
+  }
+  .planos-img{
+    display: flex;
+    width: 50vw;
+
+  }
+}
+
+@media screen and (max-width: 412px){
+
+  .index1{
+    width: 200%;
+  }
+
+  #text2{
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+  .planos-img{
+    display: flex;
+    justify-content: center;
+    width: 200%;
+   
+  }
+
+  .plano-c{
+    
+    justify-items: center;
+  }
+  footer{
+    width: 200%;
+  }
+}
+    
