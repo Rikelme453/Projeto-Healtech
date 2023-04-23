@@ -95,20 +95,17 @@
 
 </div>
          
-  </main>
-
       </div>
 
-<<<<<<< HEAD
+
       <section>
         <div class="tabela-medicos">
           <div class="tabela-caixa">
-          TABELA DE MÉDICOS AQUI
+          TABELA DE MÉDICOS AQU
           </div>
         </div>
       </section>
-=======
->>>>>>> main
+
 
     </main>
 
