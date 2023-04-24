@@ -366,7 +366,7 @@ cursor: pointer;
 }
 
 .barra-vertical{
-    height: 520px;
+    height: 500px;
     border-right: 2px solid rgb(19, 19, 19);
     margin-left: 30px;
 }
@@ -438,10 +438,10 @@ cursor: pointer;
   
 }
 
-.confira-tempo{
+/*.confira-tempo{
     background-color: darkgreen;
     display: flex;
-    width: 50%;
+    width: 30%;
     padding-top: 30%;
     margin-top: 20px;
     background-size: cover;
@@ -450,25 +450,78 @@ cursor: pointer;
     
     
 }
+*/
+.previsao-sol{
+    display: flex;
+    width: 15%;
+    height: 5%;
+    margin-bottom: 30px;
+    background-position: center;
+}
 
+.texto-previsao{
+  
+    font-size: 25px;
+    margin-left: 80px;
+    font-weight: bold;
+    color: #424242;
+}
+
+.barra-mensagem{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-left: 60px;
+    background-position: center;
+    
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.barra-vertical-msg{
+    height: 250px;
+    border-right: 2px solid rgb(19, 19, 19);
+    margin-left: 30px;
+}
 .enquetes-1{
-    background-color: blueviolet;
-    margin-top: 60px;
-    padding-top: 60%;
+    /*background-color: blueviolet;*/
+    margin-top: 10px;
+    padding-top: 5%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.enquentes-indice{
-    background-color: rgb(127, 127, 214);
-}
+
+
 
 /*Bate papo do site*/
 
 .chat-1{
-    background-color: gold;
-    margin-top: 40px;
-    padding-top: 50%;
+    /*background-color: gold;*/
+    margin-top: 20px;
+    padding-top: 10%;
     margin-left: 20px;
     margin-right: 20px;
 

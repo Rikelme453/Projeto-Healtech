@@ -116,6 +116,8 @@
             <div class="noticias-wraper">
 
               <div class="noticia-chave">
+
+             
                              
 
                   <div class="noticia-preview">
@@ -199,24 +201,32 @@
               <div id="ww_df8c506e10713" v='1.3' loc='auto' a='{"t":"horizontal","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/pt/" id="ww_df8c506e10713_u" target="_blank">Previsão do tempo widget</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_df8c506e10713"></script>
               
               </div>
-              
+              <div class="barra-vertical-msg"></div>
 
-              <div class="confira-tempo">
-                <h3>Confira a previsão do tempo em sua região</h3>
-                <legend>Beba água</legend>
-                <a href="#">Confira</a>
-              </div>
+              <!--<div class="confira-tempo">
+          
+                </div>-->
+
+             
+
+                <div class="barra-mensagem">
+                
+                <img class="previsao-sol" src="https://cdn-icons-png.flaticon.com/512/146/146199.png" alt="">
+                <p class="texto-previsao">Confira a previsão do tempo em sua região<br>Beba água</p>
+                </div>
+                <br>
+                <div class="botao-confirma">
+            <a href="https://www.google.com/search?q=tempo+agora&rlz=1C1FCXM_pt-PTBR1008BR1008&sxsrf=APwXEdc5PWZ8dXJ98pmCWC-VLjvXLPNqhQ%3A1682295949467&ei=jcxFZJGHHLfW1sQP4eiiuAM&ved=0ahUKEwjRgebjoMH-AhU3q5UCHWG0CDcQ4dUDCA8&uact=5&oq=tempo+agora&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIMCCMQJxCdAhBGEIACMggIABCABBCSAzIICAAQgAQQkgMyBQgAEIAEMgsIABCKBRCxAxCDATIFCAAQgAQyBQgAEIAEMggIABCKBRCxAzILCAAQigUQsQMQgwEyBQgAEIAEOgoIABBHENYEELADOg0IABBHENYEEMkDELADOgsIABCKBRCSAxCwA0oECEEYAFD8BVjSDGCPE2gCcAF4AIAB0wKIAdIGkgEHMC4zLjAuMZgBAKABAcgBCsABAQ&sclient=gws-wiz-serp" class="myButton">CONFIRA</a>
             </div>
+            </div>
+           
         </section>
 
         <section class="enquetes-1">
-          <div class="enquentes-indice">
-          
-            <div class="enquete">
-              <h1>ENQUETES</h1>
-    
-            </div>
-          </div>
+          <h1>ENQUETE</h1>
+          <ce:enquete id="12930010" question_size="5" option_size="6" img_option_size="5" font="Roboto, sans-serif" primary_color="#ff9f1c" secondary_color="#ffffff" height="804" ></ce:enquete>
+<script async type="text/javascript" src="https://www.criarenquete.com.br/user.js"></script>
+
         </section>
 
         <section class="chat-1">
@@ -230,16 +240,19 @@
             <div class="chat-all">
                     <div class="barra-comentario">
                       <h3>Comentários</h3>
-                      <input type="text" name="comentario" id="comentarios">
-                    </div>
-            </div>
+                      <!--Plugin de comentários do facebook-->
 
-            <div class="mensagens">
-                  <p>Mensagemns aqui</p>
-            </div>
+                      <div id="fb-root"></div>
+                      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v16.0" 
+                      nonce="EobdiE7I"></script>
+
+                          <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+                          data-width="600" data-numposts="5"></div>
+
           </div>
         </section>
 
+        
       </main>
 
       <footer>
