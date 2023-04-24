@@ -213,6 +213,24 @@ cursor: pointer;
     display: flex;
     margin-left: 10px;
 }
+/*Formatação data e hora*/
+.uvs-noticia{
+    font-weight: bold;
+    font-size: 30px;
+    color: #06333b;
+}
+.hora-caixa{
+    border: none;
+    background-color: rgb(56, 56, 56);
+    font-weight: bold;
+    color: rgb(48, 223, 48);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(31, 31, 31);
+    margin-left: 80%;
+}
 .tempo-barra{
     margin-top: 10px;
 }

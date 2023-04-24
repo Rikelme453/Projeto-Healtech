@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Menu formatação-->
     <link rel="stylesheet" href="../CSS/menu.css">
+    <!--Data e hora com JavaScript-->
+    <script src="../JS/time.js"></script>
+    
 
 </head>
 <body class="noticias-body">
@@ -59,8 +62,20 @@
   <hr class="divisao-elementos">
 
   <div class="uvs-noticias-abertura">
-                <h2>UVS NOTÍCIAS</h2>
+                <h2 class="uvs-noticia">UVS NOTÍCIAS| </h2>
                 <img class="logo-noticias" src="../IMAGENS/uvs-noticias-logo.png" alt="uvs notícias logomarca">
+
+                <!--Data e hora-->
+                <div class="data-hora">
+
+                                  
+                        <input type="time" class="hora-caixa" id="rel">
+                </div>
+
+                <div class="publicidade">
+                
+
+                </div>
             </div>
 
   <!--Tempo barra-->
