@@ -64,7 +64,7 @@
 
           <div class="planos-img">
             <div class="plano-c">
-            <img src="IMAGENS/idosos_texto1.jpg" alt="" width="286px" height="286px">
+            <img src="IMAGENS/idosos_texto1.jpg" alt="" width="100%" height="286px">
             <h2>Saúde da pessoa idosa</h2>
             <p>O Estatuto do Idoso (Lei nº 10.741/2003) é uma iniciativa inovadora na 
               garantia de direitos da pessoa idosa, 
@@ -85,10 +85,8 @@
                   dos Direitos Humanos e com a participação de doze ministérios, incluindo o Ministério da Saúde.</p>
             </div>
           
-
-          <div class="planos-img">
             <div class="plano-c">
-            <img src="IMAGENS/dois-ciclismo.jpg" alt="" width="286px" height="286px">
+            <img src="IMAGENS/dois-ciclismo.jpg" alt="" width="100%" height="286px">
             <h2>Atividade para a vida</h2>
             <p>A atividade física é simplesmente o movimento do corpo que consome energia: andar, subir 
               escadas, jogar futebol, trabalhar no jardim ou dançar a noite toda são alguns 
@@ -102,13 +100,11 @@
                 a obesidade é uma das principais responsáveis por doenças crônicas como 
                 hipertensão, dislipidemia, doenças cardiovasculares, diabetes e câncer.
 
-  </p>
+             </p>
             </div>
-          </div>
 
-          <div class="planos-img">
             <div class="plano-c">
-            <img src="IMAGENS/cerebro_humano.png.webp" alt="" width="286px" height="286px">
+            <img src="IMAGENS/cerebro_humano.png.webp" alt="" width="100%" height="286px">
             <h2>Saúde Mental</h2>
             <p>A reabilitação psicossocial é compreendida como um conjunto de ações que buscam o fortalecimento, a inclusão e o exercício de direitos de cidadania de pacientes e familiares, mediante a criação e o desenvolvimento de iniciativas articuladas com os recursos do território nos campos do trabalho, habitação, educação, cultura, segurança e direitos humanos.
 
@@ -123,8 +119,7 @@
             Tenha alimentação saudável;
             Reforce os laços familiares e de amizades. </p>
             </div>
-          </div>
-              </div>
+         </div>
 
           </section>
 </main>
