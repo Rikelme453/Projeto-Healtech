@@ -5,13 +5,45 @@
 html, body{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
 }
 
 header{
     display: flex;
     padding: 10px 2%;
     justify-content: space-between;
-    background-color: rgb(48, 158, 158);
+    background-color: rgb(16, 119, 119);
+    
+}
+
+
+.info-cabecalho{
+    display: flex;
+}
+
+.info-cabecalho h5{
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-left: 20%;
+    font-size: 15px
+   
+}
+
+.info-cabecalho p{
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-left: 100%;
+    font-size: 15px
+}
+.perfil-adm{
+    height: 30%;
+ 
+}
+.image-perfil img{
+    margin-top: 10px;
+    margin-left: 30%;
+    justify-content: center;
+    
 }
 
 .logo{
@@ -56,6 +88,8 @@ header{
 .sidebar h3{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
+    text-align: center;
+    color: #222;
 
 }
 
@@ -108,12 +142,14 @@ header{
 }
 
 .caixa-info{
-    width: 100%;
+    width: 95%;
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
     background-color: white;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
 
     
 }
@@ -140,6 +176,8 @@ header{
     background-color: white;
     margin-top: 20px;
     margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
  
 }
 .mapa-ubs h3{

@@ -45,7 +45,7 @@
               <li><a href="pages/conta.php">CONTA</a></li>
               <li><a href="pages/login.php">LOGIN</a></li>
               <li><a href="pages/cadastro.php">CADASTRO</a></li>
-              <li><a href="pages/administrador.php">ADMIN</a></li>
+              <li><a href="admin_pages/administrador.php">ADMIN</a></li>
           </li>
         </ul>
       </div>
