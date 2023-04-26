@@ -5,25 +5,11 @@
     {
 
         $id = $_GET['id'];
-
-        $sqlSelect = "SELECT *  FROM tbubs WHERE id=$id";
         $sqlSelect2 = "SELECT *  FROM tbmedicos WHERE Id=$id";
-
-        $result = $conexao->query($sqlSelect);
         $result2 = $conexao->query($sqlSelect2);
 
-
-    if($result->num_rows > 0){
-            
-          while($user_data = mysqli_fetch_assoc($result)) {
-
-           $email = $user_data['email']; 
-           $nome = $user_data['nome'];
-           $data = $user_data['data']; 
-           $senha = $user_data['senha'];
-        }
-       
-    }else if($result2->num_rows > 0){
+        
+     if($result2->num_rows > 0){
 
          while( $user_data2 = mysqli_fetch_assoc($result2)){
 

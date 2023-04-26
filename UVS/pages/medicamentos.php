@@ -38,6 +38,8 @@
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">HOME</a></li>
+          <li><a href="medicos.php">MÉDICOS</li>
+          <li><a href="noticias.php">CAMPANHAS E PÚBLICAÇÕES</li>
            
           <li>
             <a href="#">CONTA</a>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2023 at 02:07 AM
+-- Generation Time: Apr 25, 2023 at 02:05 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Database: `dbubs`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbmedicos`
+--
+
+CREATE TABLE `tbmedicos` (
+  `profissional` varchar(100) NOT NULL,
+  `formacao` varchar(100) NOT NULL,
+  `dias` varchar(100) NOT NULL,
+  `horarios` varchar(100) NOT NULL,
+  `Id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbmedicos`
+--
+
+INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) VALUES
+('Dr Gonçalves Dias', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 9hs', 10),
+('Med Salustiana Neves ', 'Psicologa', 'Quartas e Sextas', 'Das 8hs às 16hs da tarde', 11),
+('Dra Livia Silva', 'Fisioterapeuta', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 12),
+('Dr Gonçalves Guimarães', 'Psiquiatra', 'Quartas e Sextas', 'Das 8hs às 15hs da tarde', 13),
+('Dr Celio Mendonça', 'Clinico Geral', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 14),
+('Dr Tom Marry', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 15hs da tarde', 15),
+('Dra Luana Souza', 'Fisioterapeuta', 'Segunda,Terça e Sexta.', 'Das 8hs às 15hs da tarde', 16);
 
 -- --------------------------------------------------------
 
@@ -41,14 +68,13 @@ CREATE TABLE `tbubs` (
 
 INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`) VALUES
 ('luan001@gmail.com', 'luan123', 'bolinha2', '2023-03-07', 5),
-('aureliocarros2010@gmail.com', 'muito1234456', 'Aurélio Silva', '2006-01-15', 6),
 ('luan924@gmail.com', '12345', 'Luan', '2022-12-03', 7),
-('rikelme@gmail.com', '125678', 'Cicero Rikelme Lopes', '1500-12-04', 8),
 ('ederson@gmail.com', '90645te', 'Ederson Silva', '2022-12-05', 9),
-('mariele@gmail.com', '764747yi', 'Marielle', '2023-04-05', 10),
-('mariele@gmail.com', '1364364gg', 'Marielle', '2023-04-05', 11),
-('tommorto@gmai.coml', '1234ret', 'Jerry', '2024-12-06', 12),
-('jerrymorto@gmail.com', '12345t', 'Tom', '2024-02-12', 13);
+('jerrymorto@gmail.com', '12345t', 'Tom', '2024-02-12', 13),
+('mariellesilva@gmail.com', '1234567', 'Marielle Franco', '2023-12-03', 15),
+('suzanna@gmail.com', '12345', 'Suzanna Almeida', '2003-12-03', 16),
+('mariene@gmail.com', '9894ggfr5', 'Mariene Gonçalves', '2004-12-03', 17),
+('mendonça@gmail.com', '1fr42567y', 'Suzanna Mendonça', '2006-12-03', 19);
 
 -- --------------------------------------------------------
 
@@ -67,6 +93,12 @@ CREATE TABLE `tbupload` (
 --
 
 --
+-- Indexes for table `tbmedicos`
+--
+ALTER TABLE `tbmedicos`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `tbubs`
 --
 ALTER TABLE `tbubs`
@@ -83,10 +115,16 @@ ALTER TABLE `tbupload`
 --
 
 --
+-- AUTO_INCREMENT for table `tbmedicos`
+--
+ALTER TABLE `tbmedicos`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT for table `tbubs`
 --
 ALTER TABLE `tbubs`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `tbupload`

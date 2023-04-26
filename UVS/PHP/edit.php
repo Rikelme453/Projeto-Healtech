@@ -7,10 +7,8 @@
         $id = $_GET['id'];
 
         $sqlSelect = "SELECT *  FROM tbubs WHERE id=$id";
-        $sqlSelect2 = "SELECT *  FROM tbmedicos WHERE Id=$id";
 
         $result = $conexao->query($sqlSelect);
-        $result2 = $conexao->query($sqlSelect2);
 
 
     if($result->num_rows > 0){
@@ -23,16 +21,6 @@
            $senha = $user_data['senha'];
         }
        
-    }else if($result2->num_rows > 0){
-
-         while( $user_data2 = mysqli_fetch_assoc($result2)){
-
-            $nome = $user_data2['profissional'];
-            $formacao = $user_data2['formacao'];
-            $dias = $user_data2['dias'];
-            $horario = $user_data2['horarios'];
-         }
-
     }
 
     }else{
