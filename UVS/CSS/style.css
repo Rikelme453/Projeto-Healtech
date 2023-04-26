@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 body{
     background: rgb(217,226,228);
     background: linear-gradient(90deg, rgba(217,226,228,1) 5%, rgba(217,226,228,1) 75%);
@@ -111,10 +112,13 @@ body{
   }
 
   .plano-c{
-    width: 290px;
+    width: 300px;
     margin: 10px 10px;
     border: 2px solid gray;
-    background-color: #C8C8C8;
+    border-radius: 6px;
+    background-color: rgb(48, 158, 158);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
   }
 
   .caixa{

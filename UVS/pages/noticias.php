@@ -41,6 +41,8 @@
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">HOME</a></li>
+          <li><a href="medicamentos.php">MEDICAMENTOS</a></li>
+          <li><a href="medicos.php">MÉDICOS</li>
            
           <li>
             <a href="#">CONTA</a>
