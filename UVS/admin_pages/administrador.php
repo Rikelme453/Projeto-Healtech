@@ -14,10 +14,6 @@
        <link rel="stylesheet" href="css/bootstrap.min.css">
          <!--Data e hora com JavaScript-->
     <script src="../JS/time.js"></script>
-
-    
-    
-    
     
 </head>
 <body>
@@ -38,7 +34,13 @@
 
             <div class="perfil-adm">
                 <div class="image-perfil">
-                    <a class="image-perfil" href="user_admin.php"> <img src="../ICONS/username.png" alt="" width="100px" height="100px"></a>
+
+                <form action="user_admin.php">
+                                   
+                    <a class="image-perfil" href="user_admin.php"> <img  name="perfiluser" style="width: 60px; height: 60px"></a>
+                    <script src="../JS/perfil.js"></script>
+                    </form>
+                   
                     <h3>Bem Vindo de volta!</h3>
                 </div>
             </div>
