@@ -55,7 +55,7 @@ nav .navbar .links li a{
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
 }
@@ -72,7 +72,7 @@ nav .navbar .links li .arrow{
   line-height: 70px;
   text-align: center;
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 nav .navbar .links li .sub-menu{
@@ -80,7 +80,7 @@ nav .navbar .links li .sub-menu{
   top: 70px;
   left: 0;
   line-height: 40px;
-  background: #757575;
+  background:   #466189;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   display: none;
@@ -95,7 +95,7 @@ nav .navbar .links li:hover .js-sub-menu{
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .navbar .links li .sub-menu a{
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
 }
@@ -217,7 +217,7 @@ nav .navbar .links li:hover .js-sub-menu{
     display: block;
     max-width: 270px;
     width: 100%;
-    background:  #6699FF;
+    background:  #8AA6CF;
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -310,5 +310,5 @@ nav .navbar .links li .sub-menu li{
 }
 
 .menu3 .links li a:hover{
-  color: rgb(0, 0, 0);
+  color: #555555;
 }
