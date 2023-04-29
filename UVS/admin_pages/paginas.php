@@ -22,10 +22,6 @@
               
         </div>
 
-            <div class="admin-foto">
-          
-            </div>
-
         </div>
     </header>
 
@@ -33,9 +29,7 @@
         <div class="sidebar">
 
             <div class="perfil-adm">
-                <div class="image-perfil">
-                    <img src="../ICONS/username.png" alt="" width="195" height="195px">
-                </div>
+             
             </div>
 
             <h3>Bem Vindo de volta!</h3>
@@ -43,12 +37,27 @@
                 <hr>
             <a href=""> Páginas </a>
                 <hr>
-            <a href=""> Formulários</a>
+            <a href=""> Usuários</a>
                 <hr>
             <a href=""> Tabelas</a>
                 <hr>
             <a href="../pages/sair.php"> Sair</a>
             <hr>
+        </div>
+
+        <div class="container">
+            <div class="titulo-secao">
+                <h3>Páginas disponivies</h3>
+            </div>
+        </div>
+
+        <div class="maps-ubs">
+            <h3>Acessar páginas disponiveis: </h3>
+            <a href="../index.php">Página Incial</a>
+            <hr>
+            <a href="../pages/medicamentos.php"></a>
+
+
         </div>
     
 </body>
