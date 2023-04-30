@@ -17,7 +17,7 @@
 <header>
         <div class="info-cabecalho">
            
-                <img  class="logo" src="../IMAGENS/uvs-logo.png" alt="uvs logo">
+                <img  class="logo" src="../IMAGENS/UVS +.svg" alt="uvs logo">
                 <h5>UVS ADMINISTRATOR</h5>
                 <p>Ola, Admin</p>
               

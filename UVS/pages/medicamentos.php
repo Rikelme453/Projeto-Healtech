@@ -32,7 +32,7 @@
 
       <i class='bx bx-menu'></i>
 
-      <img class="logo-marca" src="../IMAGENS/uvs-logo.png" ></img>
+      <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
 
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 

@@ -35,7 +35,7 @@
 
       <i class='bx bx-menu'></i>
 
-      <img class="logo-marca" src="../IMAGENS/uvs-logo.png" ></img>
+      <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
 
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
@@ -65,7 +65,7 @@
 
   <div class="uvs-noticias-abertura">
                 <h2 class="uvs-noticia">UVS NOTÍCIAS| </h2>
-                <img class="logo-noticias" src="../IMAGENS/uvs-noticias-logo.png" alt="uvs notícias logomarca">
+                <img class="logo-noticias" src="../IMAGENS/uvs-noticias alt="uvs notícias logomarca">
 
                 <!--Data e hora-->
                 <div class="data-hora">

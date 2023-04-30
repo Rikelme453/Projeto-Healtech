@@ -12,7 +12,7 @@ header{
     display: flex;
     padding: 10px 2%;
     justify-content: space-between;
-    background-color: rgb(16, 119, 119);
+    background-color: #466189;
     
 }
 
@@ -192,5 +192,68 @@ header{
    margin-top: 30px;
    border: 7px solid black;
 
+}
+.link-paginas{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 100, 112);
+    font-weight: bold;
+}
+
+.link-paginas:hover{
+    color: #222;
+}
+/*menu editores*/
+
+
+.menu ul li{
+	background-color: rgb(70, 77, 107);
+	float: left;
+	width: 100%;
+	display: inline-block;
+	line-height: 30px;
+	font-size: 15px;
+	position: relative;
+    border: 2px solid rgb(48, 44, 56);
+    
+}
+
+.menu ul li:hover{
+	background-color: #f7f7f7;
+
+}
+
+.menu ul{
+	padding: 0px;
+}
+
+.menu ul ul{
+	display: none;
+}
+
+.menu ul li:hover > ul{
+	display:block;
+}
+
+.menu ul ul ul{
+	margin-left: 201px;
+	top: 0px;
+	position: absolute;
+}
+
+.menu ul ul li a:hover{
+	background-color: #ffffff;
+
+}
+
+.menu ul ul ul li:hover{
+	background-color: #ffffff;
   
 }
+
+.menu a{
+	color: rgb(253, 253, 253);
+	text-decoration: none;
+}
+
+

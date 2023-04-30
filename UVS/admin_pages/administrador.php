@@ -12,8 +12,11 @@
 
        <!-- Bootstrap -->
        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/7cdd971c93.js" crossorigin="anonymous"></script>
          <!--Data e hora com JavaScript-->
     <script src="../JS/time.js"></script>
+    
     
 </head>
 <body>
@@ -46,15 +49,15 @@
             </div>
 
            
-            <a class="nome-colorido" href=""> Dashboard</a>
+            <a class="nome-colorido" href=""> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
                 <hr>
-            <a href="paginas.php"> Páginas </a>
+            <a href="paginas.php"> <i class="fa-sharp fa-solid fa-file-lines" style="color: #076470;"></i> Páginas </a>
                 <hr>
-            <a href=""> Formulários</a>
+            <a href=""> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>
                 <hr>
-            <a href=""> Tabelas</a>
+            <a href=""> <i class="fa-solid fa-table" style="color: #076470;"></i> Tabelas</a>
                 <hr>
-            <a href="../pages/sair.php"> Sair</a>
+            <a href="../pages/sair.php"> <i class="fa-solid fa-right-from-bracket" style="color: #076470;"></i> Sair</a>
             <hr>
         </div>
 
