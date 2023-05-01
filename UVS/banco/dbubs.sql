@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2023 at 02:05 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Tempo de geração: 02/05/2023 às 00:35
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbubs`
+-- Banco de dados: `dbubs`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbmedicos`
+-- Estrutura para tabela `tbmedicos`
 --
 
 CREATE TABLE `tbmedicos` (
@@ -33,25 +33,24 @@ CREATE TABLE `tbmedicos` (
   `dias` varchar(100) NOT NULL,
   `horarios` varchar(100) NOT NULL,
   `Id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbmedicos`
+-- Despejando dados para a tabela `tbmedicos`
 --
 
 INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) VALUES
-('Dr Gonçalves Dias', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 9hs', 10),
+('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', 'Das 13hs às 17hs ', 10),
 ('Med Salustiana Neves ', 'Psicologa', 'Quartas e Sextas', 'Das 8hs às 16hs da tarde', 11),
 ('Dra Livia Silva', 'Fisioterapeuta', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 12),
 ('Dr Gonçalves Guimarães', 'Psiquiatra', 'Quartas e Sextas', 'Das 8hs às 15hs da tarde', 13),
-('Dr Celio Mendonça', 'Clinico Geral', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 14),
 ('Dr Tom Marry', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 15hs da tarde', 15),
 ('Dra Luana Souza', 'Fisioterapeuta', 'Segunda,Terça e Sexta.', 'Das 8hs às 15hs da tarde', 16);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbubs`
+-- Estrutura para tabela `tbubs`
 --
 
 CREATE TABLE `tbubs` (
@@ -60,10 +59,10 @@ CREATE TABLE `tbubs` (
   `nome` varchar(20) NOT NULL,
   `data` date DEFAULT NULL,
   `id` int(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbubs`
+-- Despejando dados para a tabela `tbubs`
 --
 
 INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`) VALUES
@@ -79,55 +78,55 @@ INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbupload`
+-- Estrutura para tabela `tbupload`
 --
 
 CREATE TABLE `tbupload` (
   `id` int(11) NOT NULL,
-  `path` varchar(255) NOT NULL,
+  `arquivo` varchar(255) NOT NULL,
   `data_upload` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `tbmedicos`
+-- Índices de tabela `tbmedicos`
 --
 ALTER TABLE `tbmedicos`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tbubs`
+-- Índices de tabela `tbubs`
 --
 ALTER TABLE `tbubs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbupload`
+-- Índices de tabela `tbupload`
 --
 ALTER TABLE `tbupload`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `tbmedicos`
+-- AUTO_INCREMENT de tabela `tbmedicos`
 --
 ALTER TABLE `tbmedicos`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `tbubs`
+-- AUTO_INCREMENT de tabela `tbubs`
 --
 ALTER TABLE `tbubs`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `tbupload`
+-- AUTO_INCREMENT de tabela `tbupload`
 --
 ALTER TABLE `tbupload`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

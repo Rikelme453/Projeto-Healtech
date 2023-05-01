@@ -36,21 +36,20 @@
       <i class='bx bx-menu'></i>
 
       <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
-
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">HOME</a></li>
-          <li><a href="medicamentos.php">MEDICAMENTOS</a></li>
-          <li><a href="medicos.php">MÉDICOS</li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="medicamentos.php">Medicamentos</a></li>
+          <li><a href="medicos.php">Medicos</li>
            
           <li>
-            <a href="#">CONTA</a>
+            <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="conta.php">CONTA</a></li>
-              <li><a href="login.php">LOGIN</a></li>
-              <li><a href="cadastro.php">CADASTRO</a></li>
+              <li><a href="conta.php">Conta</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>
@@ -68,9 +67,7 @@
                 <img class="logo-noticias" src="../IMAGENS/uvs-noticias alt="uvs notícias logomarca">
 
                 <!--Data e hora-->
-                <div class="data-hora">
-
-                                  
+                <div class="data-hora">   
                         <input type="time" class="hora-caixa" id="rel">
                 </div>
 
@@ -133,9 +130,6 @@
             <div class="noticias-wraper">
 
               <div class="noticia-chave">
-
-             
-                             
 
                   <div class="noticia-preview">
                     <div class="categoria">
@@ -224,8 +218,6 @@
           
                 </div>-->
 
-             
-
                 <div class="barra-mensagem">
                 
                 <img class="previsao-sol" src="https://cdn-icons-png.flaticon.com/512/146/146199.png" alt="">
@@ -255,16 +247,16 @@
             </div>
 
             <div class="chat-all">
-                    <div class="barra-comentario">
-                      <h3>Comentários</h3>
-                      <!--Plugin de comentários do facebook-->
+              <div class="barra-comentario">
+                <h3>Comentários</h3>
+                <!--Plugin de comentários do facebook-->
 
-                      <div id="fb-root"></div>
-                      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v16.0" 
-                      nonce="EobdiE7I"></script>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v16.0" 
+                nonce="EobdiE7I"></script>
 
-                          <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
-                          data-width="600" data-numposts="5"></div>
+              <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+              data-width="600" data-numposts="5"></div>
 
           </div>
         </section>
@@ -286,16 +278,11 @@
    <div class="caixa">
    <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
   
-<b><p class="heal">&copy; Healtec2023</p></b>
-
-      
+<b><p class="heal">&copy; Healtec2023</p></b>     
      
 </div>
 
   </footer>
-  
-
-
-    
+   
 </body>
 </html>

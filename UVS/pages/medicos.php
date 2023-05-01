@@ -19,7 +19,8 @@
      
      <!--Rodapé formatação-->
      <link rel="stylesheet" href="../CSS/style.css">
-
+     <!--Tabela Formatação-->
+       <link rel="stylesheet" href="../CSS/all-pages.css">
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -31,21 +32,21 @@
 <nav class="menu3">
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <img class="logo-marca" src="../IMAGENS/uvs-logo.png" ></img>
+      <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">HOME</a></li>
-          <li><a href="medicamentos.php">MEDICAMENTOS</a></li>
-          <li><a href="noticias.php">CAMPANHAS E PÚBLICAÇÕES</li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="medicamentos.php">Medicamentos</a></li>
+          <li><a href="noticias.php">Campanhas e Publicações</li>
            
           <li>
-            <a href="#">CONTA</a>
+            <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="../pages/conta.php">CONTA</a></li>
-              <li><a href="../pages/login.php">LOGIN</a></li>
-              <li><a href="../pages/cadastro.php">CADASTRO</a></li>
+              <li><a href="../pages/conta.php">Conta</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>
@@ -94,26 +95,41 @@
        <div class="titulo-1">
        <h1><b>Informações sobre a rotina dos profissionais de <br> saúde de sua unidade</b></h1>
        </div>
-
-</div>
-      </div>
-
-
+       
       <section>
-        <div class="tabela-medicos">
-          <div class="tabela-caixa">
-          TABELA DE MÉDICOS AQU
-          </div>
-        </div>
+          
+      <table class="tabela">
+      <th>Nome do Profissional</th>
+      <th>Formação/Especialização</th>
+      <th>Dias de Atendimento</th>
+      <th>Horários de Atendimento</th>
+      
+  <?php
+  include "../PHP/pesquisa.php"; 
+ 
+  
+  while($user = mysqli_fetch_assoc($result2)) {
+
+    echo "<tr>";
+    echo "<td>".$user['profissional']."</td>";
+    echo "<td>".$user['formacao']."</td>";
+    echo "<td>".$user['dias']."</td>";
+    echo "<td>".$user['horarios']."</td>";
+    echo "</tr>";
+
+  };       
+         ?>
+</table>
+   
+
       </section>
-
-
+     
     </main>
-
+<br><br>
 
   <!--Rodapé do site-->
+    <article class="article-footer">d</article>
   <footer>
-
    <section class="rodape">
      <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
     
@@ -125,9 +141,9 @@
    <div class="caixa">
    <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
   
-<b><p class="heal">&copy; Healtec2023</p></b>
+   <b><p class="heal">&copy;Healtec2023</p></b>
      
-  </div>  
+   </div>  
   </footer>
 </body>
 </html>
