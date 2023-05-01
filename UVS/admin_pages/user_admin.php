@@ -1,3 +1,16 @@
+<?php
+    include_once("../banco/dbconnect.php");
+    include "../banco/dbadmin.php";
+if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
+       {
+       move_uploaded_file($_FILES["imagem"]["tmp_name"], "upload".$_FILES["imagem"]["name"] );
+       echo "Atualização feita com sucesso";
+
+       }else{
+           $imagem = "";
+       }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +25,7 @@
         <script src="../JS/perfil.js"></script>
        <!-- Bootstrap -->
        <link rel="stylesheet" href="css/bootstrap.min.css">
+       
 </head>
 <body>
 <header>
@@ -33,6 +47,8 @@
             <hr>
         </div>
 
+        <!--Editar perfil-->
+
         <div class="container">
             <div class="titulo-secao">
                 <h2>Editar Pefil</h2>
@@ -41,34 +57,25 @@
 
             <div class="mapa-ubs">
                     <h3>Perfil</h3>
+                    
                         <br>
                     <div class="informacoes">
                         <div class="foto-perfil">
                             <p>Foto: </p>
-                            <form action="administrador.php" method="POST" enctype="multipart/form-data">
-                                <input type="file" name="imagem" id="imagem" onchange="previewImagem()"><br><br>
+
+                            <form action="administrador.php" method="POST" enctype="multipart/form-data" name="cad_admin">
+                             
+                                <input type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br><br>
+
                                     <img  name="perfiluser" style="width: 150px; height: 150px">
-                                <input type="submit" value="Salvar">
-
                                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-                            </form>
-                            <br>
-                            <p>Nome:</p>
-                           
-                            <br>
-                            <p>Email:</p>
-
-                            <hr>
-                            <h3>Editar dados</h3>
-                            <br>
-
-                            <form action="" method="POST">
+                                <br>
                                 <p>Nome:</p>
-                                <input type="text" name="nome" id="nome">
+                                <input type="text" name="nome" id="nome" autofocus required>
                                 <br>
                                 <p>Email: </p>
-                                <input type="Email" id="nome" name="nome"><br><br>
-                                <input type="submit" value="Salvar">
+                                <input type="Email" id="email" name="email" required><br><br>
+                                <input type="submit" value="Salvar" name="submit" id="submit">
                             </form>
                         </div>
                     </div>
