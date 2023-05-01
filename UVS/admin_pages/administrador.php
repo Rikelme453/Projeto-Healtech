@@ -1,3 +1,6 @@
+<?php
+    include "../banco/dbadmin.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +30,7 @@
            
                 <img class="logo"src="../IMAGENS/uvs-logo.png" alt="uvs logo">
                 <h5>UVS ADMINISTRATOR</h5>
-                <p>Ola, Admin</p>
+                <p>Ola</p>
               
         </div>
     </header>
@@ -38,13 +41,17 @@
             <div class="perfil-adm">
                 <div class="image-perfil">
 
-                <form action="user_admin.php">
+                <form action="">
                                    
-                    <a class="image-perfil" href="user_admin.php"> <img  name="perfiluser" style="width: 60px; height: 60px"></a>
+                    <a class="image-perfil" href="user_admin.php"> 
+                        
+                    <img src="<?php echo "../banco/dbadmin/$imagem" ?>"  name="perfiluser" style="width: 60px; height: 60px">
+                </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
-                   
+
                     <h3>Bem Vindo de volta!</h3>
+                    
                 </div>
             </div>
 
@@ -53,7 +60,7 @@
                 <hr>
             <a href="paginas.php"> <i class="fa-sharp fa-solid fa-file-lines" style="color: #076470;"></i> Páginas </a>
                 <hr>
-            <a href=""> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>
+            <a href="../pages/conta.php"> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>
                 <hr>
             <a href=""> <i class="fa-solid fa-table" style="color: #076470;"></i> Tabelas</a>
                 <hr>
