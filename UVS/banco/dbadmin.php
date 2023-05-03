@@ -8,7 +8,7 @@
         //print_r($_POST['email']);
 
        if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
-            $imagem= "upload".$_FILES["imagem"]["name"];
+            $imagem= "../upload/".$_FILES["imagem"]["name"];
             move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem);
        }
     

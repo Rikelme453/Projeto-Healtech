@@ -1,84 +1,67 @@
 -- phpMyAdmin SQL Dump
-
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02/05/2023 às 00:35
+-- Tempo de geração: 03/05/2023 às 02:57
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
--- version 4.0.4.1
--- http://www.phpmyadmin.net
---
--- Máquina: localhost
--- Data de Criação: 01-Maio-2023 às 08:54
--- Versão do servidor: 5.5.28
--- versão do PHP: 5.3.19
-
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
-
 -- Banco de dados: `dbubs`
-
--- Base de Dados: `dbubs`
-
 --
-CREATE DATABASE IF NOT EXISTS `dbubs` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `dbubs`;
 
 -- --------------------------------------------------------
 
 --
-
--- Estrutura para tabela `tbmedicos`
-
--- Estrutura da tabela `tbadmin`
-
+-- Estrutura para tabela `tbadmin`
 --
 
-CREATE TABLE IF NOT EXISTS `tbadmin` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `tbadmin` (
+  `id` int(11) NOT NULL,
   `imagem` varchar(220) DEFAULT NULL,
   `nome` varchar(220) NOT NULL,
-  `email` varchar(220) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `email` varchar(220) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Despejando dados para a tabela `tbadmin`
+--
+
+INSERT INTO `tbadmin` (`id`, `imagem`, `nome`, `email`) VALUES
+(2, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
+(3, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
+(4, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
+(5, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
+(6, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tbmedicos`
+-- Estrutura para tabela `tbmedicos`
 --
 
-CREATE TABLE IF NOT EXISTS `tbmedicos` (
+CREATE TABLE `tbmedicos` (
   `profissional` varchar(100) NOT NULL,
   `formacao` varchar(100) NOT NULL,
   `dias` varchar(100) NOT NULL,
   `horarios` varchar(100) NOT NULL,
-
   `Id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tbmedicos`
-
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=17 ;
-
 --
--- Extraindo dados da tabela `tbmedicos`
-
 
 INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) VALUES
 ('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', 'Das 13hs às 17hs ', 10),
@@ -91,32 +74,19 @@ INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) V
 -- --------------------------------------------------------
 
 --
-
 -- Estrutura para tabela `tbubs`
-
--- Estrutura da tabela `tbubs`
-
 --
 
-CREATE TABLE IF NOT EXISTS `tbubs` (
+CREATE TABLE `tbubs` (
   `email` varchar(50) NOT NULL,
   `senha` varchar(50) NOT NULL,
   `nome` varchar(20) NOT NULL,
   `data` date DEFAULT NULL,
-
   `id` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tbubs`
-
-  `id` int(100) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=21 ;
-
---
--- Extraindo dados da tabela `tbubs`
-
 --
 
 INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`) VALUES
@@ -125,12 +95,13 @@ INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`) VALUES
 ('ederson@gmail.com', '90645te', 'Ederson Silva', '2022-12-05', 9),
 ('jerrymorto@gmail.com', '12345t', 'Tom', '2024-02-12', 13),
 ('mariellesilva@gmail.com', '1234567', 'Marielle Franco', '2023-12-03', 15),
-('aurelio2010@gmail.com', 'muitolegal', 'Aurelio Silva', '2006-01-15', 20);
+('suzanna@gmail.com', '12345', 'Suzanna Almeida', '2003-12-03', 16),
+('mariene@gmail.com', '9894ggfr5', 'Mariene Gonçalves', '2004-12-03', 17),
+('mendonça@gmail.com', '1fr42567y', 'Suzanna Mendonça', '2006-12-03', 19);
 
 -- --------------------------------------------------------
 
 --
-
 -- Estrutura para tabela `tbupload`
 --
 
@@ -143,6 +114,12 @@ CREATE TABLE `tbupload` (
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `tbadmin`
+--
+ALTER TABLE `tbadmin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `tbmedicos`
@@ -167,6 +144,12 @@ ALTER TABLE `tbupload`
 --
 
 --
+-- AUTO_INCREMENT de tabela `tbadmin`
+--
+ALTER TABLE `tbadmin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT de tabela `tbmedicos`
 --
 ALTER TABLE `tbmedicos`
@@ -184,17 +167,6 @@ ALTER TABLE `tbubs`
 ALTER TABLE `tbupload`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
-
--- Estrutura da tabela `tbupload`
---
-
-CREATE TABLE IF NOT EXISTS `tbupload` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `path` varchar(255) NOT NULL,
-  `data_upload` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
-
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

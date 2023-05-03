@@ -3,7 +3,7 @@
     include "../banco/dbadmin.php";
 if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
        {
-       move_uploaded_file($_FILES["imagem"]["tmp_name"], "upload".$_FILES["imagem"]["name"] );
+       move_uploaded_file($_FILES["imagem"]["tmp_name"],"../upload/".$_FILES["imagem"]["name"] );
        echo "Atualização feita com sucesso";
 
        }else{

@@ -45,7 +45,7 @@
                                    
                     <a class="image-perfil" href="user_admin.php"> 
                         
-                    <img src="<?php echo "../banco/dbadmin/$imagem" ?>"  name="perfiluser" style="width: 60px; height: 60px">
+                    <img src=<?php echo $imagem ?> name="perfiluser" style="width: 60px; height: 60px">
                 </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
