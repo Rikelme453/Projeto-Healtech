@@ -31,21 +31,21 @@
 <nav class="menu3">
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <img class="logo-marca" src="../IMAGENS/uvs-logo.png" ></img>
+      <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">HOME</a></li>
-          <li><a href="medicamentos.php">MEDICAMENTOS</a></li>
-          <li><a href="noticias.php">CAMPANHAS E PÚBLICAÇÕES</li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="medicamentos.php">Medicamentos</a></li>
+          <li><a href="noticias.php">Campanhas e públicações</li>
            
           <li>
-            <a href="#">CONTA</a>
+            <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="../pages/conta.php">CONTA</a></li>
-              <li><a href="../pages/login.php">LOGIN</a></li>
-              <li><a href="../pages/cadastro.php">CADASTRO</a></li>
+              <li><a href="../pages/conta.php">Conta</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>

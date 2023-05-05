@@ -22,7 +22,7 @@
 <header>
         <div class="info-cabecalho">
            
-                <img class="logo"src="../IMAGENS/uvs-logo.png" alt="uvs logo">
+                <img class="logo"src="../IMAGENS/UVS +.svg" alt="uvs logo">
                 <h5>UVS ADMINISTRATOR</h5>
                 <p>Ola, Admin</p>  
         </div>
@@ -55,8 +55,6 @@
             <div class="titulo-secao">
                 <h3>Páginas disponivies</h3>
                 <hr><br>
-                <a class="link-paginas" href="../index-intro.php"></i> Página de Apresentação</a>
-                <br>
                 <a class="link-paginas" href="../index.php">Página Inicial</a>
                 <br>
                 <a class="link-paginas" href="../pages/medicos.php">Página Rotina de Médicos</a>

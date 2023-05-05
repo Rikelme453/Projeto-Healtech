@@ -134,7 +134,7 @@ body{
   }
   .idoso{
     position: relative;
-    margin-left: 67%;
+    margin-left: 70%;
     margin-top: -22%;
     border-radius: 20px;
     box-shadow: 10px 10px  #466189 ;
@@ -154,7 +154,7 @@ body{
     color: #ffffff;
   }
 
-/*Responsividade do site*/
+/*Responsividade do index html*/
 
 @media screen and (max-width: 768px)
 {
@@ -162,6 +162,7 @@ body{
     width: 100%;
   
   }
+
   .planos-img{
     display: flex;
     width: 50vw;
@@ -172,7 +173,7 @@ body{
 @media screen and (max-width: 412px){
 
   .index1{
-    width: 200%;
+    width: 210%;
   }
 
   #text2{
@@ -182,18 +183,54 @@ body{
 
 
   .planos-img{
-    display: flex;
+    display: block;
     justify-content: center;
     width: 200%;
    
   }
 
   .plano-c{
-    
-    justify-items: center;
+    display: block;
+    width: 104%;
+    margin-left: 5px;
+
   }
+  .idososbt{
+    display: block;
+  }
+
+  .text1{
+    display: block;
+  }
+
+  .idoso{
+    width: 45%;
+    margin-top: 40px;
+    margin-left: 30%;
+  
+  }
+
   footer{
     width: 200%;
   }
+
+  .rodape{
+    width: 105%;
+  }
+  .caixa{
+    width: 105%;
+  }
 }
+
+@media screen and (max-width: 1024px){
+  .idoso{
+    margin-top: 30px;
+    margin-left: 40%;
+    width: 25%;
+  }
+}
+
+
+
+
     

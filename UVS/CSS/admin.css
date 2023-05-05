@@ -256,4 +256,47 @@ header{
 	text-decoration: none;
 }
 
+/*Responsividade*/
 
+@media screen and (max-width: 412px){
+    html{
+        background-color: rgb(209, 209, 209);
+    }
+    header{
+        width: 210%;
+    }
+
+    .main{
+        width: 210%;
+    }
+    .sidebar{
+        width: 20%;
+    }
+    .perfil-adm{
+        width: 100%;
+    }
+
+    .container{
+        width: 80%;
+        height: 100vh;
+    }
+
+    .caixa-info-primeira{
+        width: 100%;
+    }
+
+    .cor-de-baixo{
+        margin-top: 5px;
+    }
+    .tablet-uvs{
+        width: 55%;
+    }
+    iframe{
+        width: 368px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 820px){
+
+}

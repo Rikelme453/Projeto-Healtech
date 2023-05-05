@@ -37,17 +37,17 @@
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">HOME</a></li>
-          <li><a href="medicos.php">MÉDICOS</li>
-          <li><a href="noticias.php">CAMPANHAS E PÚBLICAÇÕES</li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="medicos.php">Médicos</li>
+          <li><a href="noticias.php">Camapanhas e publicações</li>
            
           <li>
-            <a href="#">CONTA</a>
+            <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="conta.php">CONTA</a></li>
-              <li><a href="login.php">LOGIN</a></li>
-              <li><a href="cadastro.php">CADASTRO</a></li>
+              <li><a href="conta.php">Conta</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>
