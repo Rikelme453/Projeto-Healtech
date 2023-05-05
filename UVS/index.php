@@ -31,6 +31,7 @@
     <div class="navbar">
       <i class='bx bx-menu'></i>
       <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
+      <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="#">Home</a></li>
@@ -69,28 +70,27 @@
             <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">
             <hr>
             <br>  
-            <p class="text1">A saúde é um dos pilares mais importantes da vida e isso é ainda mais<br>
-             evidente na terceira idade.
-               Por isso, é fundamental cuidar da saúde dos<br> idosos de forma preventiva,
-               para garantir que eles possam aproveitar <br>
-               ao máximo essa fase da vida.<br>
-               <br>
-               Aqui na nossa Unidade Virtual de Saúde, oferecemos uma ampla gama<br>de serviços de saúde para os idosos, desde consultas médicas regulares<br> até 
-               tratamentos especializados para doenças crônicas. 
-               Nossos profissionais<br> são altamente qualificados e experientes em cuidar da saúde dos idosos com todo<br> o cuidado e carinho que eles merecem.</p>
-               <img class="idoso" src="IMAGENS/idoso.jpg" width="19%" height="19%" draggable="false">
+                <p class="text1">A saúde é um dos pilares mais importantes da vida e isso é ainda mais<br>
+                evidente na terceira idade.
+                  Por isso, é fundamental cuidar da saúde dos<br> idosos de forma preventiva,
+                  para garantir que eles possam aproveitar <br>
+                  ao máximo essa fase da vida.<br>
+                  <br>
+                  Aqui na nossa Unidade Virtual de Saúde, oferecemos uma ampla gama<br>de serviços de saúde para os idosos, desde consultas médicas regulares<br> até 
+                  tratamentos especializados para doenças crônicas. 
+                  Nossos profissionais<br> são altamente qualificados e experientes em cuidar da saúde dos idosos com todo<br> o cuidado e carinho que eles merecem.</p>
+                  <img class="idoso" src="IMAGENS/idoso.jpg" width="19%" height="19%" draggable="false">
             </div>
             <br>
             <hr>
             <div class="plano-c">
-            <a class="idososbt" href="#">Aqui</a>
             <img src="IMAGENS/fisicaimage.svg" alt="" width="100%">
             <hr>
             <br>
             <p class="text2">As atividades físicas são fundamentais para manter a saúde em dia em todas as idades.<br>Elas trazem uma série de benefícios para o corpo e a mente, como aumento da disposição,<br> melhora do sono, controle do peso corporal, fortalecimento dos ossos e músculos, <br>redução do risco de doenças crônicas, como diabetes, hipertensão arterial e doenças cardiovasculares,<br> e ainda contribuem para a saúde mental, reduzindo o estresse e a ansiedade.
-<br>
-<br> 
-   Além disso, as atividades físicas podem ser uma ótima oportunidade para socialização,<br> já que muitas vezes são praticadas em grupo, o que pode aumentar o sentimento de <br>pertencimento e promover a interação social.</p>
+                      <br>
+                      <br> 
+                        Além disso, as atividades físicas podem ser uma ótima oportunidade para socialização,<br> já que muitas vezes são praticadas em grupo, o que pode aumentar o sentimento de <br>pertencimento e promover a interação social.</p>
             </div>
             <br>
             <br>
@@ -102,9 +102,9 @@
             <hr>
             <br>
             <p class="text2">A saúde mental é tão importante quanto a saúde física e deve ser cuidada com atenção e carinho. <br>Ela é essencial para o bem-estar geral, para a capacidade de lidar com desafios, <br>para manter relacionamentos saudáveis e para a produtividade e criatividade no trabalho.
-   <br>
-   <br>
-Manter uma boa saúde mental envolve o cuidado com as emoções, pensamentos e comportamentos. <br> É importante que as pessoas aprendam a reconhecer sinais de alerta,<br> como mudanças de humor, pensamentos negativos e dificuldade em realizar atividades cotidianas, <br>e busquem ajuda quando necessário.</p>
+                <br>
+                <br>
+              Manter uma boa saúde mental envolve o cuidado com as emoções, pensamentos e comportamentos. <br> É importante que as pessoas aprendam a reconhecer sinais de alerta,<br> como mudanças de humor, pensamentos negativos e dificuldade em realizar atividades cotidianas, <br>e busquem ajuda quando necessário.</p>
             </div>
             <br>
             <br>
@@ -123,17 +123,14 @@ Manter uma boa saúde mental envolve o cuidado com as emoções, pensamentos e c
 
      <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
      <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
-  
+
    </section>
 
    <div class="caixa">
    <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
   
 <b><p class="heal">&copy; Healtec2023</p></b>
-
-      
-     
-</div>
+   </div>
 
     
   </footer>

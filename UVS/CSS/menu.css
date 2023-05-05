@@ -1,6 +1,7 @@
 /*BARRA DE menu*/
 
 /* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
 
 *{
   margin: 0;
@@ -8,7 +9,10 @@
   
   font-family: 'Poppins', sans-serif;
 }
-
+#texto-faxada{
+  font-family: 'Alkatra', cursive;
+  color: hsl(210, 77%, 18%);
+}
 .menu3{
   position: fixed;
   top: 0;

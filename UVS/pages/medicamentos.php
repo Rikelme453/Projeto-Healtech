@@ -33,13 +33,16 @@
       <i class='bx bx-menu'></i>
 
       <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
-
-        <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+        <p id="texto-faxada">Mais Vida!Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
           <li><a href="medicos.php">Médicos</li>
+<<<<<<< HEAD
           <li><a href="noticias.php">Camapanhas e publicações</li>
+=======
+          <li><a href="noticias.php">Campanhas e Públicações</li>
+>>>>>>> main
            
           <li>
             <a href="#">Conta</a>
@@ -130,6 +133,7 @@
 
                  
          </div>
+         
        </section>
     </main>
 
@@ -147,9 +151,7 @@
    <div class="caixa">
    <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
   
-<b><p class="heal">&copy; Healtec2023</p></b>
-
-      
+<b><p class="heal">&copy; Healtec2023</p></b>    
      
 </div>
 

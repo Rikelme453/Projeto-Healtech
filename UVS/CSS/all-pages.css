@@ -21,7 +21,7 @@ body{
 }
 /*Formatação do menu nav bar, baseado na formatação da página inicial*/
 .menu3{
-    background: rgb(48, 158, 158);
+    background: #466189;
     max-height: 100%;
     box-shadow: 0px 10px 20px #676565;
 }
@@ -30,12 +30,6 @@ body{
     width: 8%;
     height: 100%;
     margin-left: 4%;
-}
-
-#texto-faxada{
-    color: aliceblue;
-    font-size: 16px;
-    margin-right: 10%;
 }
 
 hr{
@@ -183,32 +177,36 @@ cursor: pointer;
 
 /*Formatação página de médicos*/
 
-.tabela-medicos{
-    background-color: #c94a4a;
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
-.tabela-caixa{
-    width: 50%;
-    height: 80%;
-    background-color: #78899e;
-
+.tabela{
+    background-color: rgb(48, 158, 158);;
+    margin-left: 10%;
+    text-align: center;
+    border: solid rgb(37, 37, 37);
+    width: 80%;
+    box-shadow:0px 10px 20px #676565;
+    border-radius: 2px;
+    cursor: pointer;
+    border-collapse:collapse ;
+    font-size: 20px;
+    height: 400pt;
     
 }
-
+td{
+    border:solid rgb(22, 22, 22) 1px;
+    
+}
+th{
+    border:solid rgb(22, 22, 22) 1px;
+    
+}
 /* 2- Formatação da página de notícias*/
 
 .uvs-noticias-abertura{
     display: flex;
     margin-left: 10px;
     
-
 }
-
 .logo-noticias{
     display: flex;
     margin-left: 10px;
