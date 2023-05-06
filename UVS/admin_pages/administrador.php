@@ -8,10 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVS| ADMINISTRATOR</title>
-    <link rel="stylesheet" href="../CSS/admin.css">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/admin.css">
+
 
        <!-- Bootstrap -->
        <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -44,12 +47,12 @@
                                    
                     <a class="image-perfil" href="user_admin.php"> 
                         
-                    <img src=<?php echo $imagem ?> name="perfiluser" style="width: 60px; height: 60px">
+                    <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
                 </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
 
-                    <h3>Bem Vindo de volta!</h3>
+                    <h4>Bem Vindo de Volta!</h4>
                     
                 </div>
             </div>
@@ -59,9 +62,9 @@
                 <hr>
             <a href="paginas.php"> <i class="fa-sharp fa-solid fa-file-lines" style="color: #076470;"></i> Páginas </a>
                 <hr>
-            <a href="../pages/conta.php"> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>
+            <a href="usuarios.php"> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>
                 <hr>
-            <a href=""> <i class="fa-solid fa-table" style="color: #076470;"></i> Tabelas</a>
+            <a href="tabelas.php"> <i class="fa-solid fa-table" style="color: #076470;"></i>Tabelas</a>
                 <hr>
             <a href="../pages/sair.php"> <i class="fa-solid fa-right-from-bracket" style="color: #076470;"></i> Sair</a>
             <hr>

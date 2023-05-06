@@ -15,8 +15,12 @@
 
         $result = $conexao->query($sqlInsert);  
         
+        header('Location: ../admin_pages/usuarios.php');
      
-       }else if(isset($_POST['alterar2'])) {
+       }
+      
+
+       else if(isset($_POST['alterar2'])) {
 
         $id = $_POST['id'];
         $nome = $_POST['nome'];
@@ -30,6 +34,8 @@
         
         $result2 = $conexao->query($sqlInsert2);  
        
+         
+        header('Location: ../admin_pages/tabelas.php');
        }
-       header('Location: ../pages/conta.php');
+      
      ?>

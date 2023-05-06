@@ -43,9 +43,6 @@
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
           <li><a href="medicos.php">Médicos</li>
-
-          <li><a href="noticias.php">Camapanhas e publicações</li>
-
           <li><a href="noticias.php">Campanhas e Públicações</li>
 
            

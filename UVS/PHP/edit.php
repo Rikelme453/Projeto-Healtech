@@ -24,7 +24,7 @@
     }
 
     }else{
-        header('Location:../pages/conta.php');
+        header('Location:../pages/usuarios.php');
     }
    
 ?>

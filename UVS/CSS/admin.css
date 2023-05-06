@@ -3,9 +3,11 @@
     padding: 0;
 }
 html, body{
-    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
+    height: 100%;
+
+   
 }
 
 header{
@@ -75,6 +77,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+   
     
 }
 
@@ -82,6 +85,7 @@ header{
     width: 20%;
     background-color: rgb(255, 255, 255);
     height: 100%;
+    border: 1px solid  rgb(7, 100, 112); 
     
 }
 
@@ -203,12 +207,16 @@ header{
 .link-paginas:hover{
     color: #222;
 }
+.principal{
+    width: 80%;
+    
+   
+}
 /*menu editores*/
 
 
 .menu ul li{
 	background-color: rgb(70, 77, 107);
-	float: left;
 	width: 100%;
 	display: inline-block;
 	line-height: 30px;
