@@ -1,37 +1,49 @@
+<!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <!DOCTYPE html>
+<!--Idioma do site-->
 <html lang="pt-br">
 <head>
+  <!--Metatags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título da página-->
+    <title>UVS| Página Inicial</title>
+
+    <!--CSS estilo e menu da página INDEX-->
+
     <link href="./CSS/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>UVS</title>
+    <link rel="stylesheet" href="CSS/menu.css">
 
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <!--Fontes do Google-->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     
-    <!-- Bootstrap -->
+    <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/menu.css">
     
 </head>
 <body>
 
+<!--Menu-->
+
 <nav class="menu3">
+
     <div class="navbar">
       <i class='bx bx-menu'></i>
+
+      <!--Logo do site-->
       <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
       <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+
+        <!--Menu de navegação-->
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="#">Home</a></li>
@@ -39,6 +51,7 @@
           <li><a href="pages/medicos.php">Médicos</li>
           <li><a href="pages/noticias.php">Campanhas e Publicações  </li>
            
+          <!--Submenus-->
           <li>
             <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
@@ -54,14 +67,15 @@
   </nav>
 
   <br><br>
+
+  <!--Conteúdo principal-->
+
   <main class="conteudo-principal">
-  
-      <img class="index1" src="IMAGENS/indeximage.svg" alt="" draggable="false">
-      
-    <!-- <p id="text2">MEDICINA E ESTILO DE VIDA<p>  -->
-      
-    <hr>
-    <br>
+       <img class="index1" src="IMAGENS/indeximage.svg" alt="" draggable="false">
+        <hr>
+        <br>
+
+        <!--Imagens e textos-->
 
         <section class="imagens">
 
@@ -69,7 +83,8 @@
             <div class="plano-c">
             <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">
             <hr>
-            <br>  
+            <br> 
+
                 <p class="text1">A saúde é um dos pilares mais importantes da vida e isso é ainda mais<br>
                 evidente na terceira idade.
                   Por isso, é fundamental cuidar da saúde dos<br> idosos de forma preventiva,
@@ -114,26 +129,42 @@
          </div>
 
           </section>
-</main>
-  <footer>
+      </main>
 
-   <section class="rodape">
-     <img id="imagem2" src="./IMAGENS/instagram_logo.png" width="25%"></img>
-    
+      <!--Rodapé do site-->
 
-     <img id="imagem1" src="./IMAGENS/logo.png" width="25%"></img>
-     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
+    <footer>
 
-   </section>
+      <div class="rodape-conteudo">
+        <div class="rodape-contatos">
 
-   <div class="caixa">
-   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
-  
-<b><p class="heal">&copy; Healtec2023</p></b>
-   </div>
+            <h1>UVS.COM</h1>
+           <p>UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</p>
+             
+              <div class="rodape-redes">
+                <a href="#" class="rodape-links" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="rodape-links" id="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="rodape-links" id="zap"><i class="fa-brands fa-whatsapp"></i></a>
 
-    
-  </footer>
+              </div>
+          </div>
+
+          <div  class="rodape-lista">
+
+            <ul>
+              <h3>Saiba mais sobre o projeto</h3>
+
+              <li class="lista"><a class="lista-link" href="../UVS/pages/quem_somos.php">Quem somos?</a></li>
+              <li class="lista"><a class="lista-link" href="">Política da Empresa</a></li>
+            </ul>
+          </div>
+       </div>
+       
+       <div class="rodape-copyright">
+            &copy; 2023 Healtech direitos reservados
+          </div>
+
+      <!--Voltar ao topo do site com JavaScript-->
   <style>
       #btn-voltar-topo {
         position: fixed;

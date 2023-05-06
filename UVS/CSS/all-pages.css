@@ -32,6 +32,12 @@ body{
     margin-left: 4%;
 }
 
+
+.banner-remedios img{
+    height: 30%;
+}
+
+
 hr{
     border: none;
     background: orangered;
@@ -45,9 +51,8 @@ hr{
 .index1{
     width: 100%;
     margin-top: 2%;
-    background-color: #c94a4a;
-    border-bottom: #d67d16  solid ;
-    border-top: #d67d16  solid ;
+    background-color: #4ac970;
+    
 }
 
 .titulo-1{
@@ -211,27 +216,13 @@ th{
     display: flex;
     margin-left: 10px;
 }
-/*Formatação data e hora*/
+
 .uvs-noticia{
     font-weight: bold;
     font-size: 30px;
     color: #06333b;
 }
-.hora-caixa{
-    border: none;
-    background-color: rgb(56, 56, 56);
-    font-weight: bold;
-    color: rgb(48, 223, 48);
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid rgb(31, 31, 31);
-    margin-left: 80%;
-}
-.tempo-barra{
-    margin-top: 10px;
-}
+
 .divisao-elementos{
     border: none;
 
@@ -240,15 +231,14 @@ th{
 /*Formatação slides*/
 
 .slideshow{
-    height: 500px;
-    width: 935px;
+    height: 600px;
+    width: 100%;
     overflow: hidden;
-    border-radius: 20px;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 130px;
+    margin-top: 80px;
     box-shadow:0px 10px 20px #282727;
     
 }
@@ -530,9 +520,6 @@ th{
     margin-right: 20px;
 }
 
-
-
-
 /*Bate papo do site*/
 
 .chat-1{
@@ -541,5 +528,10 @@ th{
     padding-top: 10%;
     margin-left: 20px;
     margin-right: 20px;
-
+    
 }
+
+.chat-comunitario{
+    align-items: center;
+}
+

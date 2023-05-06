@@ -17,8 +17,7 @@
        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/7cdd971c93.js" crossorigin="anonymous"></script>
-         <!--Data e hora com JavaScript-->
-    <script src="../JS/time.js"></script>
+    
     
     
 </head>

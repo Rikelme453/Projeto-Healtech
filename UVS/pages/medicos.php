@@ -21,8 +21,13 @@
      <link rel="stylesheet" href="../CSS/style.css">
      <!--Tabela Formatação-->
        <link rel="stylesheet" href="../CSS/all-pages.css">
+       
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
   <body>
@@ -32,21 +37,17 @@
 <nav class="menu3">
     <div class="navbar">
       <i class='bx bx-menu'></i>
-<<<<<<< HEAD
-      <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
-=======
+
       <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
->>>>>>> main
+
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
-<<<<<<< HEAD
+
           <li><a href="noticias.php">Campanhas e públicações</li>
-=======
-          <li><a href="noticias.php">Campanhas e Publicações</li>
->>>>>>> main
+
            
           <li>
             <a href="#">Conta</a>
@@ -135,23 +136,57 @@
     </main>
 <br><br>
 
-  <!--Rodapé do site-->
-    <article class="article-footer">d</article>
-  <footer>
-   <section class="rodape">
-     <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
-    
-     <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
-     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
-  
-   </section>
+     <!--Rodapé do site-->
 
-   <div class="caixa">
-   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
+     <footer>
+
+<div class="rodape-conteudo">
+  <div class="rodape-contatos">
+
+      <h1>UVS.COM</h1>
+     <p>UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</p>
+       
+        <div class="rodape-redes">
+          <a href="#" class="rodape-links" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="rodape-links" id="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" class="rodape-links" id="zap"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+    </div>
+
+    <div  class="rodape-lista">
+
+      <ul>
+        <h3>Saiba mais sobre o projeto</h3>
+
+        <li class="lista"><a class="lista-link" href="../UVS/pages/quem_somos.php">Quem somos?</a></li>
+        <li class="lista"><a class="lista-link" href="">Política da Empresa</a></li>
+      </ul>
+    </div>
+ </div>
+ 
+ <div class="rodape-copyright">
+      &copy; 2023 Healtech direitos reservados
+    </div>
+
+<!--Voltar ao topo do site com JavaScript-->
+<style>
+#btn-voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  user-select: none;
   
-   <b><p class="heal">&copy;Healtec2023</p></b>
-     
-   </div>  
-  </footer>
+}
+</style>
+<img id="btn-voltar-topo" src="IMAGENS/up.svg" width="5%" height="5%" draggable="false">
+
+<script>
+document.getElementById("btn-voltar-topo").addEventListener("click", function(){
+  window.scrollTo({top: 0, behavior: "smooth"});
+});
+</script>
+
 </body>
 </html>

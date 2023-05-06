@@ -14,14 +14,19 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Página de medicamentos</title>
 
-    <!--Menu formatação-->
-    <link rel="stylesheet" href="../CSS/menu.css">
+     <!--CSS estilo e menu-->
 
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link href="./CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/menu.css">
 
      <!-- JavaScript-->
      <script src="../JS/janela.js"></script>
+      <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -38,11 +43,11 @@
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
           <li><a href="medicos.php">Médicos</li>
-<<<<<<< HEAD
+
           <li><a href="noticias.php">Camapanhas e publicações</li>
-=======
+
           <li><a href="noticias.php">Campanhas e Públicações</li>
->>>>>>> main
+
            
           <li>
             <a href="#">Conta</a>
@@ -61,7 +66,7 @@
     
     <main>
        <div class="banner-remedios">
-           <img src="../IMAGENS/medicament.png" alt="medicamentos aqui" class="index1">
+           <img src="../IMAGENS/remedios-planta.png" alt="medicamentos aqui" class="index1">
        </div>
        <hr>
 
@@ -137,26 +142,39 @@
        </section>
     </main>
 
-    <footer>
+     <!--Rodapé do site-->
 
-   <section class="rodape">
-     <img id="imagem2" src="../IMAGENS/instagram_logo.png" width="25%"></img>
-    
+     <footer>
 
-     <img id="imagem1" src="../IMAGENS/logo.png" width="25%"></img>
-     <legend class="legenda">UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</legend>
-  
-   </section>
+<div class="rodape-conteudo">
+  <div class="rodape-contatos">
 
-   <div class="caixa">
-   <a href="pages/quem_somos.php" class="quem-somos">Quem somos?</a>
-  
-<b><p class="heal">&copy; Healtec2023</p></b>    
-     
-</div>
+      <h1>UVS.COM</h1>
+     <p>UVS+, o portal de acesso rápido e fácil! <br> Informações relacionadas à unidade<br> basica de sua localidade</p>
+       
+        <div class="rodape-redes">
+          <a href="#" class="rodape-links" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="rodape-links" id="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" class="rodape-links" id="zap"><i class="fa-brands fa-whatsapp"></i></a>
 
-    
-  </footer>
+        </div>
+    </div>
+
+    <div  class="rodape-lista">
+
+      <ul>
+        <h3>Saiba mais sobre o projeto</h3>
+
+        <li class="lista"><a class="lista-link" href="../UVS/pages/quem_somos.php">Quem somos?</a></li>
+        <li class="lista"><a class="lista-link" href="">Política da Empresa</a></li>
+      </ul>
+    </div>
+ </div>
+ 
+ <div class="rodape-copyright">
+      &copy; 2023 Healtech direitos reservados
+    </div>
+
 
    
 </body>

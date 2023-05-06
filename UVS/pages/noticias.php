@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Menu formatação-->
     <link rel="stylesheet" href="../CSS/menu.css">
-    <!--Data e hora com JavaScript-->
-    <script src="../JS/time.js"></script>
+   
     
 
 </head>
@@ -41,11 +40,11 @@
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
-<<<<<<< HEAD
+
           <li><a href="medicos.php">Médicos</li>
-=======
+
           <li><a href="medicos.php">Medicos</li>
->>>>>>> main
+
            
           <li>
             <a href="#">Conta</a>
@@ -70,23 +69,8 @@
                 <h2 class="uvs-noticia">UVS NOTÍCIAS| </h2>
                 <img class="logo-noticias" src="../IMAGENS/uvs-noticias alt="uvs notícias logomarca">
 
-                <!--Data e hora-->
-                <div class="data-hora">   
-                        <input type="time" class="hora-caixa" id="rel">
-                </div>
-
-                <div class="publicidade">
-                
-
-                </div>
+               
             </div>
-
-  <!--Tempo barra-->
-  <div class="tempo-barra">
-  <div id="ww_a108bd38e4893" v='1.3' loc='auto' a='{"t":"ticker","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/pt/" id="ww_a108bd38e4893_u" target="_blank">Previsão do tempo widget</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_a108bd38e4893"></script>
-  </div>
-
-           
 
              <!--Slides-->
 
@@ -134,6 +118,8 @@
             <div class="noticias-wraper">
 
               <div class="noticia-chave">
+              http://servicodados.ibge.gov.br/api/v3/noticias/
+
 
                   <div class="noticia-preview">
                     <div class="categoria">
