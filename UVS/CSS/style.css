@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
 
 body{
     background: rgb(255, 255, 255);
@@ -30,6 +31,54 @@ body{
     border-bottom: #48c883  solid ;
     border-top: #48c883 solid;
 }
+.aqui1{
+  text-decoration: none;
+  position: relative;
+  color:#466189;
+  margin-left: 80%;
+  bottom: 178px;
+  font-size: 40px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+
+}
+.aqui1:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.aqui2{
+  text-decoration: none;
+  position: relative;
+  color:#466189;
+  margin-left: 80%;
+  bottom: 178px;
+  font-size: 40px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+
+}
+.aqui2:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.aqui3{
+  text-decoration: none;
+  position: relative;
+  color:#466189;
+  margin-left: 76.5%;
+  bottom: 184px;
+  font-size: 37px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+
+}
+.aqui3:hover{
+  text-decoration: none;
+  color: black;
+}
+
 #a1{
   
  

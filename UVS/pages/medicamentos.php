@@ -63,7 +63,7 @@
     
     <main>
        <div class="banner-remedios">
-           <img src="../IMAGENS/remedios-planta.png" alt="medicamentos aqui" class="index1">
+           <img src="../IMAGENS/remedios-planta.svg" alt="medicamentos aqui" class="index1">
        </div>
        <hr>
 
@@ -171,8 +171,5 @@
  <div class="rodape-copyright">
       &copy; 2023 Healtech direitos reservados
     </div>
-
-
-   
 </body>
 </html>

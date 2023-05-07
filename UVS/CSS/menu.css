@@ -10,8 +10,13 @@
   font-family: 'Poppins', sans-serif;
 }
 #texto-faxada{
-  font-family: 'Alkatra', cursive;
-  color: hsl(210, 77%, 18%);
+  font-family: 'Arial';
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  text-align: center;
+  top: 11%;
+  font-size: 15px;
+  margin-right: 23%;
 }
 .menu3{
   position: fixed;

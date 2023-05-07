@@ -95,7 +95,7 @@
         <!--Banner-->
 
         <div class="banner-medicos">
-           <img src="../IMAGENS/medica.png" alt="medicos" class="index1">
+           <img src="../IMAGENS/medica.svg" alt="medicos" class="index1">
        </div>
 
        <hr>

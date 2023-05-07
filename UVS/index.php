@@ -39,10 +39,10 @@
      <button class="botao-responsivo" onclick= "menuShow()"><img src="./IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
-      <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
+      <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
       <script src="./JS/menu.js"></script>
 
-        <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+       <p id="texto-faxada">Unidade Virtual de Sáude<p> 
 
        <div class="nav-links"> 
        <ul class="links">
@@ -116,6 +116,7 @@
           <div class="planos-img">
             <div class="plano-c">
             <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">
+            <a class="aqui1" href="#">Aqui</a>
             <hr>
             <br> 
 
@@ -134,6 +135,7 @@
             <hr>
             <div class="plano-c">
             <img src="IMAGENS/fisicaimage.svg" alt="" width="100%">
+            <a class="aqui2" href="#">Aqui</a>
             <hr>
             <br>
             <p class="text2">As atividades físicas são fundamentais para manter a saúde em dia em todas as idades.<br>Elas trazem uma série de benefícios para o corpo e a mente, como aumento da disposição,<br> melhora do sono, controle do peso corporal, fortalecimento dos ossos e músculos, <br>redução do risco de doenças crônicas, como diabetes, hipertensão arterial e doenças cardiovasculares,<br> e ainda contribuem para a saúde mental, reduzindo o estresse e a ansiedade.
@@ -148,6 +150,7 @@
 
             <div class="plano-c">
             <img src="IMAGENS/mentalImage.svg" alt="" width="100%" draggable="false">
+            <a class="aqui3" href="#">Aqui</a>
             <hr>
             <br>
             <p class="text2">A saúde mental é tão importante quanto a saúde física e deve ser cuidada com atenção e carinho. <br>Ela é essencial para o bem-estar geral, para a capacidade de lidar com desafios, <br>para manter relacionamentos saudáveis e para a produtividade e criatividade no trabalho.
