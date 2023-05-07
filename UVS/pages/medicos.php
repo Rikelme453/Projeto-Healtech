@@ -36,11 +36,14 @@
     
 <nav class="menu3">
     <div class="navbar">
-      <i class='bx bx-menu'></i>
+     <button class="botao-responsivo" onclick= "menuShow()"><img src="../IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
+     
       <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
+      <script src="../JS/menu.js"></script>
 
         <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
@@ -59,7 +62,30 @@
         </ul>
       </div>
     </div>
+
   </nav>
+
+  <!--Menu para celular-->
+  <div class="menu-mobile">
+
+       <ul>
+          <li><a class="nav-item" href="../index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
+          <li><a class="nav-item" href="medicamentos.php">Medicamentos</a></li>
+          <li><a class="nav-item" href="noticias.php">Campanhas e públicações</li>
+
+           
+          <li>
+            <a href="#">Conta</a>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="../pages/conta.php">Conta</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
+          </li>
+        </ul>
+      </div>
+
+
+  </div>
 
   <br><br>
 
