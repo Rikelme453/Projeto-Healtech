@@ -42,14 +42,14 @@
       <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
       <script src="../JS/menu.js"></script>
 
-        <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+        <p id="texto-faxada">Unidade Virtual de Sáude<p>
 
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="../index.php">Home</a></li>
+          <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
-
            
           <li>
             <a href="#">Conta</a>
