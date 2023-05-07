@@ -171,5 +171,22 @@
  <div class="rodape-copyright">
       &copy; 2023 Healtech direitos reservados
     </div>
+    <style>
+      #btn-voltar-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        user-select: none;
+        
+      }
+      </style>
+      <img id="btn-voltar-topo" src="../IMAGENS/up.svg" width="5%" height="5%" draggable="false">
+    
+    <script>
+      document.getElementById("btn-voltar-topo").addEventListener("click", function(){
+        window.scrollTo({top: 0, behavior: "smooth"});
+      });
+    </script>
 </body>
 </html>

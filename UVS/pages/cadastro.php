@@ -12,7 +12,7 @@
 <body>
 
   <div class="login1">
-  <img id="imagem1" src="../IMAGENS/logo.png" width="70%" ></img>
+  <img id="imagem1" src="../IMAGENS/UVS +.svg" ></img>
      <h3>Você é importante!<br>
          Junte-se a nós!
      <h3>
@@ -23,16 +23,16 @@
 
         <form name="form1" method="post" action="../banco/dbcadastro.php" onsubmit="return valida_form()">
         <div class="input-field">
-                <label>Nome do Usuário:</label>
+                <label class="labtext">Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
                     placeholder="insira o nome" required>
-                <label>Data de Nascimento:</label>
+                 <label class="labtext">Data de Nascimento:</label>
                 <input class="form-control" type="date" name="data" id="data" 
                     placeholder="Insira a data" required>
-                <label>Email do Usuário:</label>
+                 <label class="labtext">Email do Usuário:</label>
                 <input class="form-control" type="text" name="email" id="email"
                     placeholder="insira o email" required>
-                <label>Senha do Usuário:</label>
+                 <label class="labtext">Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
                     placeholder="insira a senha" required>
                 <div class="underline"></div>

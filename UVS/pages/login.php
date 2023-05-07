@@ -12,9 +12,13 @@
 <body>
   <div class="login1">
 
-   <img id="imagem1" src="../IMAGENS/logo.png" width="70%" ></img>
-     <h3>Seja Bem Vindo!!<h3>
-     <p>Efetue o login para acessar o site</p>
+   <img id="imagem1" src="../IMAGENS/UVS +.svg"></img>
+   <h3>Unidade Virtual de Saúde</h3>
+   <br>
+   <br>
+   <br>     
+     <h3>Seja Bem Vind@!<h3>
+     <p>Efetue o login para acessar o site.</p>
   </div>
     <main class="container">
         <h2>UVS | Acesso</h2>
@@ -32,7 +36,8 @@
             </div>
 
             <input type="submit" name="submit" value="Login" id="enviar" onclick="Apresentar()">
-            <p class="link">Não tem uma conta?<a href="cadastro.php">Registre-se</a></p> 
+            <div class="reg"><div class="itens"><p class="link">Não tem uma conta?</p></div>
+            <div class="itens"><a href="cadastro.php" class="link2">Registre-se</a></div><div>
         </form>
     </main>
 </body>
