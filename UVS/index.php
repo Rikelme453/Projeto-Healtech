@@ -96,7 +96,7 @@
               <li><a class="user-mobile" href="../pages/cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
         </ul>
-       </ul>>
+       </ul>
       </div>
 
 
@@ -117,8 +117,8 @@
 
           <div class="planos-img">
             <div class="plano-c">
-            <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">
-            <a class="aqui1" href="#">Aqui</a>
+            <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">  <a class="aqui1" href="#">Aqui</a>
+          
             <hr>
             <br> 
 
