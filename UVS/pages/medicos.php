@@ -95,14 +95,14 @@
         <!--Banner-->
 
         <div class="banner-medicos">
-           <img src="../IMAGENS/medica.svg" alt="medicos" class="index1">
+           <img src="../IMAGENS/medica.svg" alt="medicos" class="index1" draggable="false">
        </div>
 
        <hr>
 
         <!--Texto informativo-->
         <div class="titulo-1">
-          <img class="rotinaMed"src="../IMAGENS/rotinamed.svg" width="100%"></img>
+          <img class="rotinaMed"src="../IMAGENS/rotinamed.svg" width="100%" draggable="false"></img>
        </div>
 
        <!-- <div class="texto-informativo">
