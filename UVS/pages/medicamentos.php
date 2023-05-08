@@ -32,11 +32,11 @@
 <body>
 
 <nav class="menu3">
+<div class="navbar">
+     <button class="botao-responsivo" onclick= "menuShow()"><img src="../IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
+     <script src="../JS/menu.js"></script>
 
-    <div class="navbar">
-
-      <i class='bx bx-menu'></i>
-
+    
       <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
         <p id="texto-faxada">Unidade Virtual de Sáude<p>
        <div class="nav-links"> 
@@ -48,7 +48,6 @@
            
           <li>
             <a href="#">Conta</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
               <li><a href="conta.php">Conta</a></li>
               <li><a href="login.php">Login</a></li>
@@ -58,6 +57,36 @@
       </div>
     </div>
   </nav>
+
+  <!--Menu para celular-->
+  <div class="menu-mobile">
+
+       <ul>
+          <li><a class="nav-item" href="../index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
+          
+          <hr class="mobile-barra">
+
+
+
+            <ul>
+            <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
+              <hr class="mobile-barra">
+              <li><a class="user-mobile" href="conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
+              <li><a class="user-mobile" href="login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
+              <li><a class="user-mobile" href="cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
+          </li>
+        </ul>
+       </ul>>
+      </div>
+
+
+  </div>
 
     <br><br>
     

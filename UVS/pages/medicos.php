@@ -55,9 +55,9 @@
             <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="../pages/conta.php">Conta</a></li>
-              <li><a href="../pages/login.php">Login</a></li>
-              <li><a href="../pages/cadastro.php">Cadastro</a></li>
+              <li><a href="conta.php">Conta</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>
@@ -70,18 +70,26 @@
 
        <ul>
           <li><a class="nav-item" href="../index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
-          <li><a class="nav-item" href="medicamentos.php">Medicamentos</a></li>
-          <li><a class="nav-item" href="noticias.php">Campanhas e públicações</li>
+          <hr class="mobile-barra">
 
-           
-          <li>
-            <a href="#">Conta</a>
-            <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="../pages/conta.php">Conta</a></li>
-              <li><a href="../pages/login.php">Login</a></li>
-              <li><a href="../pages/cadastro.php">Cadastro</a></li>
+          <li><a class="nav-item" href="medicamentos.php"> <i class="fa-sharp fa-solid fa-tablets" style="color: #dedede;"></i> Medicamentos </a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
+          
+          <hr class="mobile-barra">
+
+
+
+            <ul>
+            <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
+              <hr class="mobile-barra">
+              <li><a class="user-mobile" href="conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
+              <li><a class="user-mobile" href="login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
+              <li><a class="user-mobile" href="cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
         </ul>
+       </ul>>
       </div>
 
 

@@ -520,3 +520,22 @@ th{
     align-items: center;
 }
 
+
+/*Responsividade página de médicos*/
+
+@media (max-width: 500px){
+    .index1{
+        width: 210%;
+    }
+
+    .rotinaMed{
+        width: 210%;
+        margin-top: 10px;
+    }
+
+    .tabela{
+        width: 200%;
+        margin-top: 60%;
+        
+    }
+}

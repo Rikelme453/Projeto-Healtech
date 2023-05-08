@@ -12,11 +12,7 @@
 #texto-faxada{
   font-family: 'Arial';
   color: hsl(0, 0%, 100%);
-  position: relative;
-  text-align: center;
-  top: 11%;
-  font-size: 15px;
-  margin-right: 23%;
+
 }
 .menu3{
   position: fixed;
@@ -140,10 +136,14 @@ nav .navbar .links li:hover .js-sub-menu{
   font-size: 20px;
 }
 
-/*Responsividade do menu*/
+/*Responsividade do menu para celular*/
 
 
 @media (max-width: 500px) {
+  .menu-mobile-janela{
+    
+  }
+  
   .nav-links{
     display: none;
   }
@@ -175,6 +175,8 @@ nav .navbar .links li:hover .js-sub-menu{
     border: 2px solid #11233d;
     list-style: none;
     margin-top: 10%;
+    position: fixed;
+   
   }
 
   .menu-mobile ul li{
@@ -208,5 +210,23 @@ nav .navbar .links li:hover .js-sub-menu{
 
   .open{
     display: block;
+
+
   }
 }
+
+ /*menu responsivo para telas maiores*/
+
+ @media (max-width: 1080px) {
+  #texto-faxada{
+    font-family: 'Arial';
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    text-align: center;
+    top: 11%;
+    font-size: 15px;
+    margin-right: 23%;
+  }
+
+
+ }

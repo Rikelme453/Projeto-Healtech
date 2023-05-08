@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
+    <div class="plano-fundo">
   <div class="login1">
 
    <img id="imagem1" src="../IMAGENS/UVS +.svg"></img>
@@ -40,5 +41,6 @@
             <div class="itens"><a href="cadastro.php" class="link2">Registre-se</a></div><div>
         </form>
     </main>
+    </div>
 </body>
 </html>

@@ -8,7 +8,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+.plano-fundo {
     background: #466189;
     /* align-items: center;
     justify-content: center;*/
@@ -128,32 +128,12 @@ form input[type="submit"]:hover {
 
 /*Responsividade*/
 
-@media screen and (max-width: 412px){
 
-
-.login1{
-   
-    display: inline-block;
-}
-h3{
-    font-size: 20px;
- }
-
-.container{
+@media (max-width:500px){
     
-}
-}
-
-.reg{
-    display: flex;
-    justify-content: center;
-}
-.itens{
-    margin-top: 0.15%;
-    margin-left: 0.75%;
-}
-.labtext{
-    display: flex;
-    align-items: center;
-    margin-right: 60%;
+    .login1{
+        display: none;
+    }
+    
+     
 }
