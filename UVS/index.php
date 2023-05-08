@@ -96,7 +96,7 @@
               <li><a class="user-mobile" href="../pages/cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
         </ul>
-       </ul>>
+       </ul>
       </div>
 
 

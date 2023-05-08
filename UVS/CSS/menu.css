@@ -171,7 +171,7 @@ nav .navbar .links li:hover .js-sub-menu{
   .menu-mobile{
     background-color: #466189;
     list-style: none;
-    margin-top: 10%;
+    margin-top: 0%;
     position: fixed;
    
   }
@@ -235,7 +235,9 @@ nav .navbar .links li:hover .js-sub-menu{
 
   }
   .img{
-    display: none;
+    display: block;
+    margin-left: 40%;
+    
   }
 
   #texto-faxada{
@@ -256,7 +258,7 @@ nav .navbar .links li:hover .js-sub-menu{
     background-color: #466189;
     border: 2px solid #11233d;
     list-style: none;
-    margin-top: 10%;
+    margin-top: 0%;
     position: fixed;
    
   }
@@ -283,9 +285,7 @@ nav .navbar .links li:hover .js-sub-menu{
     background-color: wheat;
   }
 
-  .user-mobile{
-    color: #ffffff;
-  }
+  
 
   .open{
     display: block;
