@@ -102,10 +102,10 @@
 
         <!--Texto informativo-->
         <div class="titulo-1">
-          <h1><b>ROTINA DE MÉDICOS <br> NO SISTEMA</b></h1>
+          <img class="rotinaMed"src="../IMAGENS/rotinamed.svg" width="100%"></img>
        </div>
 
-       <div class="texto-informativo">
+       <!-- <div class="texto-informativo">
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Praesent congue faucibus erat. 
            Cras tempus mauris dignissim ante accumsan, porta lacinia orci vestibulum.<br>
            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
@@ -113,12 +113,12 @@
             dictum mauris non,<br> luctus sapien. Nullam quis elit diam. Suspendisse vitae mollis enim.<br>
             Integer tristique quam in gravida condimentum. Integer quam urna, <br>ultricies lobortis scelerisque vitae, 
             suscipit eget massa. Proin ultricies rutrum nisl nec venenatis. .</p>
-       </div>
+       </div> -->
 
         <br>
 
         <!--Informações sobre os médicos -->
-
+<!-- 
        <div class="titulo-1">
          <h1><b>INFORMAÇÕES</b></h1>
        </div>
@@ -128,15 +128,15 @@
 
        <div class="titulo-1">
        <h1><b>Informações sobre a rotina dos profissionais de <br> saúde de sua unidade</b></h1>
-       </div>
+       </div> -->
        
       <section>
           
       <table class="tabela">
-      <th>Nome do Profissional</th>
-      <th>Formação/Especialização</th>
-      <th>Dias de Atendimento</th>
-      <th>Horários de Atendimento</th>
+      <th class="tdDark">Nome do Profissional</th>
+      <th class="tdDark">Formação/Especialização</th>
+      <th class="tdDark">Dias de Atendimento</th>
+      <th class="tdDark">Horários de Atendimento</th>
       
   <?php
   include "../PHP/pesquisa.php"; 
