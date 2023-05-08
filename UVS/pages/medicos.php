@@ -66,20 +66,24 @@ $result2 = $conexao -> query($sql2);
           <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
+
+          <div class="mae">
+            
+          </div>
            
           <li>
           <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-<<<<<<< HEAD
+
               <li><a href="conta.php">Conta</a></li>
               <li><a href="login.php">Login</a></li>
               <li><a href="cadastro.php">Cadastro</a></li>
-=======
+
               <li><a href="pages/login.php">Login</a></li>
               <li><a href="pages/cadastro.php">Cadastro</a></li>
               <li><a href="../admin_pages/administrador.php">Usuário</a></li>
->>>>>>> main
+
           </li>
         </ul>
       </div>

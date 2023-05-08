@@ -48,12 +48,12 @@
           <li><a href="noticias.php">Campanhas e públicações</li>
            
           <li>
-<<<<<<< HEAD
+
             <a href="#">Conta</a>
-=======
+
           <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
->>>>>>> main
+
             <ul class="htmlCss-sub-menu sub-menu">
               <li><a href="pages/login.php">Login</a></li>
               <li><a href="pages/cadastro.php">Cadastro</a></li>

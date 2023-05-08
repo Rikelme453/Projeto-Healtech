@@ -140,10 +140,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
 
 @media (max-width: 500px) {
-  .menu-mobile-janela{
-    
-  }
-  
+ 
   .nav-links{
     display: none;
   }
@@ -172,7 +169,6 @@ nav .navbar .links li:hover .js-sub-menu{
 
   .menu-mobile{
     background-color: #466189;
-    border: 2px solid #11233d;
     list-style: none;
     margin-top: 10%;
     position: fixed;
@@ -227,6 +223,76 @@ nav .navbar .links li:hover .js-sub-menu{
     font-size: 15px;
     margin-right: 23%;
   }
+ }
 
+ @media (max-width: 940px){
+   .nav-links{
+    display: none;
+  }
+  .menu-mobile{
+    padding: 1.0rem 4rem;
+
+  }
+  .img{
+    display: none;
+  }
+
+  #texto-faxada{
+    display: none;
+  }
+
+  .botao-responsivo{
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .menu-mobile{
+    background-color: #466189;
+    border: 2px solid #11233d;
+    list-style: none;
+    margin-top: 10%;
+    position: fixed;
+   
+  }
+
+  .menu-mobile ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    list-style: none;
+  }
+
+  
+
+  .nav-item{
+    color: #ffffff;
+    text-decoration: none;
+    
+  }
+  .menu-mobile .nav-item{
+    display: block;
+    padding-top: 3.5rem;
+
+  }
+
+  .mobile-barra{
+    background-color: wheat;
+  }
+
+  .user-mobile{
+    color: #ffffff;
+  }
+
+  .open{
+    display: block;
+
+
+  }
 
  }
