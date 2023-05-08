@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -47,12 +48,12 @@
 
            
           <li>
-            <a href="#">Conta</a>
+          <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="conta.php">Conta</a></li>
-              <li><a href="login.php">Login</a></li>
-              <li><a href="cadastro.php">Cadastro</a></li>
+              <li><a href="pages/login.php">Login</a></li>
+              <li><a href="pages/cadastro.php">Cadastro</a></li>
+              <li><a href="../admin_pages/administrador.php">Usuário</a></li>
           </li>
         </ul>
       </div>
@@ -70,7 +71,17 @@
        <div class="titulo-1">
        <h1><b>MEDICAMENTOS DISPONÍVEIS <br> NO SISTEMA</b></h1>
        </div>
-
+        
+       <form class="img" action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
+      <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
+      <br>
+      <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
+     <br>
+      <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
+     <br>
+      <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
+    </form>
+  
        <br>
 
        <form class="pesquisa">
@@ -90,52 +101,60 @@
          </datalist>
        </form>
        
-       <section class="remedios">
-         <div class="remedios-disponiveis">
+          <section class="remedios">
+               <div class="medicamentos">
+                
+ 
+                <?php  
+                  include_once('../banco/dbconnect.php');
 
-            <div clss="medicamentos">
-                <div class="remedio-c">
+                  $sql = 'SELECT * FROM tbmedicamentos ORDER BY arquivo';
 
-                  <img class="caixa-remedio" src="../IMAGENS/dipirona.png" alt="dipirona">
+                  if($res = mysqli_query($conexao,$sql)){
+                     $nomeMed = array();
+                     $quantMed = array();
+                     $imgMed = array();
+                     $a = 0;
 
+                     while($valor = mysqli_fetch_assoc($res)){
+                      
+                      $nomeMed[$a] = $valor["nome"];
+                      $quantMed[$a]= $valor["quant"];
+                      $imgMed[$a]= $valor["caminho"];
+                      
+                ?>
+                 <div class="remedio-c">
+                  <img class="caixa-remedio" src= <?php echo $imgMed[$a]; ?> alt="dipirona">
                   <div class="descricao-remedio">
-                    Dipirona sodica
+                    <?php  echo $nomeMed[$a]; ?>
                   </div>
-
                   <div class="botao-remedio">
-
                   <button class="botao-remedio" onclick="abrirDescricao('vis-descricao')"> DISPONÍVEL</button>
-
-                    </div>
+                  </div>
+              
 
                     <div id="vis-descricao" class="janela-remedio">
                           <div class="conteudo-janela">
 
                             <div class="remedio-descricao-imagem">
-                              <img src="../IMAGENS/dipirona.png" alt="dipirona">
+                              <img height="100px" src=<?php echo $imgMed[$a]; ?> alt="dipirona">
                             </div>
 
                             <div class="remedio-dados">
-                              <p>Nome do medicamento: </p>
+                              <p>Nome do medicamento: <?php  echo $nomeMed[$a]; ?> </p>
                               <p>Fabricante: </p>
-                              <p>Quantidade disponivel</p>
+                              <p>Quantidade disponivel: <?php echo $quantMed[$a]; ?></p>
                             </div>
-
+                         
                             <div class="botao-reservar">
                               <button class="botao-reservar" onclick="reservarDescricao('vis-descricao')">RESERVAR MEDICAMENTO</button>
                             </div>
-                          </div>
+                      </div>
+                     </div>
+                     
                   </div>
-                 
-                </div>
-                </div>
-
-               
-            </div>
-
-                 
-         </div>
-         
+                  </div>
+                <?php  $a++; } }   ?>      
        </section>
     </main>
 

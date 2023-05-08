@@ -1,16 +1,20 @@
 <?php
   include_once('../banco/dbconnect.php');
 
-      if(!empty($_GET['search']))
-  {
-      $data_1 = $_GET['search'];
-      $sql2 = "SELECT * FROM tbmedicos WHERE Id LIKE '%$data_1%' or profissional LIKE '%$data_1%' or formacao LIKE '%$data_1%'  or dias LIKE '%$data_1%' or horarios LIKE '%$data_1%'  ORDER BY profissional DESC";
-  }
-  else
-  {
-      $sql2 = "SELECT * FROM tbmedicos ORDER BY profissional DESC";
-  }
-  $result2 = $conexao -> query($sql2);
+  if(!empty($_GET['search']))
+{
+  $data = $_GET['search'];
+  $data_1 = $_GET['search'];
+  $sql = "SELECT * FROM tbmedicamentos WHERE  id LIKE '%$data%' or arquivo LIKE '%$data%' or  data_upload LIKE '%$data%' or nome LIKE '%$data%' or quant LIKE '%$data%' or caminho LIKE '%$data%' ORDER BY arquivo DESC";
+  $sql2 = "SELECT * FROM tbmedicos WHERE Id LIKE '%$data_1%' or profissional LIKE '%$data_1%' or formacao LIKE '%$data_1%'  or dias LIKE '%$data_1%' or horarios LIKE '%$data_1%'  ORDER BY profissional DESC";
+}
+else
+{
+  $sql = "SELECT * FROM tbmedicamentos ORDER BY arquivo DESC";
+  $sql2 = "SELECT * FROM tbmedicos ORDER BY profissional DESC";
+}
+$result = $conexao -> query($sql);
+$result2 = $conexao -> query($sql2);
 
   ?>
 
@@ -89,9 +93,7 @@
       <th>Horários de Atendimento</th>
       <th>Id</th>
        
-       <?php
-  include "../PHP/pesquisa.php"; 
- 
+       <?php 
   
   while($user = mysqli_fetch_assoc($result2)) {
 
@@ -129,6 +131,28 @@
                  </a> 
                  
              </th>
+</table>
+
+<table class="tabela">
+     <th>Id</th>
+     <th>Arquivo de Imagem</th>
+     <th>Data de Upload</th>
+     <th>Nome do Medicamento</th>
+     <th>Quantidade</th>
+     <th>Caminho da Imagem</th>
+
+     <?php 
+     while($user = mysqli_fetch_assoc($result)) {
+      echo "<tr>";
+      echo "<td>".$user['id']."</td>";
+      echo "<td>".$user['arquivo']."</td>";
+      echo "<td>".$user['data_upload']."</td>";
+      echo "<td>".$user['nome']."</td>";
+      echo "<td>".$user['quant']."</td>";
+      echo "<td>".$user['caminho']."</td>";
+      echo "<td>";
+     }
+     ?>
 </table>
 
 </div>
