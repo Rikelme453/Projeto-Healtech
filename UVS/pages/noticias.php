@@ -35,13 +35,13 @@
       <i class='bx bx-menu'></i>
 
       <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
-        <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+        <p id="texto-faxada">Unidade Virtual de Sáude<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">Home</a></li>
+       <li><a href="../index.php">Home</a></li>
+          <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
-
-          <li><a href="medicos.php">Médicos</li>
+          <li><a href="noticias.php">Campanhas e públicações</li>
 
            
           <li>
@@ -284,5 +284,22 @@
           </div>
   </footer>
    
+  <style>
+      #btn-voltar-topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        user-select: none;
+        
+      }
+      </style>
+      <img id="btn-voltar-topo" src="../IMAGENS/up.svg" width="5%" height="5%" draggable="false">
+    
+    <script>
+      document.getElementById("btn-voltar-topo").addEventListener("click", function(){
+        window.scrollTo({top: 0, behavior: "smooth"});
+      });
+    </script>
 </body>
 </html>

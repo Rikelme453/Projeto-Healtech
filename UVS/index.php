@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
     <!--Título da página-->
     <title>UVS| Página Inicial</title>
 
     <!--CSS estilo e menu da página INDEX-->
 
     <link href="./CSS/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
 
     <!--Fontes do Google-->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -32,38 +32,79 @@
 </head>
 <body>
 
-<!--Menu-->
-
+  <!--Menu de navegação-->
+    
 <nav class="menu3">
-
     <div class="navbar">
-      <i class='bx bx-menu'></i>
+     <button class="botao-responsivo" onclick= "menuShow()"><img src="./IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
-      <!--Logo do site-->
-      <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
-      <p id="texto-faxada">Mais Vida! Mais Saúde!<p>
+     
+      <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
+      <script src="./JS/menu.js"></script>
 
-        <!--Menu de navegação-->
+       <p id="texto-faxada">Unidade Virtual de Sáude<p> 
+
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="pages/medicamentos.php">Medicamentos</a></li>
-          <li><a href="pages/medicos.php">Médicos</li>
-          <li><a href="pages/noticias.php">Campanhas e Publicações  </li>
-           
-          <!--Submenus-->
+          <li><a href="index.php">Home</a></li>
+          <li><a href="./pages/medicos.php">Médicos</a></li>
+          <li><a href="./pages/medicamentos.php">Medicamentos</a></li>
+          <li><a href="./pages/noticias.php">Campanhas e públicações</li>
+         
           <li>
             <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
+
               <li><a href="pages/login.php">Login</a></li>
               <li><a href="pages/cadastro.php">Cadastro</a></li>
               <li><a href="admin_pages/administrador.php">Usuário</a></li>
+
+              <li><a href="./pages/conta.php">Conta</a></li>
+              <li><a href="./pages/login.php">Login</a></li>
+              <li><a href="./pages/cadastro.php">Cadastro</a></li>
+
           </li>
         </ul>
       </div>
     </div>
+
   </nav>
+
+
+
+  <!--Menu para celular-->
+  <div class="menu-mobile">
+
+       <ul>
+          <li><a class="nav-item" href="index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="./pages/medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="./pages/medicamentos.php"> <i class="fa-sharp fa-solid fa-tablets" style="color: #dedede;"></i> Medicamentos </a></li>
+          <hr class="mobile-barra">
+
+          <li><a class="nav-item" href="./pages/noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
+          
+          <hr class="mobile-barra">
+
+
+
+            <ul>
+            <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
+              <hr class="mobile-barra">
+              <li><a class="user-mobile" href="../pages/conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
+              <li><a class="user-mobile" href="../pages/login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
+              <li><a class="user-mobile" href="../pages/cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
+          </li>
+        </ul>
+       </ul>>
+      </div>
+
+
+  </div>
 
   <br><br>
 
@@ -81,6 +122,7 @@
           <div class="planos-img">
             <div class="plano-c">
             <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">
+            <a class="aqui1" href="#">Aqui</a>
             <hr>
             <br> 
 
@@ -99,6 +141,7 @@
             <hr>
             <div class="plano-c">
             <img src="IMAGENS/fisicaimage.svg" alt="" width="100%">
+            <a class="aqui2" href="#">Aqui</a>
             <hr>
             <br>
             <p class="text2">As atividades físicas são fundamentais para manter a saúde em dia em todas as idades.<br>Elas trazem uma série de benefícios para o corpo e a mente, como aumento da disposição,<br> melhora do sono, controle do peso corporal, fortalecimento dos ossos e músculos, <br>redução do risco de doenças crônicas, como diabetes, hipertensão arterial e doenças cardiovasculares,<br> e ainda contribuem para a saúde mental, reduzindo o estresse e a ansiedade.
@@ -113,6 +156,7 @@
 
             <div class="plano-c">
             <img src="IMAGENS/mentalImage.svg" alt="" width="100%" draggable="false">
+            <a class="aqui3" href="#">Aqui</a>
             <hr>
             <br>
             <p class="text2">A saúde mental é tão importante quanto a saúde física e deve ser cuidada com atenção e carinho. <br>Ela é essencial para o bem-estar geral, para a capacidade de lidar com desafios, <br>para manter relacionamentos saudáveis e para a produtividade e criatividade no trabalho.
