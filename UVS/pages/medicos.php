@@ -1,3 +1,19 @@
+<?php
+  include_once('../banco/dbconnect.php');
+
+  if(!empty($_GET['search']))
+{
+ 
+  $data_1 = $_GET['search'];
+  $sql2 = "SELECT * FROM tbmedicos WHERE Id LIKE '%$data_1%' or profissional LIKE '%$data_1%' or formacao LIKE '%$data_1%'  or dias LIKE '%$data_1%' or horarios LIKE '%$data_1%'  ORDER BY profissional DESC";
+}
+else
+{
+  $sql2 = "SELECT * FROM tbmedicos ORDER BY profissional DESC";
+}
+$result2 = $conexao -> query($sql2);
+
+  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -139,7 +155,6 @@
       <th class="tdDark">Horários de Atendimento</th>
       
   <?php
-  include "../PHP/pesquisa.php"; 
  
   
   while($user = mysqli_fetch_assoc($result2)) {
