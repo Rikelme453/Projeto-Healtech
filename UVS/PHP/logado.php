@@ -11,7 +11,5 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
     }else{
       $user = null;
     }
-}else{
-    header('Location: login.php');
-}
+  }
 ?>

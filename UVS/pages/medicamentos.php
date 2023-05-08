@@ -48,15 +48,14 @@
           <li><a href="noticias.php">Campanhas e públicações</li>
            
           <li>
-<<<<<<< HEAD
-            <a href="#">Conta</a>
-=======
+
           <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
->>>>>>> main
+
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="pages/login.php">Login</a></li>
-              <li><a href="pages/cadastro.php">Cadastro</a></li>
+              
+              <li><a href="login.php">Login</a></li>
+              <li><a href="cadastro.php">Cadastro</a></li>
               <li><a href="../admin_pages/administrador.php">Usuário</a></li>
           </li>
         </ul>
@@ -88,7 +87,7 @@
               <li><a class="user-mobile" href="cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
         </ul>
-       </ul>>
+       </ul>
       </div>
 
 
@@ -137,8 +136,6 @@
        
           <section class="remedios">
                <div class="medicamentos">
-                
- 
                 <?php  
                   include_once('../banco/dbconnect.php');
 
@@ -150,7 +147,7 @@
                      $imgMed = array();
                      $a = 0;
 
-                     while($valor = mysqli_fetch_assoc($res)){
+                    while($valor = mysqli_fetch_assoc($res)){
                       
                       $nomeMed[$a] = $valor["nome"];
                       $quantMed[$a]= $valor["quant"];
@@ -158,7 +155,7 @@
                       
                 ?>
                  <div class="remedio-c">
-                  <img class="caixa-remedio" src= <?php echo $imgMed[$a]; ?> alt="dipirona">
+                  <img class="caixa-remedio" src= <?php echo $imgMed[$a]; ?> >
                   <div class="descricao-remedio">
                     <?php  echo $nomeMed[$a]; ?>
                   </div>
@@ -171,7 +168,7 @@
                           <div class="conteudo-janela">
 
                             <div class="remedio-descricao-imagem">
-                              <img height="100px" src=<?php echo $imgMed[$a]; ?> alt="dipirona">
+                              <img height="100px" src=<?php echo $imgMed[$a]; ?>>
                             </div>
 
                             <div class="remedio-dados">
@@ -185,10 +182,10 @@
                             </div>
                       </div>
                      </div>
-                     
                   </div>
                   </div>
-                <?php  $a++; } }   ?>      
+            
+                  <?php  $a+2; } }   ?>    
        </section>
     </main>
 

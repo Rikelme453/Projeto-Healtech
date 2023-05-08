@@ -94,6 +94,7 @@ nav .navbar .links li .sub-menu{
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu{
   display: block;
+  color:#466189;
 }
 .navbar .links li .sub-menu li{
   padding: 0 22px;

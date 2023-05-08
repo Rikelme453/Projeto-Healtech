@@ -58,11 +58,7 @@
 
               <li><a href="pages/login.php">Login</a></li>
               <li><a href="pages/cadastro.php">Cadastro</a></li>
-              <li><a href="admin_pages/administrador.php">Usuário</a></li>
-
-              <li><a href="./pages/conta.php">Conta</a></li>
-              <li><a href="./pages/login.php">Login</a></li>
-              <li><a href="./pages/cadastro.php">Cadastro</a></li>
+              <li><a href="./admin_pages/administrador.php">Usuário</a></li>
 
           </li>
         </ul>
