@@ -67,9 +67,6 @@ $result2 = $conexao -> query($sql2);
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
 
-          <div class="mae">
-            
-          </div>
            
           <li>
           <a href="#">Conta</a>

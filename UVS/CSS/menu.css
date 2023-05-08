@@ -146,6 +146,7 @@ nav .navbar .links li:hover .js-sub-menu{
   }
   .menu-mobile{
     padding: 1.0rem 4rem;
+    top: 4%
 
   }
   .img{
@@ -225,7 +226,7 @@ nav .navbar .links li:hover .js-sub-menu{
   }
  }
 
- @media (max-width: 940px){
+ @media (max-width: 990px){
    .nav-links{
     display: none;
   }
@@ -267,9 +268,6 @@ nav .navbar .links li:hover .js-sub-menu{
     padding-bottom: 1rem;
     list-style: none;
   }
-
-  
-
   .nav-item{
     color: #ffffff;
     text-decoration: none;
