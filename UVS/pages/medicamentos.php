@@ -149,6 +149,7 @@
                      $quantMed = array();
                      $imgMed = array();
                      $a = 0;
+                     $quant = mysqli_num_rows($res);
 
                     while($valor = mysqli_fetch_assoc($res)){
                       
@@ -163,11 +164,11 @@
                     <?php  echo $nomeMed[$a]; ?>
                   </div>
                   <div class="botao-remedio">
-                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao')"> DISPONÍVEL</button>
+                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao-<?php echo $valor['id']?>')"> DISPONÍVEL</button>
                   </div>
               
 
-                    <div id="vis-descricao" class="janela-remedio">
+                    <div id="vis-descricao-<?php echo $valor['id'];?>" class="janela-remedio">
                           <div class="conteudo-janela">
 
                             <div class="remedio-descricao-imagem">
@@ -181,7 +182,7 @@
                             </div>
                          
                             <div class="botao-reservar">
-                              <button class="botao-reservar" onclick="reservarDescricao('vis-descricao')">RESERVAR MEDICAMENTO</button>
+                              <button class="botao-reservar" href="medicamentos.php"  onclick="reservarDescricao('vis-descricao-<?php echo $valor['id']?>')">Voltar</button>
                             </div>
                       </div>
                      </div>
