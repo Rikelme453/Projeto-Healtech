@@ -107,20 +107,8 @@
        <h1><b>MEDICAMENTOS DISPONÍVEIS <br> NO SISTEMA</b></h1>
        </div>
         
-       <form class="img" action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
-      <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
-      <br>
-      <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
-     <br>
-      <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
-     <br>
-      <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
-    </form>
-  
-       <br>
-
        <form class="pesquisa">
-         <input type="search" id="text" placeholder="Pesquisar remédios">
+         <input type="search" id="texto-btn" placeholder="Pesquisar remédios">
          <img src="../IMAGENS/lupa1.png" class="btn-lupa">
 
          <datalist id="historico">
@@ -135,6 +123,19 @@
            
          </datalist>
        </form>
+       <br>
+       <form class="img" action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
+      <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
+      <br>
+      <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
+     <br>
+      <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
+     <br>
+      <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
+    </form>
+  
+       <br>
+
        
           <section class="remedios">
                <div class="medicamentos">
