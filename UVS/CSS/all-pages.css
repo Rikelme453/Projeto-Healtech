@@ -103,6 +103,7 @@ cursor: pointer;
     border: 2px solid #a7a7a7;
     border-radius: 20px;
     gap: 1px;
+    margin-left: 2%;
 }
 
 .caixa-remedio{
