@@ -138,22 +138,34 @@ h4{
        width: 25%;
        gap:.1%;
        display: flex;
-       height: 6%;
+      
      
  }
 
-.tabela{
-  background-color: rgb(72, 179, 206);
-  margin-left: 15%;
-  margin-bottom: 4%;
+ .tabela{
+  background-color: #AFC3DB;
+  margin-left: 10%;
   text-align: center;
-  border: solid rgb(114, 117, 117);
-  width: 70%;
-  height: 50%;
+  border: solid rgb(37, 37, 37);
+  width: 80%;
   box-shadow:0px 10px 20px #676565;
+  border-radius: 2px;
+  cursor: pointer;
+  border-collapse:collapse ;
+  font-size: 20px;
+  height: 400pt;
+  
 }
- td{
-     border:solid rgb(112, 107, 107) 1px;
+.tdDark{
+  background-color: #264d88;
+  color: white;
+}
+td{
+  border:solid rgb(22, 22, 22) 1px;
+  
+}
+th{
+  border:solid rgb(22, 22, 22) 1px;
 }
  .img{
   width: 25%;
@@ -186,21 +198,5 @@ h4{
  
 }
 
-.sair{
-    width: 100px;
-    background: rgb(180,58,103);
-    background: linear-gradient(90deg, rgba(180,58,103,1) 0%, rgba(253,29,29,1) 50%, rgba(252,170,69,1) 98%);
-    border: 2px solid black;
-    border-radius: 3px;
-    margin-left: 100%;
-}
-
-.voltar{
-    width: 100px;
-    background: rgb(15,115,21);
-    background: linear-gradient(90deg, rgba(15,115,21,1) 0%, rgba(9,117,121,1) 35%, rgba(0,255,55,1) 100%);
-    border: 2px solid black;
-    border-radius: 3px;
-}
 
 

@@ -73,7 +73,7 @@
    
         <div class="box-search">
             
-            <input type="search" placeholder="Pesquisar" class="form-control"  id="pesquisar">
+            <input type="search" placeholder="Pesquisar" class="form-control" id="pesquisar">
 
             <button class= "btn btn-primary" onclick="Apresentar()">
             <svg btn btn-primary xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -85,10 +85,11 @@
 
    <table class="tabela">
    
-      <th>Email do Usuário</th>
-      <th>Nome do Usuário</th>
-      <th>Data de Nascimento</th>
-      <th>Id</th>
+      <th class="tdDark">Email do Usuário</th>
+      <th class="tdDark">Nome do Usuário</th>
+      <th class="tdDark">Data de Nascimento</th>
+      <th class="tdDark">Id</th>
+      <th class="tdDark">Ação</th>
       
     <?php
     

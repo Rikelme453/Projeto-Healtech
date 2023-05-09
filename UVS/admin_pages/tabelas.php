@@ -87,11 +87,12 @@ $result2 = $conexao -> query($sql2);
 <br>
 
 <table class="tabela">
-      <th>Nome do Profissional</th>
-      <th>Formação/Especialização</th>
-      <th>Dias de Atendimento</th>
-      <th>Horários de Atendimento</th>
-      <th>Id</th>
+      <th class="tdDark">Nome do Profissional</th>
+      <th class="tdDark">Formação/Especialização</th>
+      <th class="tdDark">Dias de Atendimento</th>
+      <th class="tdDark">Horários de Atendimento</th>
+      <th class="tdDark">Id</th>
+      <th class="tdDark">Ação</th>
        
        <?php 
   
@@ -132,14 +133,14 @@ $result2 = $conexao -> query($sql2);
                  
              </th>
 </table>
-
+<br><br>
 <table class="tabela">
-     <th>Id</th>
-     <th>Arquivo de Imagem</th>
-     <th>Data de Upload</th>
-     <th>Nome do Medicamento</th>
-     <th>Quantidade</th>
-     <th>Caminho da Imagem</th>
+     <th class="tdDark">Id</th>
+     <th class="tdDark">Arquivo de Imagem</th>
+     <th class="tdDark">Data de Upload</th>
+     <th class="tdDark">Nome do Medicamento</th>
+     <th class="tdDark">Quantidade</th>
+     <th class="tdDark">Caminho da Imagem</th>
 
      <?php 
      while($user = mysqli_fetch_assoc($result)) {
