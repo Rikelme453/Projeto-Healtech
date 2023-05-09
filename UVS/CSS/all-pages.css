@@ -7,7 +7,7 @@
 
 1-Página de medicamentos;
 2-Página de notícias; 
-3-
+
 /
 
 
@@ -46,22 +46,31 @@ body{
 .pesquisa{
     width: 460px;
     height: 40px;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 2%;
+    
 }
 
-#text{
+#texto-btn{
     width: 350px;
     height: 40px;
     float: left;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #DDDDDD;
+    background-color: rgb(235, 235, 235);
+    border: 2px solid #004AAD;
+    border-radius: 5px;
+    
 }
 .btn-lupa{
 width: 40px;
 height: 40px;
-background-color: #676565;
-padding: 5px 10px ;
+background-color: #1249af;
+border-radius: 3px;
+padding: 8px 8px ;
 cursor: pointer;
 
 }
@@ -539,3 +548,33 @@ th{
         
     }
 }
+
+/*Responsividade página de medicamentos*/
+
+    @media (max-width: 500px){
+        .titulo-1 h1 b{
+            font-size: 30px;
+            text-align: center;
+            white-space: nowrap;
+
+        }
+
+        .img{
+            display: block;
+            margin-left: 40%;
+        }
+
+        .logo-marca{
+            display: block;
+            margin-left: 40%;
+        }
+
+        .pesquisa{
+            margin-top: 3%;
+            width: 50%;
+        }
+        
+        #texto-btn{
+            width: 210vw;
+        }
+    }

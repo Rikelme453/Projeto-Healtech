@@ -14,6 +14,7 @@
     <!--CSS estilo e menu da página INDEX-->
 
     <link href="./CSS/style.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="./CSS/menu.css">
 
     <!--Fontes do Google-->
