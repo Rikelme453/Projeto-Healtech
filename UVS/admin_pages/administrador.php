@@ -2,7 +2,7 @@
     include "../banco/dbadmin.php";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
            
                 <img class="logo"src="../IMAGENS/UVS +.svg" alt="uvs logo">
                 <h5>UVS ADMINISTRATOR</h5>
-                <p>Ola</p>
+                <p>Ola, Admin</p>
               
         </div>
     </header>
@@ -55,11 +55,11 @@
 
                     <h4>Bem Vindo de Volta!</h4>
                     <p><?php include "../PHP/logado.php";
-                echo "<br>" . $logado; if($user != ""){
-                echo "<br>" . "Usúario: " .  $user;
-                }else{
+                //echo "<br>" . $logado; if($user != ""){
+                //echo "<br>" . "Usúario: " .  $user;
+                //}else{
                     
-                }?></p>
+                //}?></p>
 
                 </div>
             </div>
@@ -79,10 +79,7 @@
 
         <div class="container">
             <div class="titulo-secao">
-                <!--Data e hora-->
-                <div class="data-hora">            
-                        <input type="time" class="hora-caixa" id="rel">
-                </div>
+              
                 <h2>Dashboard</h2>
                 <hr>
                 <p>Painel de controle</p>
@@ -135,7 +132,7 @@
                     <h3>Localização UBS Google Maps</h3>
                     <div class="tablet-uvs">
                         
-                    <iframe width="529" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                    <iframe class="mapa-da-ubs-formatado" width="529" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
   
 
                     </div>
@@ -148,7 +145,7 @@
             <form  action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
             <br>
             <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar" onchange="previewRemedio()" required><br><br>
-            <img name="remedioimg" style="width: 300px; height: 300px">
+            <img class="recebe-imagem" name="remedioimg" style="width: 300px; height: 300px">
             <br><br>
             <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
             <br><br>

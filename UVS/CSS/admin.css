@@ -319,8 +319,8 @@ header{
     .tablet-uvs{
         width: 55%;
     }
-    iframe{
-        width: 368px;
+    .mapa-da-ubs-formatado{
+        width: 100%;
         height: 400px;
     }
 }
