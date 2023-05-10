@@ -133,6 +133,8 @@ $result2 = $conexao -> query($sql2);
                  
              </th>
 </table>
+
+
 <br><br>
 <table class="tabela">
      <th class="tdDark">Id</th>
@@ -155,8 +157,8 @@ $result2 = $conexao -> query($sql2);
      }
      ?>
 </table>
-
 </div>
+
 
 <script>
     var search = document.getElementById("pesquisar");

@@ -140,9 +140,21 @@
                 </div>
             </div>
 
-            
-       
+     <div class="upload">
+            <h3>Upload de Medicamentos no SISTEMA</h3>
 
+            <form  action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
+            <br>
+            <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
+            <br>
+            <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
+            <br>
+            <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
+            <br>
+            <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
+            </form>
+      </div>
+      <br>
     </section>
 </body>
 </html>

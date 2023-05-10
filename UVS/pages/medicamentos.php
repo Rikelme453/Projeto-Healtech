@@ -124,15 +124,7 @@
          </datalist>
        </form>
        <br>
-       <form class="img" action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
-      <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
-      <br>
-      <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
-     <br>
-      <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
-     <br>
-      <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
-    </form>
+       
   
        <br>
 
@@ -164,7 +156,7 @@
                     <?php  echo $nomeMed[$a]; ?>
                   </div>
                   <div class="botao-remedio">
-                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao-<?php echo $valor['id']?>')"> DISPONÍVEL</button>
+                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao-<?php echo $valor['id']?>')">Mais Detalhes</button>
                   </div>
               
 
@@ -189,7 +181,7 @@
                   </div>
                   </div>
             
-                  <?php  $a+2; } }   ?>    
+                  <?php  $a++; } }   ?>    
        </section>
     </main>
 
