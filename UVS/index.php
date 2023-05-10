@@ -92,7 +92,7 @@
             <ul>
             <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
               <hr class="mobile-barra">
-              <li><a class="user-mobile" href="../pages/conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
+              <li><a class="user-mobile" href="./admin_pages/administrador.php"> <i class="fa-solid fa-user"></i> Usuário</a></li>
               <li><a class="user-mobile" href="../pages/login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
               <li><a class="user-mobile" href="../pages/cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
