@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="../CSS/admin.css">
 
 
-       <!-- Bootstrap -->
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!--Font Awesome-->
+     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font Awesome-->
+
     <script src="https://kit.fontawesome.com/7cdd971c93.js" crossorigin="anonymous"></script>
-    
-    
-    
+    <!--JavaScript e Jquery-->
+    <script src="../JS/remedio.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     
@@ -134,7 +135,8 @@
                     <h3>Localização UBS Google Maps</h3>
                     <div class="tablet-uvs">
                         
-                        <iframe width="520" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Juazeiro%20do%20Norte+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                    <iframe width="529" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+  
 
                     </div>
                 </div>
@@ -145,12 +147,13 @@
 
             <form  action="../banco/dbmedicamentos.php" method="POST" enctype="multipart/form-data"> 
             <br>
-            <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
-            <br>
+            <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar" onchange="previewRemedio()" required><br><br>
+            <img name="remedioimg" style="width: 300px; height: 300px">
+            <br><br>
             <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
-            <br>
+            <br><br>
             <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
-            <br>
+            <br><br>
             <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
             </form>
       </div>
