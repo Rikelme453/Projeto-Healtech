@@ -6,8 +6,12 @@
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
     <link rel='icon' type='image/jpg' href="../imagens/iconsite1.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>UVS | Cadastro</title>
+    <title>UVS|Cadastro</title>
     <link rel="stylesheet" href="../CSS/login.css">
+
+     <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
+    
 </head>
 <body>
 
