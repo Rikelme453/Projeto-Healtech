@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/admin.css">
     <link rel="stylesheet" href="../CSS/conta.css">
+
+     <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

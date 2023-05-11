@@ -18,6 +18,9 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/7cdd971c93.js" crossorigin="anonymous"></script>
     <title>UVS| ADMINISTRATOR</title>
+
+     <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
 </head>
 <body>
 

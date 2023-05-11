@@ -25,6 +25,9 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
         <script src="../JS/perfil.js"></script>
        <!-- Bootstrap -->
        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
        
 </head>
 <body>

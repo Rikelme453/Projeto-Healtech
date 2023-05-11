@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Menu formatação-->
     <link rel="stylesheet" href="../CSS/menu.css">
+     <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
+  
    
     
 
@@ -273,7 +276,7 @@
             <ul>
               <h3>Saiba mais sobre o projeto</h3>
 
-              <li class="lista"><a class="lista-link" href="../UVS/pages/quem_somos.php">Quem somos?</a></li>
+              <li class="lista"><a class="lista-link" href="../pages/quem_somos.php">Quem somos?</a></li>
               <li class="lista"><a class="lista-link" href="">Política da Empresa</a></li>
             </ul>
           </div>

@@ -24,6 +24,9 @@
     <!--JavaScript e Jquery-->
     <script src="../JS/remedio.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+     <!--Icone favicon-->
+     <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -116,9 +119,9 @@
                     </div>
 
                     <div style="background-color: #B600C6;" class="caixa-info-primeira-texto">
-                    <img src="../ICONS/mensg.png" alt="novas mensagens" width="60px" height="60px">
+                    <img src="../ICONS/form.png" alt="novas mensagens" width="60px" height="60px">
                         <h3>00</h3>
-                        <p>Novas Mensagens</p>
+                        <p>Agenda</p>
 
                         <div style="background-color: #6C1074;" class="cor-de-baixo"></div>
                        
@@ -132,7 +135,7 @@
                     <h3>Localização UBS Google Maps</h3>
                     <div class="tablet-uvs">
                         
-                    <iframe class="mapa-da-ubs-formatado" width="529" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                    <iframe class="mapa-da-ubs-formatado" width="508" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
   
 
                     </div>
@@ -151,7 +154,8 @@
             <br><br>
             <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
             <br><br>
-            <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
+            <img class="botao-upload "src="../ICONS/upload.png">
+            <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar Informações">
             </form>
       </div>
       <br>
