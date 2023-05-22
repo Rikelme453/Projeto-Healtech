@@ -1,3 +1,4 @@
+<!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,6 +12,21 @@
 
      <!--Icone favicon-->
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
+
+     <script>
+
+    function funcao1()
+    {
+        var input = document. querySelector("#password");
+        var texto = input. value;
+        
+        if(texto.length < 8){
+            alert("Sua senha deve ter no minímo 8 caracteres")
+        }
+
+}
+
+</script>
   
 </head>
 <body>
@@ -28,7 +44,7 @@
     <main class="container">
         <h2>UVS | Acesso</h2>
 
-        <form name="form1" method="post" action="verificarLogin.php" onsubmit="return valida_form()">
+        <form name="form1" method="post" action="verificarLogin.php" class="form11">
             <div class="input-field">
                 <input class="form-control"  type="text" name="email" id="username"
                     placeholder="Email do Usuário" required>
@@ -40,7 +56,7 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="submit" name="submit" value="Login" id="enviar" onclick="Apresentar()">
+            <input type="submit" name="submit" class="btt" value="Login" id="enviar" onclick="funcao1()">
             <div class="reg"><div class="itens"><p class="link">Não tem uma conta?</p></div>
             <div class="itens"><a href="cadastro.php" class="link2">Registre-se</a></div><div>
         </form>
