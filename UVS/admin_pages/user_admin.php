@@ -12,7 +12,7 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,8 +23,7 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
         <script src="../JS/perfil.js"></script>
-       <!-- Bootstrap -->
-       <link rel="stylesheet" href="css/bootstrap.min.css">
+       
 
         <!--Icone favicon-->
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
@@ -52,7 +51,7 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
 
         <!--Editar perfil-->
 
-        <div class="container">
+        <div class="container-edit">
             <div class="titulo-secao">
                 <h2>Editar Pefil</h2>
                 <hr>

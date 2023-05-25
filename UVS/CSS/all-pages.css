@@ -590,4 +590,26 @@ th{
             display: block;
             
         }
+
+        .janela-remedio{
+        width: 100%;
+        height: 100%;
+        }
+        
+        .conteudo-janela{
+            height: 50%;
+        }
+
+        .remedio-descricao-imagem img{
+            width: 50%;
+            height: 60%;
+            right: 10%;
+        }
+
+        .remedio-dados{
+            text-align: center;
+            font-size: 25px;
+        }
+
+       
     }

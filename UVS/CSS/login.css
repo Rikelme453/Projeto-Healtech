@@ -135,8 +135,25 @@ form input[type="submit"]:hover {
 @media (max-width:500px){
     
     .login1{
-        display: none;
+        width: 100%;
     }
-    
+    body{
+        background: #466189;
+    }
+    .plano-fundo{
+        background-color: white;
      
+    }
+    .container{
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        top: 40%;
+
+    }
+
+    form{
+        width: 100%;
+        
+    }
 }

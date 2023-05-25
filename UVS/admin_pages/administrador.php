@@ -135,7 +135,7 @@
                     <h3>Localização UBS Google Maps</h3>
                     <div class="tablet-uvs">
                         
-                    <iframe class="mapa-da-ubs-formatado" width="508" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                    <iframe class="mapa-da-ubs-formatado" width="508" height="578" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=696&amp;height=578&amp;hl=en&amp;q=%20Caririacu+(Carira%C3%A7u)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
   
 
                     </div>

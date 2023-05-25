@@ -124,6 +124,13 @@ header{
   
 }
 
+.container-edit{
+    width: 70%;
+    margin: 0%;
+    background-color: rgb(209, 209, 209);
+  
+}
+
 .titulo-secao{
     background-color: white;
     padding: 10px;
