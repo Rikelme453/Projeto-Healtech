@@ -157,3 +157,16 @@ form input[type="submit"]:hover {
         
     }
 }
+
+@media (max-width: 375px){
+    .login1 h3{
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .login1 p{
+        margin-top: 10%;
+    }
+}
