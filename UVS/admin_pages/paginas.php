@@ -71,12 +71,9 @@
                 <h3>Editor de páginas</h3>
                 <hr><br>
 
-                <nav class="menu">
+              
             
-			    <ul>
-				<li><a href="#"> <i class="fa-solid fa-box" style="color: #cfcfcf;"></i> Conteúdo</a>
-					<ul>
-                                        
+			               
                 <form method="POST" action="">
 
                 <label for="">Título</label>
@@ -109,15 +106,7 @@
                     });
                 </script>
                 </form>			
-						</li>
-					</ul>	
-			</ul>
-
-            <ul>
-                <li><a href="">Artigos</a></li>
-            </ul>
-
-		</nav>
+					
         </div>
         
     </section>

@@ -217,6 +217,7 @@ header{
     margin-top: 20px;
 }
 
+
 .tablet-uvs{
    margin-left: 25%;
    margin-right: 25%;
@@ -240,65 +241,15 @@ header{
    
 }
 
+.caixa-dados{
+    width: 25%;
+    border: 2px solid rgb(161, 161, 223);
+    border-radius: 5px;
+}
+
 .upload h3{
     font-size: 30px;
     color: #222;
-}
-/*menu editores*/
-
-
-.menu ul li{
-	background-color: rgb(70, 77, 107);
-	width: 100%;
-	display: inline-block;
-	line-height: 30px;
-	font-size: 15px;
-	position: relative;
-    border: 2px solid rgb(48, 44, 56);
-    
-}
-
-.menu ul li:hover{
-	background-color: #f7f7f7;
-
-}
-
-.menu ul{
-	padding: 0px;
-}
-
-.menu ul ul{
-	display: none;
-}
-
-.menu ul li:hover > ul{
-	display:block;
-}
-
-.menu ul ul ul{
-	margin-left: 201px;
-	top: 0px;
-	position: absolute;
-}
-
-.menu ul ul li a:hover{
-	background-color: #ffffff;
-
-}
-
-.menu ul ul ul li:hover{
-	background-color: #ffffff;
-  
-}
-
-.menu a{
-	color: rgb(253, 253, 253);
-	text-decoration: none;
-}
-
-.botao-upload{
-    width: 40px;
-    height: 40px; 
 }
 
 /*Responsividade*/
@@ -348,6 +299,8 @@ header{
     }
 
     .mapa-da-ubs-formatado{
-        width: 531px;
+        width: 508px;
     }
+
 }
+

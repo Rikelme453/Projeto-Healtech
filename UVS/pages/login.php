@@ -15,7 +15,7 @@
 
      <script>
 
-    function funcao1()
+    function funcao2()
     {
         var input = document. querySelector("#password");
         var texto = input. value;
@@ -56,7 +56,8 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="submit" name="submit" class="btt" value="Login" id="enviar" onclick="funcao1()">
+            <input type="submit" name="submit" class="btt" value="Login" id="enviar" onclick="funcao2()">
+            
             <div class="reg"><div class="itens"><p class="link">Não tem uma conta?</p></div>
             <div class="itens"><a href="cadastro.php" class="link2">Registre-se</a></div><div>
         </form>

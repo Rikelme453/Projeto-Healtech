@@ -64,7 +64,7 @@
   <nav class="menu3">
     <div class="navbar" style="float: left;">
     <form action="../index.php">
-    <input class="voltar" type="submit" name="voltar" value="Voltar">
+    <input class="voltar" type="submit" name="voltar" value="Página Inicial">
 </form>
     <p></p>
     <form action="sair.php">
@@ -76,16 +76,8 @@
   
   <br><br><br><br><br>
 
-
-  <div class="email">
-    <h1 class="txt"><?php include "../PHP/logado.php";
-      echo "<br>" . $logado; if($user != ""){
-      echo "<br>" . "Usúario: " .  $user;
-      }else{
-          
-      }?></h1>
     <h3 class="txt2">Você está logado!</h3>
-</div>
+</div>-->
 
    <div class="box-search">
      
@@ -104,10 +96,10 @@
    
 <br><br>
 
-   <form class="img" action="conta.php" method="POST" enctype="multipart/form-data"> 
+   <!--<form class="img" action="conta.php" method="POST" enctype="multipart/form-data"> 
    <label for= "pegar" class="form-control" id="select">Selecionar Arquivo</label>
    <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar">    
-   <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >
+   <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar imagem" >-->
 
 </form>
 
