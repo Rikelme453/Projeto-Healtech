@@ -1,5 +1,5 @@
 /*reutilização do código de perfil user*/
-
+//Codificação para funcionalidade de prewiew do medicamento
 function previewRemedio(){
     var recebeMedimg = document.querySelector('input[name=pegar]').files[0];
     var previewMed = document.querySelector('img[name=remedioimg]');

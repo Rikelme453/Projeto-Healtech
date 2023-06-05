@@ -1,4 +1,5 @@
 <?php
+//Codificação para funcionalidade de pesquisa na tabela de medicos
   include_once('../banco/dbconnect.php');
 
   if(!empty($_GET['search']))
@@ -14,6 +15,7 @@ else
 $result2 = $conexao -> query($sql2);
 
   ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -223,6 +225,7 @@ $result2 = $conexao -> query($sql2);
  <div class="rodape-copyright">
       &copy; 2023 Healtech direitos reservados
     </div>
+    <!--Codigo em script e estilo internos para -->
     <style>
       #btn-voltar-topo {
         position: fixed;

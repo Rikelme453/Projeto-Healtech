@@ -1,3 +1,4 @@
+<!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <?php
     include "../banco/dbadmin.php";
 ?>
@@ -55,7 +56,7 @@
                 </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
-
+                   <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                     <h4>Bem Vindo de Volta!</h4>
                     <p><?php include "../PHP/logado.php";
                 echo "<br>" . $logado; if($user != ""){
@@ -141,7 +142,7 @@
                     </div>
                 </div>
             </div>
-
+      <!--Formulário para envio das informações referentes aos medicamentos a serem cadastrados-->
      <div class="upload">
             <h3>Upload de Medicamentos no SISTEMA</h3>
 

@@ -1,3 +1,4 @@
+//Código para ativar descrisção minuciosa do medicamento
 function abrirDescricao(carregarDescricao){
     //console.log("Carregar a descrição do remedio: " + carregarDescricao);
 
@@ -15,5 +16,4 @@ function reservarDescricao(reservarDescri){
     desc.style.display = 'none';
    document.body.style.overflow = 'auto';
     
-
 }

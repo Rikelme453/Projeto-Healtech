@@ -12,36 +12,8 @@
 
      <!--Icone favicon-->
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
-
-     <script> 
-        function funcao1()
-    {
-        var input = document. querySelector("#password");
-        var texto = input. value;
-        
-        if(texto.length < 8){
-            alert("Sua senha deve ter no minímo 8 caracteres")
-        }
-
-}
-    
-    </script>
     
 </head>
-<script>
-    /*
-function funcao1()
-    {
-        var input = document. querySelector("#password");
-        var texto = input. value;
-        
-        if(texto.length < 8){
-            alert("Sua senha deve ter no minímo 8 caracteres")
-        }
-
-}*/
-<script>
-
 <body>
 
   <div class="login1">
@@ -72,7 +44,7 @@ function funcao1()
             </div> 
             </div>
 
-            <input type="submit" value="Cadastrar-se" onclick="funcao1()">
+            <input type="submit" value="Cadastrar-se">
 
 
         </form>

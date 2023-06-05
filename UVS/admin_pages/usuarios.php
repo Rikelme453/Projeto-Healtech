@@ -93,7 +93,8 @@
         </div>
 <br>
 
-
+  <!-- Chamado das tabelas presente no banco de dados para exposição no site-->
+  <!-- Tabela de Usuário-->  
    <table class="tabela">
    
       <th class="tdDark">Email do Usuário</th>
@@ -132,6 +133,7 @@
 </div>
 
 <script>
+    //Código em script interno para realização da pesquisa dos registros no banco de dados
     var search = document.getElementById("pesquisar");
 
     search.addEventListener("keydown", function(event) {

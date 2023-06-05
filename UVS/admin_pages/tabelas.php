@@ -1,3 +1,4 @@
+<!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <?php
   include_once('../banco/dbconnect.php');
 
@@ -95,7 +96,9 @@ $result2 = $conexao -> query($sql2);
             </button>
         </div>
 <br>
+<!-- Chamado das tabelas presente no banco de dados para exposição no site-->
 
+<!-- Tabela de Profissionais--> 
 <table class="tabela">
       <th class="tdDark">Nome do Profissional</th>
       <th class="tdDark">Formação/Especialização</th>
@@ -146,6 +149,7 @@ $result2 = $conexao -> query($sql2);
 
 
 <br><br>
+<!-- Tabela de Medicamentos--> 
 <table class="tabela">
      
      <th class="tdDark">Arquivo</th>

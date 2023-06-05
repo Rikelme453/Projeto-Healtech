@@ -1,3 +1,4 @@
+//Código para utilização do menu responsivo
 function menuShow(){
     let mobileMenu = document.querySelector('.menu-mobile');{
         if (mobileMenu.classList.contains('open')){
