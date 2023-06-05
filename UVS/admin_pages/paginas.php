@@ -28,8 +28,8 @@
         <div class="info-cabecalho">
            
                 <img class="logo"src="../IMAGENS/UVS +.svg" alt="uvs logo">
-                <h5>UVS ADMINISTRATOR</h5>
-                <p>Ola, Admin</p>  
+                <h5>UVS Usuário</h5>
+                <p>Olá, User</p>  
         </div>
 
         </div>
@@ -43,6 +43,13 @@
             </div>
 
             <h4>Bem Vindo de Volta!</h4>
+           <p><?php include "../PHP/logado.php";
+                echo "<br>" . $logado; if($user != ""){
+                echo "<br>" . "Usúario: " .  $user;
+                }else{
+                    
+                }?></p>
+
             <a class="nome-colorido" href="administrador.php"> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
                 <hr>
             <a href="usuarios.php"> <i class="fa-solid fa-users" style="color: #076470;"></i>Usuários</a>

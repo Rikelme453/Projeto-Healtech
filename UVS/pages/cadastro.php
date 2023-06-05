@@ -14,6 +14,20 @@
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
     
 </head>
+<script>
+    /*
+function funcao1()
+    {
+        var input = document. querySelector("#password");
+        var texto = input. value;
+        
+        if(texto.length < 8){
+            alert("Sua senha deve ter no minímo 8 caracteres")
+        }
+
+}*/
+<script>
+
 <body>
 
   <div class="login1">

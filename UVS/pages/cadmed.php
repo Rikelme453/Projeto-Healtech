@@ -16,7 +16,7 @@
 <body>
 
   <div class="login1">
-  <img id="imagem1" src="../IMAGENS/logo.png" width="70%" ></img>
+  <img id="imagem1" src="../IMAGENS/UVS +.svg" width="70%" ></img>
      
      <p>Efetue o cadastro</p>
    </div>

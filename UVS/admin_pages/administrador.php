@@ -35,8 +35,8 @@
         <div class="info-cabecalho">
            
                 <img class="logo"src="../IMAGENS/UVS +.svg" alt="uvs logo">
-                <h5>UVS ADMINISTRATOR</h5>
-                <p>Ola, Admin</p>
+                <h5>UVS USUÁRIO</h5>
+                <p>Olá, User</p>
               
         </div>
     </header>
@@ -66,7 +66,7 @@
 
                 </div>
             </div>
-
+             <br>
            
             <a class="nome-colorido" href=""> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
                 <hr>

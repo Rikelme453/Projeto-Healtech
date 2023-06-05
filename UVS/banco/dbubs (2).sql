@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11/05/2023 às 01:06
+-- Tempo de geração: 05/06/2023 às 01:59
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -52,7 +52,7 @@ INSERT INTO `tbadmin` (`id`, `imagem`, `nome`, `email`) VALUES
 --
 
 CREATE TABLE `tbmedicamentos` (
-  `id` int(11) NOT NULL,
+  `ID` int(11) NOT NULL,
   `arquivo` varchar(255) NOT NULL,
   `data_upload` datetime NOT NULL,
   `nome` varchar(100) DEFAULT NULL,
@@ -64,7 +64,7 @@ CREATE TABLE `tbmedicamentos` (
 -- Despejando dados para a tabela `tbmedicamentos`
 --
 
-INSERT INTO `tbmedicamentos` (`id`, `arquivo`, `data_upload`, `nome`, `quant`, `caminho`) VALUES
+INSERT INTO `tbmedicamentos` (`ID`, `arquivo`, `data_upload`, `nome`, `quant`, `caminho`) VALUES
 (30, '645c205984c60', '2023-05-10 19:53:13', 'Hidroclotiazida', ' 17cx', '../upload/medarquivos/645c205984c60.png'),
 (31, '645c2190b812f', '2023-05-10 19:58:24', 'Losartana', ' 12 cx', '../upload/medarquivos/645c2190b812f.png'),
 (32, '645c220bd4746', '2023-05-10 20:00:27', 'Loratadina', ' 13cx', '../upload/medarquivos/645c220bd4746.png'),
@@ -92,8 +92,7 @@ INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) V
 ('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', 'Das 13hs às 17hs ', 10),
 ('Dra Livia Silva', 'Fisioterapeuta', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 12),
 ('Dr Gonçalves Guimarães', 'Psiquiatra', 'Quartas e Sextas', 'Das 8hs às 15hs da tarde', 13),
-('Dr Tom Marry', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 15hs da tarde', 15),
-('Dra Luana', 'Clinica2', 'Segunda,Terça', 'Das 13hs às 17hs ', 16);
+('Dr Tom Marry', 'Dentista', 'Segundas e Sextas-Feiras ', 'Das 8hs às 15hs da tarde', 15);
 
 -- --------------------------------------------------------
 
@@ -137,7 +136,7 @@ ALTER TABLE `tbadmin`
 -- Índices de tabela `tbmedicamentos`
 --
 ALTER TABLE `tbmedicamentos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Índices de tabela `tbmedicos`
@@ -165,7 +164,7 @@ ALTER TABLE `tbadmin`
 -- AUTO_INCREMENT de tabela `tbmedicamentos`
 --
 ALTER TABLE `tbmedicamentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de tabela `tbmedicos`

@@ -2,13 +2,10 @@
     include_once('../banco/dbconnect.php');
     if(!empty($_GET['id']))
     {
-       
 
         $id = $_GET['id'];
 
         $sqlSelect = "SELECT *  FROM tbubs WHERE id=$id";
-       
-
         $result = $conexao->query($sqlSelect);
 
         if($result->num_rows > 0)
@@ -31,7 +28,20 @@
             $resultDelete2 = $conexao->query($sqlDelete2);
         }
 
+    }else if(!empty($_GET['ID'])){
+
+        $id = $_GET['ID'];
+      
+        $sqlSelect3 = "SELECT *  FROM tbmedicamentos WHERE ID=$id";
+        $result3 = $conexao->query($sqlSelect3);
+
+        if($result3->num_rows > 0)
+        {
+            $sqlDelete3 = "DELETE FROM tbmedicamentos WHERE ID=$id";
+            $resultDelete3 = $conexao->query($sqlDelete3);
+        }
+
     }
-    header('Location:../pages/conta.php');
+    header('Location:../admin_pages/tabelas.php');
    
 ?>

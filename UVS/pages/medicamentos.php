@@ -159,11 +159,11 @@
                     <?php  echo $nomeMed[$a]; ?>
                   </div>
                   <div class="botao-remedio">
-                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao-<?php echo $valor['id']?>')">Mais Detalhes</button>
+                  <button class="botao-remedio" onclick="abrirDescricao('vis-descricao-<?php echo $valor['ID']?>')">Mais Detalhes</button>
                   </div>
               
 
-                    <div id="vis-descricao-<?php echo $valor['id'];?>" class="janela-remedio">
+                    <div id="vis-descricao-<?php echo $valor['ID'];?>" class="janela-remedio">
                           <div class="conteudo-janela">
 
                             <div class="remedio-descricao-imagem">
@@ -177,7 +177,7 @@
                             </div>
                          
                             <div class="botao-reservar">
-                              <button class="botao-reservar" href="medicamentos.php"  onclick="reservarDescricao('vis-descricao-<?php echo $valor['id']?>')">Voltar</button>
+                              <button class="botao-reservar" href="medicamentos.php"  onclick="reservarDescricao('vis-descricao-<?php echo $valor['ID']?>')">Voltar</button>
                             </div>
                       </div>
                      </div>
