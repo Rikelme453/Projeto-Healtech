@@ -150,11 +150,11 @@
             <input type="file" id="pegar" name="pegar" accept="image/*" placeholder="Selecionar" onchange="previewRemedio()" required><br><br>
             <img class="recebe-imagem" name="remedioimg" style="width: 300px; height: 300px">
             <br><br>
-            <input type="nome" name="nomeMed" placeholder="Nome do Medicamento">
+            <input class="caixa-dados" type="nome" name="nomeMed" placeholder="Nome do Medicamento">
             <br><br>
-            <input type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
+            <input class="caixa-dados" type="text" name="quantMed" placeholder="Quantidade de caixas em estoque">
             <br><br>
-            <img class="botao-upload "src="../ICONS/upload.png">
+            
             <input  type="submit" class="btn btn-primary" name="mandar" value="Enviar Informações">
             </form>
       </div>
