@@ -19,7 +19,6 @@
      
        }
       
-
        else if(isset($_POST['alterar2'])) {
 
         $id = $_POST['id'];

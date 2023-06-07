@@ -1,16 +1,4 @@
-<?php
-    include_once("../banco/dbconnect.php");
-    include "../banco/dbadmin.php";
-if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
-       {
-       move_uploaded_file($_FILES["imagem"]["tmp_name"],"../upload/admin".$_FILES["imagem"]["name"] );
-       echo "Atualização feita com sucesso";
 
-       }else{
-           $imagem = "";
-       }
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,8 +22,8 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"]))
         <div class="info-cabecalho">
            
                 <img  class="logo" src="../IMAGENS/UVS +.svg" alt="uvs logo">
-                <h5>UVS ADMINISTRATOR</h5>
-                <p>Ola, Admin</p>
+                <h5>UVS Usuário</h5>
+                <p>Olá, User</p>
               
         </div>
     </header>

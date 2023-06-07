@@ -31,12 +31,7 @@
             
            mysqli_query($conexao, $sql);
            mysqli_close($conexao);
-        }      
-        else{
-         echo "<p>Vixe Maria</p>";
-        }
-      
-      
+        }    
    }
    header('Location:../pages/medicamentos.php');
    

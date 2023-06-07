@@ -15,16 +15,16 @@
 
      <script>
     
-    function funcao2()
-    {
-        var input = document. querySelector("#password");
+   /* function funcao2()
+   {
+      var input = document. querySelector("#password");
         var texto = input. value;
         
         if(texto.length < 8){
             alert("Sua senha deve ter no minímo 8 caracteres")
         }
 
-}
+}*/
 
 
 </script>

@@ -58,16 +58,29 @@
 
             <div class="perfil-adm">
              
-            </div>
+            <div class="image-perfil">
 
-            <h4>Bem Vindo de Volta!</h4>
-            <p><?php include "../PHP/logado.php";
-                echo "<br>" . $logado; if($user != ""){
-                echo "<br>" . "Usúario: " .  $user;
-                }else{
-                    
-                }?></p>
-                
+                    <form action="">
+                                    
+                        <a class="image-perfil" href="user_admin.php"> 
+                            
+                        <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
+                        </a>
+                    <script src="../JS/perfil.js"></script>
+                    </form>
+
+                    <h4>Bem Vindo de Volta!</h4>
+                    <p><?php include "../PHP/logado.php";
+                    echo "<br>" . $logado; if($user != ""){
+                    echo "<br>" . "Usúario: " .  $user;
+                    }else{
+                        
+                    }?></p>
+
+                 </div>
+               </div>
+               <br>  
+               
             <a class="nome-colorido" href="administrador.php"> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
                 <hr>
             <a href="paginas.php"> <i class="fa-sharp fa-solid fa-file-lines" style="color: #076470;"></i> Páginas </a>
