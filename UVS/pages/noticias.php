@@ -120,9 +120,7 @@
             <div class="noticias-wraper">
 
               <div class="noticia-chave">
-              http://servicodados.ibge.gov.br/api/v3/noticias/
-
-
+                  <img src="https://ccs2.ufpel.edu.br/wp/wp-content/uploads/2022/06/POST-JUNHO-VERMELHO-E-LARANJA-400x400.png" width="100%"alt="">
                   <div class="noticia-preview">
                     <div class="categoria">
                       SAÚDE
