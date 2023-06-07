@@ -323,10 +323,10 @@ th{
 .noticia-chave{
     width: 40%;
     background-color: #78899e;
-    padding-top: 20%;
-    border: soild white;
+    padding-top: 35%;
     position: relative;
     margin-left: 20px;
+    background-image: url('https://saude.es.gov.br/Media/sesa/_Profiles/c4d8c6e6/f3f2cd0/Capa%20Mat%C3%A9ria%20Junho%20Vermelho.jpg?v=637895970505419920');
 }
 
 
@@ -342,7 +342,16 @@ th{
     font-size: 30px;
     line-height: 30px;
 }
+.noticia-preview-2{
+    color: #666666;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: _MONTSERRAT_BOLD_;
+    font-size: 12px;
+    display: block;
+    padding: 10px 15px 15px 20px;
+    font-weight: bold;
 
+}
 .categoria{
     color: #067a83;
     font-size: 14px;
@@ -368,7 +377,7 @@ th{
     flex-wrap: wrap;
     width: 40%;
     margin-left: 40px;
-   
+
 }
 
 .barra-vertical{
@@ -377,6 +386,9 @@ th{
     margin-left: 30px;
 }
 
+.noticia-links{
+    color: rgb(90, 86, 86);
+}
 .outra-noticia-1{
     background-color: rgb(94, 94, 94);
     width: 50%;
@@ -386,6 +398,50 @@ th{
     border: 2px solid white ;
     position: relative;
     margin-top: 20px;
+    background-image: url('https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/conselho-global-sobre-desigualdades-hiv-e-pandemias-e-lancado-no-brasil/52955030632_172f2d849a_o.png/@@images/51f7f155-168e-489e-9e40-0391371d7df7.png');
+
+    
+}
+
+.outra-noticia-2{
+    background-color: rgb(94, 94, 94);
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white ;
+    position: relative;
+    margin-top: 20px;
+    background-image: url('https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/ministerio-da-saude-incorpora-medicamento-inovador-para-malaria-ao-sus/mosquito-1/@@images/ccad135f-a5eb-4dc8-b42b-4b3a4c34764f.png');
+
+    
+}
+
+.outra-noticia-3{
+    background-color: rgb(94, 94, 94);
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white ;
+    position: relative;
+    margin-top: 20px;
+    background-image: url('https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/em-evento-no-chile-brasil-compartilha-experiencias-da-atencao-primaria-do-sus-como-referencia-internacional/saps.png/@@images/b40da628-63b1-4bee-bad3-d447138ec561.png');
+
+    
+}
+
+.outra-noticia-4{
+    background-color: rgb(94, 94, 94);
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white ;
+    position: relative;
+    margin-top: 20px;
+    background-image: url('https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/hospital-federal-do-andarai-no-rio-de-janeiro-inaugura-novo-setor-de-oncologia/whatsapp-image-2023-06-02-at-15.png/@@images/cbd315a4-3f0b-4a76-8f17-bf436183ec1b.png');
+
     
 }
 
@@ -393,6 +449,7 @@ th{
     /*background-color: #c94a4a;*/
     margin-top: 20px;
     display: flex;
+
   
 
 }
@@ -404,6 +461,7 @@ th{
     margin-left: 20px;
     background-color: #848486;
     background-size: cover;
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/03/criancas_uso_celular_tablet_tecnologia.jpg?w=876&h=484&crop=1');
 }
 
 /*Formatação previsão do tempo*/

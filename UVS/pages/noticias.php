@@ -60,18 +60,13 @@
       </div>
     </div>
   </nav>
-</header>
 
-  
   <br><br>
   
   <hr class="divisao-elementos">
 
   <div class="uvs-noticias-abertura">
-                <h2 class="uvs-noticia">UVS NOTÍCIAS| </h2>
-                <img class="logo-noticias" src="../IMAGENS/uvs-noticias alt="uvs notícias logomarca">
 
-               
             </div>
 
              <!--Slides-->
@@ -80,13 +75,8 @@
         <div class="slides">
             <input class="caixas-display" type="radio" name="slide" id="slide1" checked>
             <input class="caixas-display" type="radio" name="slide" id="slide2">
-            <input class="caixas-display" type="radio" name="slide" id="slide3">
-
+          
             <div class="slide s1">
-                <img src="../IMAGENS/campanha-1.png" alt="">
-            </div>
-
-            <div class="slide">
                 <img src="../IMAGENS/campanha-2.png" alt="">
             </div>
 
@@ -97,8 +87,8 @@
             <div class="barra-navegacao">
                 <label class="bar" for="slide1"></label>
                 <label class="bar" for="slide2"></label>
-                <label class="bar" for="slide3"></label>
-                
+            
+        
             </div>
 
         </div>
@@ -120,7 +110,7 @@
             <div class="noticias-wraper">
 
               <div class="noticia-chave">
-                  <img src="https://ccs2.ufpel.edu.br/wp/wp-content/uploads/2022/06/POST-JUNHO-VERMELHO-E-LARANJA-400x400.png" width="100%"alt="">
+                  
                   <div class="noticia-preview">
                     <div class="categoria">
                       SAÚDE
@@ -128,7 +118,7 @@
                     </div>
 
                     <div class="legenda-noticia">
-                        Veja algumas dicas de como se cuidar bem
+                    <a href="https://www12.senado.leg.br/radio/1/conexao-senado/2023/06/05/dedo-de-prosa-junho-vermelho">Junho Vermelho: mês de conscientização para a doação de sangue</a>
                       </div>
                    <div> 
                     </div>  
@@ -136,25 +126,39 @@
               </div>
 
               <div class="barra-vertical"></div>
+
                    <!--Outras notícias-->
 
               <div class="outras-noticias">
               
               <div class="outra-noticia-1">
-              <h3>Uma Noticia</h3>
-            
+
+              <div class="noticia-preview-2">
+             <a class="noticia-links" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/conselho-global-sobre-desigualdades-hiv-e-pandemias-e-lancado-no-brasil">Conselho Global sobre<br> Desigualdades, HIV e pandemias<br> é lançado no Brasil
+              </a>
               </div>
 
-              <div class="outra-noticia-1">
-              <h3>Uma noticias</h3>
               </div>
 
-              <div class="outra-noticia-1">
-              <h3>Uma notícia</h3>
+              <div class="outra-noticia-2">
+
+              <div class="noticia-preview-2">
+                <a class="noticia-links" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/ministerio-da-saude-incorpora-medicamento-inovador-para-malaria-ao-sus">Ministério da Saúde incorpora<br> medicamento inovador para<br> malária ao SUS
+                </a>
+              </div>
               </div>
 
-              <div class="outra-noticia-1">
-              <h3>Uma notícia</h3>
+              <div class="outra-noticia-3">
+              <div class="noticia-preview-2">
+              <a class="noticia-links" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/em-evento-no-chile-brasil-compartilha-experiencias-da-atencao-primaria-do-sus-como-referencia-internacional">Em evento no Chile,<br> Brasil compartilha experiências da atenção primária do SUS como referência internacional
+                </a>
+              </div>
+              </div>
+
+              <div class="outra-noticia-4">
+              <div class="noticia-preview-2">
+              <a class="noticia-links" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2023/junho/hospital-federal-do-andarai-no-rio-de-janeiro-inaugura-novo-setor-de-oncologia">Hospital Federal do Andaraí, <br>no Rio de Janeiro, inaugura novo<br> setor de oncologia</a>
+                </div>
               </div>
             </div>
             </div>
@@ -221,13 +225,7 @@
            
         </section>
 
-        <section class="enquetes-1">
-          <h1>ENQUETE</h1>
-          <ce:enquete id="12930010" question_size="5" option_size="6" img_option_size="5" font="Roboto, sans-serif" primary_color="#ff9f1c" secondary_color="#ffffff" height="804" ></ce:enquete>
-<script async type="text/javascript" src="https://www.criarenquete.com.br/user.js"></script>
-
-        </section>
-
+        
         <section class="chat-1">
           <div class="chat-comunitario">
 
