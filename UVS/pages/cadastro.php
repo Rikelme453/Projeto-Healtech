@@ -34,7 +34,7 @@
                     placeholder="insira o nome" required>
                  <label class="labtext">Data de Nascimento:</label>
                 <input class="form-control" type="date" name="data" id="data" 
-                    placeholder="Insira a data" required>
+                    placeholder="Insira a data" required >
                  <label class="labtext">Email do Usuário:</label>
                 <input class="form-control" type="text" name="email" id="email"
                     placeholder="insira o email" required>

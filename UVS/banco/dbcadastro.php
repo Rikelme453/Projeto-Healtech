@@ -11,19 +11,26 @@ $img2 = "https://compras.wiki.ufsc.br/images/5/56/Erro.png";
 if($email_tmp != ""){
 $email = $_POST['email'];
 
-	if($senha_tmp && $nome_tmp && $data_tmp != ""){
-$senha = $_POST['senha'];
-$nome = $_POST['nome'];
-$data = $_POST['data'];
+	if($senha_tmp && $nome_tmp && $data_tmp != "" && isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
+      $imagem= "../upload/".$_FILES["imagem"]["name"];
+      move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem);  
+   
+      $senha = $_POST['senha'];
+      $nome = $_POST['nome'];
+      $data = $_POST['data'];
 
-$sql= "INSERT INTO tbubs(nome, email, senha, data) values('$nome','$email', '$senha', '$data')";
+      $sql= "INSERT INTO tbubs(nome, email, senha, data , imagem) values('$nome','$email', '$senha', '$data', '$imagem')";
 
-mysqli_query($conexao, $sql);
-mysqli_close($conexao);
-}
+      mysqli_query($conexao, $sql);
+      mysqli_close($conexao);
+  }
 }
 header('Location:../pages/login.php');
 ?>
+ $sql= "INSERT INTO tbubs(nome, email, senha, data , imagem) values('$nome','$email', '$senha', '$data', '$imagem')";
+
+mysqli_query($conexao, $sql);
+mysqli_close($conexao);
 
 <?php /*
 include_once('../banco/dbconnect.php');

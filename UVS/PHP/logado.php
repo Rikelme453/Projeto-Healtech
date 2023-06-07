@@ -10,6 +10,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['senha'])){
       }
     }else{
       $user = null;
+      header('Location:../index.php');
     }
   }
 ?>
