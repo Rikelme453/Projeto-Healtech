@@ -12,25 +12,25 @@ if($email_tmp != ""){
 $email = $_POST['email'];
 
 	if($senha_tmp && $nome_tmp && $data_tmp != "" && isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
-      $imagem= "../upload/".$_FILES["imagem"]["name"];
+      $imagem = "../upload/perfil".$_FILES["imagem"]["name"];
       move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem);  
    
       $senha = $_POST['senha'];
       $nome = $_POST['nome'];
       $data = $_POST['data'];
+      $email = $_POST['email'];
 
       $sql= "INSERT INTO tbubs(nome, email, senha, data , imagem) values('$nome','$email', '$senha', '$data', '$imagem')";
 
       mysqli_query($conexao, $sql);
       mysqli_close($conexao);
   }
+}else{
+   header('Location:../pages/login.php');
 }
-header('Location:../pages/login.php');
-?>
- $sql= "INSERT INTO tbubs(nome, email, senha, data , imagem) values('$nome','$email', '$senha', '$data', '$imagem')";
 
-mysqli_query($conexao, $sql);
-mysqli_close($conexao);
+?>
+ 
 
 <?php /*
 include_once('../banco/dbconnect.php');

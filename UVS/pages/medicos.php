@@ -30,7 +30,7 @@ $result2 = $conexao -> query($sql2);
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../CSS/all-pages.css">
     
-    <title>Médicos</title>
+    <title>UVS|Médicos</title>
 
      <!--Menu formatação-->
      <link rel="stylesheet" href="../CSS/menu.css">
@@ -71,8 +71,7 @@ $result2 = $conexao -> query($sql2);
           <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
-
-           
+    
           <li>
           <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
@@ -81,13 +80,25 @@ $result2 = $conexao -> query($sql2);
               <li><a href="login.php">Login</a></li>
               <li><a href="cadastro.php">Cadastro</a></li>
               <li><a href="../admin_pages/administrador.php">Usuário</a></li>
-
-
           </li>
         </ul>
       </div>
+      <div class="perfil-adm">
+             
+             <div class="image-perfil">
+ 
+                     <form action="">
+                                     
+                         <a class="image-perfil" href="#"> 
+                             
+                         <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
+                         </a>
+                     <script src="../JS/perfil.js"></script>
+                  </form>
+       </div>
+     </div>
     </div>
-
+    
   </nav>
 
   <!--Menu para celular-->

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVS| Noticias</title>
+    <title>UVS|Noticias</title>
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
@@ -58,19 +58,34 @@
           </li>
         </ul>
       </div>
+      <div class="perfil-adm">
+             
+             <div class="image-perfil">
+ 
+                     <form action="">
+                                     
+                         <a class="image-perfil" href="#"> 
+                             
+                         <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
+                         </a>
+                     <script src="../JS/perfil.js"></script>
+                  </form>
+       </div>
+     </div>
     </div>
+    
   </nav>
 
   <br><br>
   
   <hr class="divisao-elementos">
-
+  
   <div class="uvs-noticias-abertura">
 
             </div>
 
              <!--Slides-->
-
+             <br>
       <div class="slideshow">
         <div class="slides">
             <input class="caixas-display" type="radio" name="slide" id="slide1" checked>

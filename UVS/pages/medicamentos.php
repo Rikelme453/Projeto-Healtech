@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="../CSS/all-pages.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Página de medicamentos</title>
+    <title>UVS|Medicamentos</title>
 
      <!--CSS estilo e menu-->
 
@@ -65,6 +65,20 @@
           </li>
         </ul>
       </div>
+      <div class="perfil-adm">
+             
+             <div class="image-perfil">
+ 
+                     <form action="">
+                                     
+                         <a class="image-perfil" href="#"> 
+                             
+                         <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
+                         </a>
+                     <script src="../JS/perfil.js"></script>
+                    </form>
+       </div>
+     </div>
     </div>
   </nav>
 
