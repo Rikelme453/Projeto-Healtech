@@ -13,7 +13,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     //print_r("<br>");
     //print_r("Senha: " . $senha);
 
-    $sql = "SELECT * FROM tbubs WHERE email = '$email' and senha = '$senha'";
+    $sql = "SELECT * FROM tbubs WHERE email = '$email' and senha = '$senha' ";
 
     $result = $conexao->query($sql);
 

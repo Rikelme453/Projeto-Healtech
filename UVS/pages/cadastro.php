@@ -27,7 +27,7 @@
     <main class="container">
         <h2>UVS | Cadastro</h2>
 
-        <form name="form1" method="post" action="../banco/dbcadastro.php" onsubmit="return valida_form()">
+        <form name="form1" method="post" action="../banco/dbcadastro.php" enctype="multipart/form-data" >
         <div class="input-field">
                 <label class="labtext">Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
@@ -45,13 +45,10 @@
               <label class="labtext">Imagem de Perfil:</label>
                <img  name="perfiluser" style="width: 150px; height: 150px">
                <input class="form-control" type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br>
-                <div class="underline"></div>
-            </div> 
+                
             </div>
 
-            <input type="submit" name="submit"  value="Cadastrar-se">
-
-
+            <input type="submit" name="submit" id="submit" value="Cadastrar-se">
         </form>
 
         

@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>UVS | Cadastro</title>
     <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../JS/perfil.js"></script>
 </head>
 <body>
 
@@ -65,9 +66,12 @@
                     placeholder="insira o email" value=<?php echo $email; ?>>
                 <label>Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
-                    placeholder="insira a senha" value=<?php echo $senha; ?>>
-                <div class="underline"></div>
-            </div> 
+                    placeholder="insira a senha" value=<?php echo $senha; ?>><br>
+                    
+                    <label class="labtext">Imagem de Perfil:</label>
+               <img  name="perfiluser" style="width: 150px; height: 150px">
+               <input class="form-control" type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br>
+                
             </div>
             <input type="hidden" name="id" value=<?php echo $id;?>>
             <input type="submit" value="Alterar" name="alterar" >

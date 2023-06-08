@@ -6,10 +6,19 @@
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $data = $_POST['data'];
-        $senha =$_POST['senha'];
+        $senha = $_POST['senha'];
+
+        $pasta = "../upload/perfil/";
+        $nomeArquivo = uniqid();
+        $extensao = strtolower(pathinfo($nomeArquivo, PATHINFO_EXTENSION));
+       
+    
+         $home = move_uploaded_file($arquivo["tmp_name"], $pasta .$nomeArquivo . "." .$extensao);
+         $caminho = $pasta .$nomeArquivo.  "."  .$extensao;
+
         
         $sqlInsert = "UPDATE tbubs
-        SET nome='$nome',senha='$senha',email='$email',data='$data'
+        SET nome='$nome',senha='$senha',email='$email',data='$data', caminho='$caminho', imagem = '$nomeArquivo'
         WHERE id=$id";
         
 
