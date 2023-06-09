@@ -93,7 +93,9 @@
                 <div class="caixa-info-primeira">
                     <div style="background-color: #0097B2; " class="caixa-info-primeira-texto">
                     <img src="../ICONS/mensg.png" alt="novas mensagens" width="60px" height="60px">
-                        <h3>00</h3>
+                        <h3 class="num-coisas">
+                      0
+                        </h3>
                         <p class="text-box">Novas Mensagens</p>
 
                         <div style="background-color: #207180;" class="cor-de-baixo"></div>
@@ -102,7 +104,23 @@
 
                     <div style="background-color:#E6C957" class="caixa-info-primeira-texto">
                     <img src="../ICONS/user.png" alt="novas mensagens" width="60px" height="60px">
-                        <h3>00</h3>
+                        <h3 class="num-coisas">
+                        <?php
+                        date_default_timezone_set('America/Sao_Paulo');
+                        include_once('../banco/dbconnect.php');
+
+                        $sql="SELECT * from tbubs";
+                       $result=$conexao-> query($sql);
+                       $count=0;
+                       if ($result-> num_rows > 0){
+                           while ($row=$result-> fetch_assoc()) {
+                   
+                               $count=$count+1;
+                           }
+                       }
+                       echo $count;
+                       ?>
+                        </h3 class="num-coisas">
                         <p class="text-box">Usuários Cadastrados</p>
                         
                         <div style="background-color: #B29B3E;" class="cor-de-baixo"></div>
@@ -111,7 +129,23 @@
 
                     <div style="background-color: #7ED957;" class="caixa-info-primeira-texto">
                     <img src="../ICONS/remedio.png" alt="novas mensagens" width="60px" height="60px">
-                        <h3>00</h3>
+                        <h3 class="num-coisas">
+                        <?php
+                        date_default_timezone_set('America/Sao_Paulo');
+                        include_once('../banco/dbconnect.php');
+
+                        $sql="SELECT * from tbmedicamentos";
+                       $result=$conexao-> query($sql);
+                       $count=0;
+                       if ($result-> num_rows > 0){
+                           while ($row=$result-> fetch_assoc()) {
+                   
+                               $count=$count+1;
+                           }
+                       }
+                       echo $count;
+                       ?>
+                        </h3>
                         <p class="text-box">Remédios Disponíveis</p>
                        
                         <div style="background-color: #79AF61;" class="cor-de-baixo"></div>
@@ -121,7 +155,23 @@
 
                     <div style="background-color: #B600C6;" class="caixa-info-primeira-texto">
                     <img src="../ICONS/form.png" alt="novas mensagens" width="60px" height="60px">
-                        <h3>00</h3>
+                        <h3 class="num-coisas">
+                        <?php
+                        date_default_timezone_set('America/Sao_Paulo');
+                        include_once('../banco/dbconnect.php');
+
+                        $sql="SELECT * from tbmedicos";
+                       $result=$conexao-> query($sql);
+                       $count=0;
+                       if ($result-> num_rows > 0){
+                           while ($row=$result-> fetch_assoc()) {
+                   
+                               $count=$count+1;
+                           }
+                       }
+                       echo $count;
+                       ?>
+                        </h3>
                         <p class="text-box">Agenda UBS</p>
 
                         <div style="background-color: #6C1074;" class="cor-de-baixo"></div>

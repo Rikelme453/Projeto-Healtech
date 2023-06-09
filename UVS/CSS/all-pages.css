@@ -230,10 +230,10 @@ th{
 
 .slideshow{
     height: 450px;
-    width: 50%;
+    width: 60%;
     overflow: hidden;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 80px;
@@ -593,6 +593,8 @@ th{
 }
 
 
+
+
 /*Responsividade página de médicos*/
 
 @media (max-width: 500px){
@@ -669,6 +671,43 @@ th{
             text-align: center;
             font-size: 25px;
         }
+        
+        
+    /*Responsividade da página de noticias*/
 
-       
+        .slideshow{
+            width: 110%;
+            margin-left: 60%;
+        }
+
+        .noticias-wraper{
+            width: 200%;
+        }
+
+        .noticia-chave{
+            width: 120%;
+        }
+
+        .outras-noticias{
+            width: 120%;
+            
+            
+        }
+
+        .noticia-preview-2{
+            font-size: 13px;
+        }
+
+        .tempo-1{
+            width: 210%;
+        }
+
+        .caixa-tempo{
+            height: 20%;
+        }
+        .chat-all{
+            width: 210%;
+        
+        }
     }
+
