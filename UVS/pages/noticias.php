@@ -24,6 +24,12 @@
     <link rel="stylesheet" href="../CSS/menu.css">
      <!--Icone favicon-->
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
+     <!-- Arquivos CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Arquivos JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
   
    
     
@@ -83,36 +89,14 @@
   <div class="uvs-noticias-abertura">
 
             </div>
-
+<br>
              <!--Slides-->
-             <br>
-      <div class="slideshow">
-        <div class="slides">
-            <input class="caixas-display" type="radio" name="slide" id="slide1" checked>
-            <input class="caixas-display" type="radio" name="slide" id="slide2">
-          
-            <div class="slide s1">
-                <img src="../IMAGENS/campanha-2.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="../IMAGENS/campanha-3.png" alt="">
-            </div>
-
-            <div class="barra-navegacao">
-                <label class="bar" for="slide1"></label>
-                <label class="bar" for="slide2"></label>
-            
-        
-            </div>
-
-        </div>
-
-    </div>
-    <br><br>
-      <!--Notícias-->
-
-      <main>
+   <div class="carousel">
+    <img src="../IMAGENS/campanha1.svg">
+    <img src="../IMAGENS/campanha2.svg">
+    <img src="../IMAGENS/campanha3.svg">
+</div>
+      <main class="mainNot">
         <div class="texto-principais-noticias">
             <h2>Confira as principais notícias</h2>
             <div class="barra-horizontal"></div>
@@ -306,6 +290,7 @@
         right: 20px;
         cursor: pointer;
         user-select: none;
+        z-index: 100;
         
       }
       </style>
@@ -316,5 +301,39 @@
         window.scrollTo({top: 0, behavior: "smooth"});
       });
     </script>
+    <script>
+ (function() {
+      var carousel = document.querySelector('.carousel');
+      var images = carousel.getElementsByTagName('img');
+      var currentIndex = 0;
+      var interval;
+
+      function fadeOutImage(index) {
+        images[index].classList.remove('active');
+      }
+
+      function fadeInImage(index) {
+        images[index].classList.add('active');
+      }
+
+      function nextImage() {
+        fadeOutImage(currentIndex);
+        currentIndex = (currentIndex + 1) % images.length;
+        fadeInImage(currentIndex);
+      }
+
+      function startCarousel() {
+        interval = setInterval(nextImage, 3000); // Altere o intervalo de troca de imagens aqui (em milissegundos)
+      }
+
+      carousel.addEventListener('click', function() {
+        clearInterval(interval);
+        nextImage();
+        startCarousel();
+      });
+
+      startCarousel();
+    })();
+</script>
 </body>
 </html>
