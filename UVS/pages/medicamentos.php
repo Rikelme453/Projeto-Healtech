@@ -129,13 +129,10 @@
          <img src="../IMAGENS/lupa1.png" class="btn-lupa">
 
          <datalist id="historico">
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
-           <option value="Dipiriona"></option>
+           <option value="DI">Dipirona</option>
+           <option value="IB">Ibuprofeno</option>
+           <option value="HI">Hidroclotiazida</option>
+        
            
            
          </datalist>
