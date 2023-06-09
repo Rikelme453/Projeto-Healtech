@@ -356,7 +356,7 @@
       }
 
       function startCarousel() {
-        interval = setInterval(nextImage, 3000); // Altere o intervalo de troca de imagens aqui (em milissegundos)
+        interval = setInterval(nextImage, 4000); // Altere o intervalo de troca de imagens aqui (em milissegundos)
       }
 
       carousel.addEventListener('click', function() {
