@@ -1,4 +1,7 @@
 <!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
+<?php
+  include_once "../banco/dbconnect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -242,6 +245,28 @@
               </div>
             </div>
             
+          </div>
+        </section>
+
+        <!--Artigos-->
+
+        <section class="artigos">
+        <?php
+      
+            $sql="SELECT * from tbartigos";
+            $result=$conexao-> query($sql);
+
+            while($user = mysqli_fetch_assoc($result)) {
+
+                
+                echo "<h1>".$user['titulo']."</h1>";
+                echo "<p>".$user['conteudo']."</p>";  
+               
+            }
+            ?>
+          <div class="artigos">
+
+
           </div>
         </section>
 

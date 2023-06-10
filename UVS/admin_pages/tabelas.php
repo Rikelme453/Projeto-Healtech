@@ -6,16 +6,20 @@
 {
   $data = $_GET['search'];
   $data_1 = $_GET['search'];
+  $data_2 = $_GET['search'];
   $sql = "SELECT * FROM tbmedicamentos WHERE  id LIKE '%$data%' or arquivo LIKE '%$data%' or  data_upload LIKE '%$data%' or nome LIKE '%$data%' or quant LIKE '%$data%' or caminho LIKE '%$data%' ORDER BY arquivo DESC";
   $sql2 = "SELECT * FROM tbmedicos WHERE Id LIKE '%$data_1%' or profissional LIKE '%$data_1%' or formacao LIKE '%$data_1%'  or dias LIKE '%$data_1%' or horarios LIKE '%$data_1%'  ORDER BY profissional DESC";
+  $sql3 = "SELECT * FROM tbartigos WHERE id LIKE '%$data_2%' or titulo LIKE '%$data_2%' or conteudo LIKE or '%$data_2%' ORDER BY titulo DESC";
 }
 else
 {
   $sql = "SELECT * FROM tbmedicamentos ORDER BY arquivo DESC";
   $sql2 = "SELECT * FROM tbmedicos ORDER BY profissional DESC";
+  $sql3 = "SELECT * FROM tbartigos ORDER BY titulo DESC";
 }
 $result = $conexao -> query($sql);
 $result2 = $conexao -> query($sql2);
+$result3 = $conexao -> query($sql3);
 
   ?>
 
@@ -193,7 +197,28 @@ $result2 = $conexao -> query($sql2);
      }
      ?>
 </table>
+
+<!--Tabela de artigos-->
+
+<table class="tabela">
+
+<th class="tdDark">Id</th>
+<th class="tdDark">Titulo</th>
+<th class="tdDark">Conteúdo</th>
+</table>
+
+<?php
+     while($user = mysqli_fetch_assoc($result3)) {
+        echo "<tr>";
+        echo "<td>".$user['id']."</td>";
+        echo "<td>".$user['titulo']."</td>";
+        echo "<td>".$user['conteudo']."</td>";
+     }
+
+?>
 </div>
+
+
 
 
 <script>

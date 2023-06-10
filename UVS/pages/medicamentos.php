@@ -149,6 +149,7 @@
                   include_once('../banco/dbconnect.php');
 
                   $sql = 'SELECT * FROM tbmedicamentos ORDER BY arquivo';
+                  
 
                   if($res = mysqli_query($conexao,$sql)){
                      $nomeMed = array();

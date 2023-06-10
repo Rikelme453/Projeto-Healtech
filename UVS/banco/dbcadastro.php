@@ -65,7 +65,7 @@ include_once('../banco/dbconnect.php');
            mysqli_close($conexao);
         }    
    }
-   header('Location: ../admin_pages/administrador.php');
+   header('Location: ../index.php');
    
 ?>
 

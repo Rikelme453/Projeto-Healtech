@@ -59,6 +59,7 @@
                    <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                     <h4>Bem Vindo de Volta!</h4>
                     <p><?php include "../PHP/logado.php";
+                        date_default_timezone_set('America/Sao_Paulo');
                 echo "<br>" . $logado; if($user != ""){
                 echo "<br>" . "Usúario: " .  $user;
                 }else{

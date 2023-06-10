@@ -68,17 +68,25 @@
         </ul>
       </div>
         <div class="perfil-adm">
-             
+       
             <div class="image-perfil">
+             
 
-                    <form action="">
-                                    
-                        <a class="image-perfil" href="#"> 
-                            
-                        <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
-                        </a>
+                        <img src ="     <?php
+              include_once "banco/dbconnect.php";
+              date_default_timezone_set('America/Sao_Paulo');
+            $sql = 'SELECT imagem, FROM tbubs ';
+
+            $result=$conexao-> query($sql);
+
+            while($user = mysqli_fetch_assoc($result)){
+              echo $user["imagem"];
+            }
+
+                      ?> " name="perfiluser" style="width: 60px; height: 60px">
+                        
                     <script src="/JS/perfil.js"></script>
-                    </form>
+                   
       </div>
     </div>
   </nav>

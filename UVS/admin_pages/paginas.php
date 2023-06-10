@@ -53,7 +53,9 @@
           
 
             <h4>Bem Vindo de Volta!</h4>
+
            <p><?php include "../PHP/logado.php";
+                  date_default_timezone_set('America/Sao_Paulo');
                 echo "<br>" . $logado; if($user != ""){
                 echo "<br>" . "Usúario: " .  $user;
                 }else{
@@ -92,16 +94,46 @@
                 <h3>Editor de páginas</h3>
                 <hr><br>
 
+                <?php
+                 date_default_timezone_set('America/Sao_Paulo');
+                    include_once('../banco/dbconnect.php');
+                    
+                   
+                if(isset($_POST['sendCardArt'])){
+
               
+                   
+                $titulo_a = $_POST['titulo'];
+                $conteudo_a = $_POST['conteudo'];
+
+              
+     
+
+                if($titulo_a && $conteudo_a!=""){
+                
+                 $titulo = $_POST['titulo'];
+                 $conteudo = $_POST['conteudo'];
+         
+
+                 $sql = "INSERT INTO tbartigos (titulo, conteudo) VALUES ('$titulo', '$conteudo')";
+
+                
+                 mysqli_query($conexao, $sql);
+                 mysqli_close($conexao);
+                }
+
+            }
+
+                ?>
             
 			               
                 <form method="POST" action="">
 
                 <label for="">Título</label>
-                <input type="text" name="artigo" id="titulo" placeholder="Título do Artigo"><br><br>
+                <input type="text" name="titulo" id="titulo" placeholder="Título do Artigo"><br><br>
 
                 <label for="">Conteúdo</label>
-                <textarea name="conteudo" id="trumbowyg-conteudo" rows="5" placeholder="Conteúdo do Artigo">
+                <textarea type="text" name="conteudo" id="trumbowyg-conteudo" rows="5" placeholder="Conteúdo do Artigo">
 
                 </textarea><br><br>
 
