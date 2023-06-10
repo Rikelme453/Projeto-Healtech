@@ -1,5 +1,8 @@
 <!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <!DOCTYPE html>
+<?php
+    include "../PHP/logado.php";
+?>
 <!--Idioma do site-->
 <html lang="pt-br">
 <head>
@@ -16,9 +19,9 @@
 
     <!--CSS estilo e menu da página INDEX-->
 
-    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
 
     <!--Fontes do Google-->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -43,57 +46,43 @@
      <button class="botao-responsivo" onclick= "menuShow()"><img src="./IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
-      <img class="img" src="./IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
+      <img class="img_1" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
       <script src="./JS/menu.js"></script>
 
-       <p id="texto-faxada">Unidade Virtual de Sáude<p> 
+       <p id="texto-faxada">Unidade Virtual de Saúde<p> 
 
        <div class="nav-links"> 
        <ul class="links">
           <li><a href="index.php">Home</a></li>
-          <li><a href="./pages/medicos.php">Médicos</a></li>
-          <li><a href="./pages/medicamentos.php">Medicamentos</a></li>
-          <li><a href="./pages/noticias.php">Campanhas e públicações</li>
+          <li><a href="../pages/medicos.php">Médicos</a></li>
+          <li><a href="../pages/medicamentos.php">Medicamentos</a></li>
+          <li><a href="../pages/noticias.php">Campanhas e públicações</li>
          
           <li>
             <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
 
-              <li><a href="pages/login.php">Login</a></li>
-              <li><a href="pages/cadastro.php">Cadastro</a></li>
-              <li><a href="./admin_pages/administrador.php">Usuário</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
+              <li><a href="../admin_pages/administrador.php">Usuário</a></li>
 
           </li>
         </ul>
       </div>
-        <div class="perfil-adm">
-       
-            <div class="image-perfil">
-             
-
-                        <img src ="     <?php
-              include_once "banco/dbconnect.php";
-              date_default_timezone_set('America/Sao_Paulo');
-            $sql = 'SELECT imagem, FROM tbubs ';
-
-            $result=$conexao-> query($sql);
-
-            while($user = mysqli_fetch_assoc($result)){
-              echo $user["imagem"];
-            }
-
-                      ?> " name="perfiluser" style="width: 60px; height: 60px">
-                        
-                    <script src="/JS/perfil.js"></script>
-                   
-      </div>
-    </div>
+      <div class="perfil">
+                    <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
+                                 
+                    <a class="image-perfil" href="user_admin.php"> 
+                    <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
+                    </a>
+                    <script src="../JS/perfil.js"></script>
+                    <p class="text_user"><?php echo nl2br("Usuário: " . $nome .
+                              "\n" . $logado);
+                     ?></p>
+            </div>
   </nav>
   
-    
-
-
   <!--Menu para celular-->
   <div class="menu-mobile">
 
@@ -101,13 +90,13 @@
           <li><a class="nav-item" href="index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
           <hr class="mobile-barra">
 
-          <li><a class="nav-item" href="./pages/medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
+          <li><a class="nav-item" href="../pages/medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
           <hr class="mobile-barra">
 
-          <li><a class="nav-item" href="./pages/medicamentos.php"> <i class="fa-sharp fa-solid fa-tablets" style="color: #dedede;"></i> Medicamentos </a></li>
+          <li><a class="nav-item" href="../pages/medicamentos.php"> <i class="fa-sharp fa-solid fa-tablets" style="color: #dedede;"></i> Medicamentos </a></li>
           <hr class="mobile-barra">
 
-          <li><a class="nav-item" href="./pages/noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
+          <li><a class="nav-item" href="../pages/noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
           
           <hr class="mobile-barra">
 
@@ -116,7 +105,7 @@
             <ul>
             <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
               <hr class="mobile-barra">
-              <li><a class="user-mobile" href="./admin_pages/administrador.php"> <i class="fa-solid fa-user"></i> Usuário</a></li>
+              <li><a class="user-mobile" href="../admin_pages/administrador.php"> <i class="fa-solid fa-user"></i> Usuário</a></li>
               <li><a class="user-mobile" href="../pages/login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
               <li><a class="user-mobile" href="../pages/cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
@@ -132,7 +121,7 @@
   <!--Conteúdo principal-->
 
   <main class="conteudo-principal">
-       <img class="index1" src="IMAGENS/indeximage.svg" alt="" draggable="false">
+       <img class="index1" src="../IMAGENS/indeximage.svg" alt="" draggable="false">
         <hr>
         <br>
 
@@ -142,7 +131,7 @@
 
           <div class="planos-img">
             <div class="plano-c">
-            <img src="IMAGENS/idososimage.svg" width="100%" draggable="false">  <a class="aqui1" href="#">Aqui</a>
+            <img src="../IMAGENS/idososimage.svg" width="100%" draggable="false">  <a class="aqui1" href="#">Aqui</a>
           
             <hr>
             <br> 
@@ -156,12 +145,12 @@
                   Aqui na nossa Unidade Virtual de Saúde, oferecemos uma ampla gama<br>de serviços de saúde para os idosos, desde consultas médicas regulares<br> até 
                   tratamentos especializados para doenças crônicas. 
                   Nossos profissionais<br> são altamente qualificados e experientes em cuidar da saúde dos idosos com todo<br> o cuidado e carinho que eles merecem.</p>
-                  <img class="idoso" src="IMAGENS/idoso.jpg" width="19%" height="19%" draggable="false">
+                  <img class="idoso" src="../IMAGENS/idoso.jpg" width="19%" height="19%" draggable="false">
             </div>
             <br>
             <hr>
             <div class="plano-c">
-            <img src="IMAGENS/fisicaimage.svg" alt="" width="100%">
+            <img src="../IMAGENS/fisicaimage.svg" alt="" width="100%">
             <a class="aqui2" href="#">Aqui</a>
             <hr>
             <br>
@@ -176,7 +165,7 @@
             <hr>  
 
             <div class="plano-c">
-            <img src="IMAGENS/mentalImage.svg" alt="" width="100%" draggable="false">
+            <img src="../IMAGENS/mentalImage.svg" alt="" width="100%" draggable="false">
             <a class="aqui3" href="#">Aqui</a>
             <hr>
             <br>
@@ -218,7 +207,7 @@
             <ul>
               <h3>Saiba mais sobre o projeto</h3>
 
-              <li class="lista"><a class="lista-link" href="../UVS/pages/quem_somos.php">Quem somos?</a></li>
+              <li class="lista"><a class="lista-link" href="../pages/quem_somos.php">Quem somos?</a></li>
               <li class="lista"><a class="lista-link" href="">Política da Empresa</a></li>
             </ul>
           </div>
@@ -239,7 +228,7 @@
         
       }
       </style>
-      <img id="btn-voltar-topo" src="IMAGENS/up.svg" width="5%" height="5%" draggable="false">
+      <img id="btn-voltar-topo" src="../IMAGENS/up.svg" width="5%" height="5%" draggable="false">
     
     <script>
       document.getElementById("btn-voltar-topo").addEventListener("click", function(){

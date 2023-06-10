@@ -29,14 +29,13 @@
         <p id="text">Mais Vida! Mais Saúde!<p>
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">HOME</a></li>       
+          <li><a href="../z-index/index.php">Home</a></li>       
           <li>
-            <a href="#">CONTA</a>
+            <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="../pages/conta.php">CONTA</a></li>
-              <li><a href="../pages/login.php">LOGIN</a></li>
-              <li><a href="../pages/cadastro.php">CADASTRO</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
           </li>
         </ul>
       </div>

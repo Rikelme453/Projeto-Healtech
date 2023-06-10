@@ -3,9 +3,6 @@
     include_once('../banco/dbconnect.php');
 
     if(isset($_POST['submit'])){
-        //print_r($_POST['imagem']);
-        //print_r($_POST['nome']);
-        //print_r($_POST['email']);
 
        if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
             $imagem= "../upload/".$_FILES["imagem"]["name"];

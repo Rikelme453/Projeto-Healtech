@@ -6,14 +6,38 @@
 *{
   margin: 0;
   padding: 0;
-  
   font-family: 'Poppins', sans-serif;
 }
 #texto-faxada{
   font-family: 'Arial';
   color: hsl(0, 0%, 100%);
+  margin-left: 0%;
+  position: relative;
 
 }
+.img_1{
+  width: 8%;
+  height: 100%;
+  margin-left: 1%;
+}
+.perfil{
+  background: #3c567c;
+  width: 19%;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  margin-left: 3%;
+  border-radius: 4px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+ .img_per{
+  float: left; 
+}
+.text_user{
+  position: relative;
+  margin-left: 1%;
+}
+
 .menu3{
   position: fixed;
   top: 0;

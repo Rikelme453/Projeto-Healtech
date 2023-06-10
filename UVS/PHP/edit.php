@@ -48,7 +48,7 @@
      <h3>Você é importante!<br>
          Junte-se a nós!
      <h3>
-     <p>Efetue o cadastro para acessar o site</p>
+     <p>Atualize as informações necessárias para o bom funcionamento do sistema</p>
    </div>
     <main class="container">
         <h2>UVS | Cadastro</h2>
@@ -67,10 +67,6 @@
                 <label>Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
                     placeholder="insira a senha" value=<?php echo $senha; ?>><br>
-                    
-                    <label class="labtext">Imagem de Perfil:</label>
-               <img  name="perfiluser" style="width: 150px; height: 150px">
-               <input class="form-control" type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br>
                 
             </div>
             <input type="hidden" name="id" value=<?php echo $id;?>>

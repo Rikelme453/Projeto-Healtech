@@ -16,6 +16,9 @@
   ?>
 
 <!DOCTYPE html>
+<?php
+    include "../PHP/logado.php";
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -57,29 +60,25 @@
     <section class="main">
         <div class="sidebar">
 
-            <div class="perfil-adm">
-             
-            <div class="image-perfil">
+        <div class="perfil-adm">
+                <div class="image-perfil">
 
-                    <form action="">
-                                    
-                        <a class="image-perfil" href="user_admin.php"> 
-                            
-                        <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
-                        </a>
+                <form action="">
+                                   
+                    <a class="image-perfil" href="user_admin.php"> 
+                        
+                    <img src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
+                </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
+                   <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
+                    <h4>Administre o Sistema!</h4>
+                    <p><?php echo nl2br("Usuário: " . $nome .
+                              "\n". "Email: " . $logado);
+                     ?></p>
 
-                    <h4>Bem Vindo de Volta!</h4>
-                    <p><?php include "../PHP/logado.php";
-                    echo "<br>" . $logado; if($user != ""){
-                    echo "<br>" . "Usúario: " .  $user;
-                    }else{
-                        
-                    }?></p>
-
-                 </div>
-               </div>
+                </div>
+            </div>
                <br>  
                
             <a class="nome-colorido" href="administrador.php"> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>

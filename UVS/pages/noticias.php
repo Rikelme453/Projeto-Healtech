@@ -1,9 +1,11 @@
 <!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
+<!DOCTYPE html>
 <?php
   include_once "../banco/dbconnect.php";
+  include "../PHP/logado.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,44 +47,37 @@
      <script src="../JS/menu.js"></script>
 
     
-      <img class="logo-marca" src="../IMAGENS/UVS +.svg" ></img>
+      <img class="img_1" src="../IMAGENS/UVS +.svg" ></img>
         <p id="texto-faxada">Unidade Virtual de Sáude<p>
        <div class="nav-links"> 
        <ul class="links">
-       <li><a href="../index.php">Home</a></li>
+       <li><a href="../z-index/index.php">Home</a></li>
           <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
-           
           <li>
-
-
-
+            
           <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
-
             <ul class="htmlCss-sub-menu sub-menu">
 
-              <li><a href="login.php">Login</a></li>
-              <li><a href="cadastro.php">Cadastro</a></li>
+              <li><a href="../pages/login.php">Login</a></li>
+              <li><a href="../pages/cadastro.php">Cadastro</a></li>
               <li><a href="../admin_pages/administrador.php">Usuário</a></li>
           </li>
         </ul>
       </div>
-      <div class="perfil-adm">
-             
-             <div class="image-perfil">
- 
-                     <form action="">
-                                     
-                         <a class="image-perfil" href="#"> 
-                             
-                         <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
-                         </a>
-                     <script src="../JS/perfil.js"></script>
-                    </form>
-       </div>
-     </div>
+      <div class="perfil">
+                    <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
+                                 
+                    <a class="image-perfil" href="user_admin.php"> 
+                    <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
+                    </a>
+                    <script src="../JS/perfil.js"></script>
+                    <p class="text_user"><?php echo nl2br("Usuário: " . $nome .
+                              "\n" . $logado);
+                     ?></p>
+            </div>
     </div>
   </nav>
 

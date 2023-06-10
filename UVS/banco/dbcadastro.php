@@ -42,11 +42,7 @@ include_once('../banco/dbconnect.php');
       $nomeArquivo = $arquivo["name"];
       $novonomeArquivo = uniqid();
       $extensao = strtolower(pathinfo($nomeArquivo, PATHINFO_EXTENSION));
-      
-    
-      if($extensao !="jpg" && $extensao != "PNG"){
-          die("Arquivo incompativel");
-         }
+   
 
          $home = move_uploaded_file($arquivo["tmp_name"], $pasta .$novonomeArquivo . "." .$extensao);
          $imagem = $pasta .$novonomeArquivo . "." .$extensao;
@@ -65,7 +61,7 @@ include_once('../banco/dbconnect.php');
            mysqli_close($conexao);
         }    
    }
-   header('Location: ../index.php');
+   header('Location:../pages/login.php');
    
 ?>
 

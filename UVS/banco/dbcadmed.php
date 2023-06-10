@@ -22,7 +22,7 @@ mysqli_query($conexao, $sql);
 mysqli_close($conexao);
 }
 }
-header('Location:../pages/conta.php');
+header('Location:../admin_pages/administrador.php');
 ?>
 
 

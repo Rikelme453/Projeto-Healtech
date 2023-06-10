@@ -17,6 +17,9 @@ $result2 = $conexao -> query($sql2);
   ?>
 
 <!DOCTYPE html>
+<?php
+    include "../PHP/logado.php";
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -60,14 +63,14 @@ $result2 = $conexao -> query($sql2);
      <button class="botao-responsivo" onclick= "menuShow()"><img src="../IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
-      <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
+      <img class="img_1" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
       <script src="../JS/menu.js"></script>
 
         <p id="texto-faxada">Unidade Virtual de Sáude<p>
 
        <div class="nav-links"> 
        <ul class="links">
-          <li><a href="../index.php">Home</a></li>
+          <li><a href="../z-index/index.php">Home</a></li>
           <li><a href="medicos.php">Médicos</a></li>
           <li><a href="medicamentos.php">Medicamentos</a></li>
           <li><a href="noticias.php">Campanhas e públicações</li>
@@ -83,20 +86,17 @@ $result2 = $conexao -> query($sql2);
           </li>
         </ul>
       </div>
-      <div class="perfil-adm">
-             
-             <div class="image-perfil">
- 
-                     <form action="">
-                                     
-                         <a class="image-perfil" href="#"> 
-                             
-                         <img src=<?php ?> name="perfiluser" style="width: 60px; height: 60px">
-                         </a>
-                     <script src="../JS/perfil.js"></script>
-                  </form>
-       </div>
-     </div>
+      <div class="perfil">
+                    <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
+                                 
+                    <a class="image-perfil" href="user_admin.php"> 
+                    <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
+                    </a>
+                    <script src="../JS/perfil.js"></script>
+                    <p class="text_user"><?php echo nl2br("Usuário: " . $nome .
+                              "\n" . $logado);
+                     ?></p>
+            </div>
     </div>
     
   </nav>

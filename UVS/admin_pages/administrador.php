@@ -1,6 +1,6 @@
 <!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
 <?php
-    
+    include "../PHP/logado.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,25 +52,21 @@
                                    
                     <a class="image-perfil" href="user_admin.php"> 
                         
-                    <img src=<?php echo $imagem?> name="perfiluser" style="width: 60px; height: 60px">
+                    <img src=<?php echo $caminho; ?> name="perfiluser" style="width: 60px; height: 60px">
                 </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
                    <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                     <h4>Bem Vindo de Volta!</h4>
-                    <p><?php include "../PHP/logado.php";
-                        date_default_timezone_set('America/Sao_Paulo');
-                echo "<br>" . $logado; if($user != ""){
-                echo "<br>" . "Usúario: " .  $user;
-                }else{
-                    
-                }?></p>
+                    <p><?php echo nl2br("Usuário: " . $nome.
+                              "\n". "Email: " . $logado );
+                     ?></p>
 
                 </div>
             </div>
              <br>
            
-            <a class="nome-colorido" href=""> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
+            <a class="nome-colorido" href="#"> <i class="fa-solid fa-house" style="color: #076470;"></i> Dashboard</a>
                 <hr>
             <a href="paginas.php"> <i class="fa-sharp fa-solid fa-file-lines" style="color: #076470;"></i> Páginas </a>
                 <hr>

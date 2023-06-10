@@ -16,11 +16,6 @@ body{
     background: rgb(255, 255, 255);
 }
 /*Formatação do menu nav bar, baseado na formatação da página inicial*/
-.logo-marca{
-    width: 8%;
-    height: 100%;
-    margin-left: 4%;
-}
 
 .banner-remedios img{
     height: 30%;
@@ -212,7 +207,7 @@ th{
 }
 .logo-noticias{
     display: flex;
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .uvs-noticia{
