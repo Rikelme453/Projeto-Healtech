@@ -93,9 +93,9 @@ $result2 = $conexao -> query($sql2);
                     <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
                     </a>
                     <script src="../JS/perfil.js"></script>
-                    <p class="text_user"><?php echo nl2br("Usuário: " . $nome .
-                              "\n" . $logado);
-                     ?></p>
+                    <p class="text_user"><?php echo nl2br("Olá, " . $nome);
+                    
+                     ?></p><a class="sair-link" href="../pages/sair.php"> <i class="fa-solid fa-right-from-bracket" style="color: white;"></i></a>
             </div>
     </div>
     

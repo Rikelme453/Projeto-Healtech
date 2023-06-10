@@ -21,6 +21,10 @@ body{
     height: 30%;
 }
 
+.img_per{
+    border-radius: 30px;
+    
+  }
 .index1{
     width: 100%;
     margin-top: 2%;

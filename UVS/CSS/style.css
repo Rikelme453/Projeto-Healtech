@@ -13,6 +13,18 @@ body{
     font-size: 16px;
     margin-right: 10%;
 }
+
+.sair-link{
+  color: white;
+  text-decoration: none;
+
+}
+
+.img_per{
+  border-radius: 30px;
+  
+}
+
 #text2{
     font-size: 25px;
     color:  #000000;

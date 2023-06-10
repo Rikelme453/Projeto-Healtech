@@ -43,11 +43,11 @@
     
 <nav class="menu3">
     <div class="navbar">
-     <button class="botao-responsivo" onclick= "menuShow()"><img src="./IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
+     <button class="botao-responsivo" onclick= "menuShow()"><img src="../IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
       <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
-      <script src="./JS/menu.js"></script>
+      <script src="../JS/menu.js"></script>
 
        <p id="texto-faxada">Unidade Virtual de Saúde<p> 
 
@@ -77,9 +77,9 @@
                     <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
                     </a>
                     <script src="../JS/perfil.js"></script>
-                    <p class="text_user"><?php echo nl2br("Usuário: " . $nome .
-                              "\n" . $logado);
-                     ?></p>
+                    <p class="text_user"><?php echo nl2br("Olá, " . $nome);
+                     ?></p> 
+                      <a class="sair-link" href="../pages/sair.php"> <i class="fa-solid fa-right-from-bracket" style="color: white;"></i></a>
             </div>
   </nav>
   
