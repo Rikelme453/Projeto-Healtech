@@ -46,7 +46,7 @@
      <button class="botao-responsivo" onclick= "menuShow()"><img src="./IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
-      <img class="img_1" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
+      <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" draggable="false" ></img>
       <script src="./JS/menu.js"></script>
 
        <p id="texto-faxada">Unidade Virtual de Saúde<p> 

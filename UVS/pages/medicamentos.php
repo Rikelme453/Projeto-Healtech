@@ -44,7 +44,7 @@
      <script src="../JS/menu.js"></script>
 
     
-      <img class="img_1" src="../IMAGENS/UVS +.svg" ></img>
+      <img class="img" src="../IMAGENS/UVS +.svg" ></img>
         <p id="texto-faxada">Unidade Virtual de Sáude<p>
        <div class="nav-links"> 
        <ul class="links">

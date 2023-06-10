@@ -63,7 +63,7 @@ $result2 = $conexao -> query($sql2);
      <button class="botao-responsivo" onclick= "menuShow()"><img src="../IMAGENS/menu_white_36dp.svg" alt="botao responsivo"></button>
 
      
-      <img class="img_1" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
+      <img class="img" src="../IMAGENS/UVS +.svg" alt="Logo da uvs" ></img>
       <script src="../JS/menu.js"></script>
 
         <p id="texto-faxada">Unidade Virtual de Sáude<p>
