@@ -206,7 +206,7 @@ $resulth = $conexao -> query($sql3);
 <th class="tdDark">Id</th>
 <th class="tdDark">Titulo</th>
 <th class="tdDark">Conteúdo</th>
-</table>
+
 
 <?php
      while($user = mysqli_fetch_assoc($resulth)) {
@@ -218,6 +218,7 @@ $resulth = $conexao -> query($sql3);
      }
 
 ?>
+</table>
 </div>
 
 
