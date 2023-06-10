@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/06/2023 às 19:23
+-- Tempo de geração: 10/06/2023 às 22:45
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -54,6 +54,25 @@ INSERT INTO `tbadmin` (`id`, `imagem`, `nome`, `email`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `tbartigos`
+--
+
+CREATE TABLE `tbartigos` (
+  `titulo` varchar(100) NOT NULL,
+  `conteudo` varchar(1000) NOT NULL,
+  `id` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tbartigos`
+--
+
+INSERT INTO `tbartigos` (`titulo`, `conteudo`, `id`) VALUES
+('Aqui', '<p>aqui</p>\r\n                ', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `tbmedicamentos`
 --
 
@@ -71,7 +90,10 @@ CREATE TABLE `tbmedicamentos` (
 --
 
 INSERT INTO `tbmedicamentos` (`ID`, `arquivo`, `data_upload`, `nome`, `quant`, `caminho`) VALUES
-(30, '645c205984c60', '2023-05-10 19:53:13', 'Hidroclotiazida', ' 17cx', '../upload/medarquivos/645c205984c60.png');
+(36, '6484bda735bb7', '2023-06-10 15:15:03', 'Hidroclotiazida', ' 17cx', '../upload/medarquivos/6484bda735bb7.png'),
+(37, '6484bdc2d37de', '2023-06-10 15:15:30', 'Metformina', ' 13cx', '../upload/medarquivos/6484bdc2d37de.png'),
+(38, '6484bde38d270', '2023-06-10 15:16:03', 'Losartana', ' 13cx', '../upload/medarquivos/6484bde38d270.png'),
+(39, '6484be04e0ab5', '2023-06-10 15:16:36', 'Dipirona', ' 3cx', '../upload/medarquivos/6484be04e0ab5.png');
 
 -- --------------------------------------------------------
 
@@ -92,10 +114,10 @@ CREATE TABLE `tbmedicos` (
 --
 
 INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) VALUES
-('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', 'Das 13hs às 17hs ', 10),
-('Dra Livia Silva', 'Fisioterapeuta', 'Quartas e Sextas', 'Das 7hs às 14hs da tarde', 12),
-('Dr Gonçalves Guimarães', 'Psiquiatra', 'Quartas e Sextas', 'Das 8hs às 15hs da tarde', 13),
-('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', 'Das 13hs às 17hs ', 15);
+('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', '9hs às 10hs', 1),
+('Dr Gomes Sousa', 'Neurologista', 'Segundas e Terça', '9hs às 10hs', 2),
+('Dra Luana', 'Pediatra', 'Segundas e Quartas', '8hs às 10hs', 3),
+('Dra Edilaine', 'Clinica', 'Segundas e Quartas', '8hs às 10hs', 4);
 
 -- --------------------------------------------------------
 
@@ -118,16 +140,13 @@ CREATE TABLE `tbubs` (
 --
 
 INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`, `caminho`, `imagem`) VALUES
-('luan001@gmail.com', 'luan123', 'bolinha2', '2023-03-07', 5, '../upload/perfil/64820aacef26a.', '64820aacef26a'),
-('luan924@gmail.com', '12345', 'Jordan', '2022-12-03', 7, '../upload/perfil/64820a9f57bbe.', '64820a9f57bbe'),
-('ederson@gmail.com', '90645te', 'Ederson', '2022-12-05', 9, '../upload/perfil/64820b063d99c.', '64820b063d99c'),
-('jerrymorto@gmail.com', '12345t', 'Tom', '2024-02-12', 13, '../upload/perfil/64820bde488eb.', '64820bde488eb'),
-('mariellesilva@gmail.com', '1234567', 'Marielle', '2023-12-03', 15, '../upload/perfil/64820c04c5493.', '64820c04c5493'),
-('suzanna@gmail.com', '12345', 'Suzanna13', '2003-12-03', 16, '../upload/perfil/6482096a14586.', '6482096a14586'),
-('mariene@gmail.com', '9894ggfr5', 'Mariene', '2004-12-03', 17, '../upload/perfil/64820bf02300f.', '64820bf02300f'),
-('cicero.batista6@aluno.ce.gov.br', '12345678', 'Rikelme', '1212-12-12', 25, '../upload/perfil/64820cecde711.', '64820cecde711'),
-('susanna@gmail.com', '12345678', 'Rikelme', '1222-12-12', 27, '../upload/perfil/6481dcddc20d5.jpg', '6481dcddc20d5'),
-('edilaine@gmail.com', '12345678', 'Rikelme', '1222-12-12', 28, '../upload/perfil/6481e2ee23642.jpg', '6481e2ee23642');
+('luan924@gmail.com', '12345678', 'Rikelme', '2005-12-12', 1, '../upload/perfil/648458e6e2225.jfif', '648458e6e2225'),
+('suzanna@gmail.com', 'hecwgucvg7652346576³', 'Suzanna Alencar', '2023-12-12', 2, '../upload/perfil/6484b7bbec8c1.jfif', '6484b7bbec8c1'),
+('marcelobiologia@gmail.com', 'tfgefugcib1234£', 'Marcelo', '1979-04-13', 3, '../upload/perfil/6484b88ce2f9f.jfif', '6484b88ce2f9f'),
+('edbatera@gmail.com', 'jhebdvbuedieb64895³', 'Edmar Batista', '1979-02-14', 4, '../upload/perfil/6484b8f55cc0e.jfif', '6484b8f55cc0e'),
+('marieneluz@gmail.com', 'Mary²12345#', 'Mariene Lopes', '2003-04-03', 5, '../upload/perfil/6484b9488dcc7.jfif', '6484b9488dcc7'),
+('mortalkombat@gmail.com', 'refjbfurg73#', 'Jonnny ', '1980-02-01', 6, '../upload/perfil/6484b9e72bd12.webp', '6484b9e72bd12'),
+('touroferdinando@gmail.com', 'rtsyeb#4567', 'Ferdinando', '2002-03-01', 7, '../upload/perfil/6484ba2872b12.png', '6484ba2872b12');
 
 --
 -- Índices para tabelas despejadas
@@ -137,6 +156,12 @@ INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`, `caminho`, `imagem`
 -- Índices de tabela `tbadmin`
 --
 ALTER TABLE `tbadmin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `tbartigos`
+--
+ALTER TABLE `tbartigos`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -168,22 +193,28 @@ ALTER TABLE `tbadmin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT de tabela `tbartigos`
+--
+ALTER TABLE `tbartigos`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de tabela `tbmedicamentos`
 --
 ALTER TABLE `tbmedicamentos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de tabela `tbmedicos`
 --
 ALTER TABLE `tbmedicos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `tbubs`
 --
 ALTER TABLE `tbubs`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

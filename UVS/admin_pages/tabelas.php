@@ -17,9 +17,9 @@ else
   $sql2 = "SELECT * FROM tbmedicos ORDER BY profissional DESC";
   $sql3 = "SELECT * FROM tbartigos ORDER BY titulo DESC";
 }
-$result = $conexao -> query($sql);
+$resultA = $conexao -> query($sql);
 $result2 = $conexao -> query($sql2);
-$result3 = $conexao -> query($sql3);
+$resulth = $conexao -> query($sql3);
 
   ?>
 
@@ -177,7 +177,7 @@ $result3 = $conexao -> query($sql3);
      <th class="tdDark">Ação</th>
 
      <?php 
-     while($user = mysqli_fetch_assoc($result)) {
+     while($user = mysqli_fetch_assoc($resultA)) {
       echo "<tr>";
       echo "<td>".$user['arquivo']."</td>";
       echo "<td>".$user['data_upload']."</td>";
@@ -209,11 +209,12 @@ $result3 = $conexao -> query($sql3);
 </table>
 
 <?php
-     while($user = mysqli_fetch_assoc($result3)) {
+     while($user = mysqli_fetch_assoc($resulth)) {
         echo "<tr>";
-        echo "<td>".$user['id']."</td>";
         echo "<td>".$user['titulo']."</td>";
         echo "<td>".$user['conteudo']."</td>";
+        echo "<td>".$user['id']."</td>";
+
      }
 
 ?>

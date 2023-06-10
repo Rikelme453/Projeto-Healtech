@@ -11,7 +11,7 @@
   {
       $sql = "SELECT * FROM tbubs ORDER BY email DESC";
   }
-  $result = $conexao -> query($sql);
+  $resultn = $conexao -> query($sql);
 
   ?>
 
@@ -118,7 +118,7 @@
       
     <?php
     
-    while($user_data = mysqli_fetch_assoc($result)) {
+    while($user_data = mysqli_fetch_assoc($resultn)) {
 
                             echo "<tr>";
                             echo "<td>".$user_data['email']."</td>";
