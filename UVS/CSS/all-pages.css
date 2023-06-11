@@ -443,26 +443,14 @@ th{
 
     
 }
+/*Formatação artigos*/
 
-.subnoticias{
-    /*background-color: #c94a4a;*/
-    margin-top: 20px;
-    display: flex;
-
-  
-
+.artigos {
+    text-align: center;
+    margin-top: 5%;
+    color: #1B1749;
+    font-weight: bold;
 }
-
-.sub-noticias-1{
-    flex-wrap: wrap;
-    width: 12%;
-    padding-top: 2%;
-    margin-left: 20px;
-    background-color: #848486;
-    background-size: cover;
-    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/03/criancas_uso_celular_tablet_tecnologia.jpg?w=876&h=484&crop=1');
-}
-
 /*Formatação previsão do tempo*/
 
 .previsao-tempo{
@@ -674,9 +662,9 @@ th{
         
     /*Responsividade da página de noticias*/
 
-        .slideshow{
-            width: 110%;
-            margin-left: 60%;
+        #carouselExampleIndicators{
+            width: 210%;
+           height: 100%;
         }
 
         .noticias-wraper{

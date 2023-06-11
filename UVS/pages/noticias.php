@@ -213,37 +213,11 @@
             </div>
             </div>
             
-            <!--Subnotícias-->
-            <div class="subnoticias">
-
-              <div class="sub-noticias-1">
-                <h3>Outras notícas</h3>
-                <div class="sub-legendas">
-                  Assunto
-            </div>
-              </div>
-
-              <div class="sub-noticias-1">
-                <h3>Outras notícas</h3>
-                <div class="sub-legendas">
-                  Assunto
-            </div>
-                
-              </div>
-
-              <div class="sub-noticias-1">
-                <h3>Outras notícas</h3>
-                <div class="sub-legendas">
-                  Assunto
-            </div>
-                
-              </div>
-            </div>
-            
-          </div>
-        </section>
+        </section><br><br>
 
         <!--Artigos-->
+            <h2 class="pagTitle" style="color: blue;">Artigos do dia</h2>
+            <div class="barra-horizontal"></div>
 
         <section class="artigos">
         <?php
@@ -254,15 +228,12 @@
             while($user = mysqli_fetch_assoc($result)) {
 
                 
-                echo "<h1>".$user['titulo']."</h1>";
+                echo "<h3>".$user['titulo']."</h3>";
                 echo "<p>".$user['conteudo']."</p>";  
                
             }
             ?>
-          <div class="artigos">
 
-
-          </div>
         </section>
 
         <section class="previsao-tempo">

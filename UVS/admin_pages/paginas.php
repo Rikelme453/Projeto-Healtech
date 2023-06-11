@@ -23,6 +23,9 @@
     <script src="https://kit.fontawesome.com/7cdd971c93.js" crossorigin="anonymous"></script>
     <title>UVS| ADMINISTRATOR</title>
 
+    
+
+
      <!--Icone favicon-->
      <link rel="shortcut icon" href="../IMAGENS/UVS-.ico" type="image/x-icon">
 </head>
@@ -136,6 +139,9 @@
 
                 <input type="submit" value="Enviar Alterações" name="sendCardArt">
 
+                <!--Editor de texo trumbowyg plugins-->
+                <script src="../dist/plugins/upload/trumbowyg.upload.min.js"></script>
+                <script src="../dist/plugins/emoji/trumbowyg.emoji.min.js"></script>
                 <script>
                 $('#trumbowyg-conteudo').trumbowyg({
                 btns: [
@@ -146,12 +152,26 @@
                 ['superscript', 'subscript'],
                 ['link'],
                 ['insertImage'],
+                ['upload'],
                 ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
                 ['unorderedList', 'orderedList'],
                 ['horizontalRule'],
                 ['removeformat'],
-                ['fullscreen']
+                ['emoji'],
+                ['fullscreen'],
+               
                             ],
+                            plugins: {
+        // Add imagur parameters to upload plugin for demo purposes
+        upload: {
+            serverPath: 'https://api.imgur.com/3/image',
+            fileFieldName: 'image',
+            headers: {
+                'Authorization': 'Client-ID xxxxxxxxxxxx'
+            },
+            urlPropertyName: 'data.link'
+        }
+    },
                     autogrow: true
                     });
                 </script>

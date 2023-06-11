@@ -21,7 +21,7 @@
   margin-left: 1%;
 }
 .perfil{
-  background: #3c567c;
+  background: #466189;
   width: 19%;
   color: hsl(0, 0%, 100%);
   position: relative;
@@ -339,4 +339,11 @@ nav .navbar .links li:hover .js-sub-menu{
 
   }
 
+ }
+
+ @media(max-width:500px) {
+   .perfil{
+     width: 20%;
+     background-color: #466189;;
+   }
  }
