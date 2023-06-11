@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(206, 206, 206);
+}
+
+.user-titulo{
+    background-color: white;
+    padding: 10px;
+    margin-top: 8%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px
+
+}
+
+#botao-sair{
+    margin-top: 12%;
+}
+
+.img_per{
+    border-radius: 30px;
+}
+
+.user-dados{
+    background-color: white;
+    padding: 10px;
+    margin-top: 8%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    height: 900px;
+
+}
+
+.img_perfil{
+    border-radius: 50px;
+    border: 1px solid gray;
+    margin-left: 43%;
+}
+
+.nome-maior{
+    margin-top: 0%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.letra-dados{
+    margin-top: 5%;
+   font-size: 20px;
+  
+}

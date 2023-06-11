@@ -73,13 +73,13 @@
       <div class="perfil">
                     <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                                  
-                    <a class="image-perfil" href="user_admin.php"> 
-                    <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 50px; height: 50px">
-                    </a>
+                   
+                    <a href="../pages/perfil.php"><img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px"></a>
+                  
                     <script src="../JS/perfil.js"></script>
                     <p class="text_user"><?php echo nl2br("Olá, " . $nome);
                      ?></p> 
-                      <a class="sair-link" href="../pages/sair.php"> <i id='exit' class="fa-solid fa-right-from-bracket" style="color: white; position: relative; left: 10px; hover: color: black"></i></a>
+                      <a class="sair-link" href="../pages/sair.php"> <i id='exit' class="fa-solid fa-right-from-bracket" style="color: white; position: relative; left: 10px"></i></a>
             </div>
   </nav>
   
