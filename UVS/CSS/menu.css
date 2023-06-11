@@ -13,6 +13,7 @@
   color: hsl(0, 0%, 100%);
   margin-left: 0%;
   position: relative;
+  top: 4px;
 
 }
 .img{
@@ -67,7 +68,7 @@ nav .navbar{
   font-weight: 600;
 }
 nav .navbar .nav-links{
-  line-height: 70px;
+  line-height: 60px;
   height: 100%;
 }
 nav .navbar .links{
@@ -347,3 +348,10 @@ nav .navbar .links li:hover .js-sub-menu{
      background-color: #466189;;
    }
  }
+
+.text_user{
+  font-size: 15px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+}
