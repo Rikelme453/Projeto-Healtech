@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <?php
     include "../PHP/logado.php";
+
+    if(isset($caminho)){
+
+    }else{
+      $caminho = null;
+    }
 ?>
 <!--Idioma do site-->
 <html lang="pt-br">
@@ -62,7 +68,6 @@
             <a href="#">Conta</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
             <ul class="htmlCss-sub-menu sub-menu">
-
               <li><a href="../pages/login.php">Login</a></li>
               <li><a href="../pages/cadastro.php">Cadastro</a></li>
               <li><button class="butao" onclick="user()"><a>Usuário</a></button></li>
@@ -73,14 +78,19 @@
       <div class="perfil">
                     <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                                  
-                   
-                    <a href="../pages/perfil.php"><img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px"></a>
+                   <?php if($caminho == null){
+                    }else{
+                    ?>
+                     <a href="../pages/perfil.php"><img class="img_per" src= "<?php echo $caminho;?>" name="perfiluser" style="width: 60px; height: 60px"></a>
                   
                     <script src="../JS/perfil.js"></script>
                     <p class="text_user"><?php echo nl2br("Olá, " . $nome);
                      ?></p> 
                       <a class="sair-link" href="../pages/sair.php"> <i id='exit' class="fa-solid fa-right-from-bracket" style="color: white; position: relative; left: 10px"></i></a>
-            </div>
+                    <?php
+                    }
+                    ?>
+              </div>
   </nav>
   
   <!--Menu para celular-->
