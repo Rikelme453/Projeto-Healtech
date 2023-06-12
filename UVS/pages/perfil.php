@@ -95,14 +95,17 @@
         <p class="letra-dados"><i class="fa-sharp fa-solid fa-envelope"></i>Email: <p><?php echo nl2br(  $logado); ?></p> </p>
         <br><br>
         <hr>
-        <h2>Avalie nosso site</h2>
+        <h2>Avalie nosso site <i class="fa-solid fa-star" style="color: #e8d245;"></i></h2>
         <br>
         <p>Envie uma mensagem de texto para a nossa equipe de desenvolvedores. 
         <br>Dê sugestões no que possamos melhorar no site</p><br>
-        <form action="">
-            <textarea rows = "15" cols = "30" placeholder="Envie sua mensagem de texto para healtecsuport@gmail.com"></textarea>
-            <br><br>
-            <input type="submit" value="ENVIAR">
+        <form action="https://formsubmit.co/cb32f0ee80d23943b7c1355cceb4c21c" method="POST">
+
+        <input type="text" class="caixa-nome" name="name" placeholder="Seu nome"><br><br>
+        <input type="email" class="caixa-nome" name="email" placeholder="Seu email"/><br><br>
+            <textarea name="message" rows = "15" cols = "30" placeholder="Envie sua mensagem de texto para healtecsuporte@gmail.com"></textarea>
+            <br>
+            <input type="submit" class="botao-de-enviar" value="ENVIAR">
         </form>
 
     </div>

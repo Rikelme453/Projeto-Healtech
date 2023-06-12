@@ -27,7 +27,7 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 5px;
-    height: 900px;
+    height: 950px;
 
 }
 
@@ -48,4 +48,18 @@ body{
     margin-top: 5%;
    font-size: 20px;
   
+}
+
+.caixa-nome{
+    width: 30%;
+    height: 20px;
+}
+
+.botao-de-enviar{
+    color: white;
+    background-color: rgb(75, 141, 241);
+    border: none;
+    width: 10%;
+    height: 20px;
+    border-radius: 10px;
 }
