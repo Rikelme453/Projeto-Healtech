@@ -71,7 +71,7 @@
       <div class="perfil">
                     <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                                  
-                    <a class="image-perfil" href="user_admin.php"> 
+                    <a class="image-perfil" href="perfil.php"> 
                     <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
                     </a>
                     <script src="../JS/perfil.js"></script>

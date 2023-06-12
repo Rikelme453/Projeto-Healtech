@@ -71,7 +71,7 @@
                     <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                                  
                     <a class="image-perfil" href="user_admin.php"> 
-                    <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
+                    <a href="perfil.php"><img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px"></a>
                     </a>
                     <script src="../JS/perfil.js"></script>
                     <p class="text_user"><?php echo nl2br("Olá, " . $nome);
