@@ -50,8 +50,6 @@
 
             <input type="submit" name="submit" id="submit" value="Cadastrar-se">
         </form>
-
-        
     </main>
 
 </body>

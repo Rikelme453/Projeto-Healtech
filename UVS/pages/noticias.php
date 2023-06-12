@@ -63,7 +63,7 @@
 
               <li><a href="../pages/login.php">Login</a></li>
               <li><a href="../pages/cadastro.php">Cadastro</a></li>
-              <li><a href="../admin_pages/administrador.php">Usuário</a></li>
+              <li><button class="butao" onclick="user()"><a>Usuário</a></button></li>
           </li>
         </ul>
       </div>
@@ -357,5 +357,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script>
+       function user(){
+        var receber = prompt('Digite a senha de Usuário ADM para acessar a página!!'); 
+        if( receber == "ADM16210023£5&*3#s"){
+          
+          location.href ='../admin_pages/administrador.php';
+          
+        }else{
+           alert("Senha incorreta.Acesso Restrito!!")
+        }
+       }
+    </script>
+
 </body>
 </html>

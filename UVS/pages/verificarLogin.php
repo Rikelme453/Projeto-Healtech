@@ -27,7 +27,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     }else{
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
-        header('Location: ../admin_pages/administrador.php');
+        header('Location: ../z-index/index.php');
     }
 
 }else{
