@@ -29,6 +29,9 @@
 
         <form name="form1" method="post" action="../banco/dbcadastro.php" enctype="multipart/form-data" >
         <div class="input-field">
+        <div id="div-1">
+          <p>Senha fraca brother</p>
+        </div>
                 <label class="labtext">Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
                     placeholder="insira o nome" required>
@@ -48,9 +51,22 @@
                 
             </div>
 
-            <input type="submit" name="submit" id="submit" value="Cadastrar-se">
+            <input type="submit" name="submit" id="submit"  value="Cadastrar-se">
         </form>
     </main>
 
 </body>
 </html>
+
+<script>
+    document.getElementById('div-1').style.visibility = 'hidden';
+    function most(){
+        var input = document. querySelector ("#senha");
+        var texto = input.value;
+        if(texto.length < 9){
+            document.getElementById('div-1').style.visibility = 'visible';
+        }else{
+            document.getElementById('form1').action = '../banco/dbcadastro.php';
+        }
+    }
+</script>

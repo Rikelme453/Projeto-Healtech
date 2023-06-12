@@ -141,6 +141,15 @@ nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu{
   display: block;
   color:#466189;
+  animation: entrar 0.5s;
+}
+@keyframes entrar {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .navbar .links li .sub-menu li{
   padding: 0 22px;
