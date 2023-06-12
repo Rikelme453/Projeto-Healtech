@@ -36,8 +36,10 @@
         <div class="info-cabecalho">
            
                 <img class="logo"src="../IMAGENS/UVS +.svg" alt="uvs logo">
-                <h5>UVS USUÁRIO</h5>
-                <p>Olá, User</p>
+                <h5 style="white-space: nowrap; margin-top:5%">UVS ADMINISTRATOR</h5>
+                    <p style="white-space: nowrap; margin-top:5%;" class="text_user"><?php echo nl2br("Olá Administrador, " . $nome);
+                     ?></p> 
+                      
               
         </div>
     </header>
@@ -50,9 +52,9 @@
 
                 <form action="">
                                    
-                    <a class="image-perfil" href="user_admin.php"> 
+                    <a class="image-perfil" href="../pages/perfil.php"> 
                         
-                    <img src=<?php echo $caminho; ?> name="perfiluser" style="width: 60px; height: 60px">
+                    <img src=<?php echo $caminho; ?> name="perfiluser" style="width: 80px; height: 80px; border-radius: 40px">
                 </a>
                     <script src="../JS/perfil.js"></script>
                     </form>
