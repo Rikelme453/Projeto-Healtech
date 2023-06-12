@@ -37,6 +37,7 @@
   margin-left: 3%;
   border-radius: 4px;
  font-family: Georgia, 'Times New Roman', Times, serif;
+
   
 }
  .img_per{
@@ -268,6 +269,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
   .open{
     display: block;
+  
 
 
   }
@@ -322,6 +324,9 @@ nav .navbar .links li:hover .js-sub-menu{
     top: 2%;
     position: fixed;
     z-index: 10;
+    height: 100%;
+    animation: 0.5s ease 0s 1 normal none running;  
+    
    
   }
 
@@ -351,7 +356,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
   .open{
     display: block;
-
+   
 
   }
 
@@ -360,7 +365,8 @@ nav .navbar .links li:hover .js-sub-menu{
  @media(max-width:500px) {
    .perfil{
      width: 20%;
-     background-color: #466189;;
+     background-color: #466189;
+     white-space: nowrap;
    }
  }
 

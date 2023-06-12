@@ -38,7 +38,7 @@
       <div class="perfil">
                     <!-- Informações referentes ao login do usuário associado aos dados do banco--> 
                                  
-                    <a class="image-perfil" href="user_admin.php"> 
+                    <a class="image-perfil"> 
                     <img class="img_per" src=<?php echo $caminho;?> name="perfiluser" style="width: 60px; height: 60px">
                     </a>
                     <script src="../JS/perfil.js"></script>
@@ -53,26 +53,10 @@
   <div class="menu-mobile">
 
        <ul>
-          <li><a class="nav-item" href="../index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
+          <li><a class="nav-item" href="../z-index/index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
           <hr class="mobile-barra">
 
-          <li><a class="nav-item" href="medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
-          <hr class="mobile-barra">
-
-          <li><a class="nav-item" href="noticias.php"><i class="fa-solid fa-newspaper" style="color: #dedede;"></i> Campanhas e públicações</li>
           
-          <hr class="mobile-barra">
-
-
-
-            <ul>
-            <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
-              <hr class="mobile-barra">
-              <li><a class="user-mobile" href="conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
-              <li><a class="user-mobile" href="login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
-              <li><a class="user-mobile" href="cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
-          </li>
-        </ul>
        </ul>
       </div>
 
