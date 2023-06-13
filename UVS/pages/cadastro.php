@@ -26,11 +26,14 @@
    </div>
     <main class="container">
         <h2>UVS | Cadastro</h2>
-
-        <form name="form1" method="post" action="../banco/dbcadastro.php" enctype="multipart/form-data" >
+        <form id = "form1" name="form1" action="../banco/dbcadastro.php"  method="post" enctype="multipart/form-data" >
         <div class="input-field">
         <div id="div-1">
-          <p>Senha fraca brother</p>
+          <p>Sua senha está muito fraca, ela deve ter um número de digitos superior a 8, sendo
+            recomendado o uso de caracteres especiais como "*" ou "#". </p>
+        </div>
+        <div id="div-2">
+          <p>Sua senha está adequada!!</p>
         </div>
                 <label class="labtext">Nome do Usuário:</label>
                 <input class="form-control" type="text" name="nome" id="nome"
@@ -43,15 +46,16 @@
                     placeholder="insira o email" required>
                  <label class="labtext">Senha do Usuário:</label>
                 <input class="form-control" type="password" name="senha" id="senha"
-                    placeholder="insira a senha" required><br>
+                    placeholder="insira uma senha" required>
+                    <button type="button" class="btn btn-primary" onclick = "most()">Conferir Senha</button> <br><br>
                     
-              <label class="labtext">Imagem de Perfil:</label>
-               <img  name="perfiluser" style="width: 150px; height: 150px">
-               <input class="form-control" type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br>
+                 <label class="labtext">Imagem de Perfil:</label>
+                 <img  name="perfiluser" style="width: 150px; height: 150px">
+                 <input class="form-control" type="file" name="imagem" id="imagem" onchange="previewImagem()" required><br>
                 
             </div>
 
-            <input type="submit" name="submit" id="submit"  value="Cadastrar-se">
+            <input type="submit" name="submit" id="submit" value="Cadastrar-se">
         </form>
     </main>
 
@@ -59,14 +63,19 @@
 </html>
 
 <script>
+
     document.getElementById('div-1').style.visibility = 'hidden';
+    document.getElementById('div-2').style.visibility = 'hidden';
     function most(){
         var input = document. querySelector ("#senha");
         var texto = input.value;
-        if(texto.length < 9){
+        if(texto.length < 9 ){
             document.getElementById('div-1').style.visibility = 'visible';
+            document.getElementById('div-2').style.visibility = 'hidden';
+            return false;    
         }else{
-            document.getElementById('form1').action = '../banco/dbcadastro.php';
+            document.getElementById('div-1').style.visibility = 'hidden';
+            document.getElementById('div-2').style.visibility = 'visible';
         }
     }
 </script>

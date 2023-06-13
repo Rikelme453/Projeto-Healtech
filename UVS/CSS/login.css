@@ -132,6 +132,16 @@ form input[type="submit"]:hover {
     background: #293a54;
    
 }
+#div-1{
+    background-color: rgb(233, 70, 70);
+    height: 50px;
+    border-radius: 4px;
+ }
+ #div-2{
+    background-color: rgb(60, 187, 91);
+    height: 20px;
+    border-radius: 2px;
+ }
 
 /*Responsividade*/
 

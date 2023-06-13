@@ -1,4 +1,7 @@
 <!--Código fonte do site UVS - Unidade Virtual de Saúde 2023 Versão 5 do HTML WC3-->
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,17 +18,6 @@
 
      <script>
     
-   /* function funcao2()
-   {
-      var input = document. querySelector("#password");
-        var texto = input. value;
-        
-        if(texto.length < 8){
-            alert("Sua senha deve ter no minímo 8 caracteres")
-        }
-
-}*/
-
 
 </script>
   
@@ -45,6 +37,17 @@
     <main class="container">
         <h2>UVS | Acesso</h2>
 
+        <?php 
+           if(isset($_SESSION['Não validado'])):
+         ?>
+    <div id="div-1">
+          <p>Dados incorretos,por favor informar as informações resgistradas
+             no ato do cadastro!!</p>
+        </div>
+       <?php  
+       endif;
+       unset($_SESSION['Não validado']);?>
+
         <form name="form1" method="post" action="verificarLogin.php" class="form11">
             <div class="input-field">
                 <input class="form-control"  type="text" name="email" id="username"
@@ -57,7 +60,7 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="submit" name="submit" class="btt" value="Login" id="enviar" onclick="funcao2()">
+            <input type="submit" name="submit" class="btt" value="Login" id="enviar">
             
             <div class="reg"><div class="itens"><p class="link">Não tem uma conta?</p></div>
             <div class="itens"><a href="cadastro.php" class="link2">Registre-se</a></div><div>

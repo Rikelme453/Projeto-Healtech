@@ -42,6 +42,6 @@
         }
 
     }
-    header('Location:../admin_pages/tabelas.php');
+    header('Location:../admin_pages/administrador.php');
    
 ?>
