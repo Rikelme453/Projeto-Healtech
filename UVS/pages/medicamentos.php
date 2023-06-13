@@ -90,7 +90,7 @@
   <div class="menu-mobile">
 
        <ul>
-          <li><a class="nav-item" href="../index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
+          <li><a class="nav-item" href="../z-index/index.php"><i class="fa-solid fa-house" style="color: #dedede;"></i> Home</a></li>
           <hr class="mobile-barra">
 
           <li><a class="nav-item" href="medicos.php"><i class="fa-solid fa-user-doctor"  style="color: #dedede;"></i> Médicos</a></li>
@@ -105,7 +105,7 @@
             <ul>
             <li><a class="user-mobile" href="#"><i class="fa-solid fa-file-user" style="color: #dedede;"></i> Conta</a></li>
               <hr class="mobile-barra">
-              <li><a class="user-mobile" href="conta.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
+              <li><a class="user-mobile" href="perfil.php"> <i class="fa-solid fa-user"></i> Perfil</a></li>
               <li><a class="user-mobile" href="login.php"><i class="fa-solid fa-right-to-bracket" style="color: #dedede;"></i> Login</a></li>
               <li><a class="user-mobile" href="cadastro.php"><i class="fa-solid fa-user-pen" style="color: #dedede;"></i> Cadastrar</a></li>
           </li>
