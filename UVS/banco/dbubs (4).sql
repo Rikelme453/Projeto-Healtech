@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10/06/2023 às 22:45
+-- Tempo de geração: 14/06/2023 às 03:34
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -24,36 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tbadmin`
---
-
-CREATE TABLE `tbadmin` (
-  `id` int(11) NOT NULL,
-  `imagem` varchar(220) DEFAULT NULL,
-  `nome` varchar(220) NOT NULL,
-  `email` varchar(220) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Despejando dados para a tabela `tbadmin`
---
-
-INSERT INTO `tbadmin` (`id`, `imagem`, `nome`, `email`) VALUES
-(2, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(3, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(4, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(5, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(6, '../upload/Serviço Web.png', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(7, '../upload/UVS +.svg', 'Dr Gomes Mendonça', 'luan924@gmail.com'),
-(8, '../upload/UVS +.svg', 'Rikelme', 'cicero.batista6@aluno.ce.gov.br'),
-(10, '../upload/UVS +.svg', 'Rikelme', 'susanna@gmail.com'),
-(11, '../upload/UVS +.svg', 'Rikelme', 'susanna@gmail.com'),
-(12, '../upload/UVS +.svg', 'Suzanna Alencar', 'susanna@gmail.com'),
-(13, '../upload/_101778109_06_portuguese_literal-translation-of-country-names_southamerica.jpg', 'Rikelme', 'edilaine@gmail.com');
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `tbartigos`
 --
 
@@ -68,7 +38,7 @@ CREATE TABLE `tbartigos` (
 --
 
 INSERT INTO `tbartigos` (`titulo`, `conteudo`, `id`) VALUES
-('Aqui', '<p>aqui</p>\r\n                ', 1);
+('Título', '<p>Conteúdo do Artigo</p>\r\n                ', 3);
 
 -- --------------------------------------------------------
 
@@ -90,7 +60,6 @@ CREATE TABLE `tbmedicamentos` (
 --
 
 INSERT INTO `tbmedicamentos` (`ID`, `arquivo`, `data_upload`, `nome`, `quant`, `caminho`) VALUES
-(36, '6484bda735bb7', '2023-06-10 15:15:03', 'Hidroclotiazida', ' 17cx', '../upload/medarquivos/6484bda735bb7.png'),
 (37, '6484bdc2d37de', '2023-06-10 15:15:30', 'Metformina', ' 13cx', '../upload/medarquivos/6484bdc2d37de.png'),
 (38, '6484bde38d270', '2023-06-10 15:16:03', 'Losartana', ' 13cx', '../upload/medarquivos/6484bde38d270.png'),
 (39, '6484be04e0ab5', '2023-06-10 15:16:36', 'Dipirona', ' 3cx', '../upload/medarquivos/6484be04e0ab5.png');
@@ -114,10 +83,11 @@ CREATE TABLE `tbmedicos` (
 --
 
 INSERT INTO `tbmedicos` (`profissional`, `formacao`, `dias`, `horarios`, `Id`) VALUES
-('Dr Gomes Mendonça', 'Odontologista', 'Segundas e Terça', '9hs às 10hs', 1),
 ('Dr Gomes Sousa', 'Neurologista', 'Segundas e Terça', '9hs às 10hs', 2),
-('Dra Luana', 'Pediatra', 'Segundas e Quartas', '8hs às 10hs', 3),
-('Dra Edilaine', 'Clinica', 'Segundas e Quartas', '8hs às 10hs', 4);
+('Dra Luana Bento', 'Pediatra', 'Segundas e Terças', '8hs às 9hs', 3),
+('Dra Edilaine', 'Clinica', 'Segundas e Quartas', '8hs às 10hs', 4),
+('Dr Silveira ', 'Neurologista', 'Segundas e Quartas', '9hs às 10hs', 5),
+('Dr Emanuel Pereira', 'Odontologista', 'Segundas e Sextas', '9hs às 11hs', 6);
 
 -- --------------------------------------------------------
 
@@ -140,7 +110,6 @@ CREATE TABLE `tbubs` (
 --
 
 INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`, `caminho`, `imagem`) VALUES
-('luan924@gmail.com', '12345678', 'Rikelme', '2005-12-12', 1, '../upload/perfil/648458e6e2225.jfif', '648458e6e2225'),
 ('suzanna@gmail.com', 'hecwgucvg7652346576³', 'Suzanna Alencar', '2023-12-12', 2, '../upload/perfil/6484b7bbec8c1.jfif', '6484b7bbec8c1'),
 ('marcelobiologia@gmail.com', 'tfgefugcib1234£', 'Marcelo', '1979-04-13', 3, '../upload/perfil/6484b88ce2f9f.jfif', '6484b88ce2f9f'),
 ('edbatera@gmail.com', 'jhebdvbuedieb64895³', 'Edmar Batista', '1979-02-14', 4, '../upload/perfil/6484b8f55cc0e.jfif', '6484b8f55cc0e'),
@@ -151,12 +120,6 @@ INSERT INTO `tbubs` (`email`, `senha`, `nome`, `data`, `id`, `caminho`, `imagem`
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices de tabela `tbadmin`
---
-ALTER TABLE `tbadmin`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `tbartigos`
@@ -187,28 +150,22 @@ ALTER TABLE `tbubs`
 --
 
 --
--- AUTO_INCREMENT de tabela `tbadmin`
---
-ALTER TABLE `tbadmin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
---
 -- AUTO_INCREMENT de tabela `tbartigos`
 --
 ALTER TABLE `tbartigos`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `tbmedicamentos`
 --
 ALTER TABLE `tbmedicamentos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT de tabela `tbmedicos`
 --
 ALTER TABLE `tbmedicos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `tbubs`
