@@ -7,9 +7,9 @@
   $data = $_GET['search'];
   $data_1 = $_GET['search'];
   $data_2 = $_GET['search'];
-  $sql = "SELECT * FROM tbmedicamentos WHERE  id LIKE '%$data%' or arquivo LIKE '%$data%' or  data_upload LIKE '%$data%' or nome LIKE '%$data%' or quant LIKE '%$data%' or caminho LIKE '%$data%' ORDER BY arquivo DESC";
+  $sql = "SELECT * FROM tbmedicamentos WHERE  ID LIKE '%$data%' or arquivo LIKE '%$data%' or  data_upload LIKE '%$data%' or nome LIKE '%$data%' or quant LIKE '%$data%' or caminho LIKE '%$data%' ORDER BY arquivo DESC";
   $sql2 = "SELECT * FROM tbmedicos WHERE Id LIKE '%$data_1%' or profissional LIKE '%$data_1%' or formacao LIKE '%$data_1%'  or dias LIKE '%$data_1%' or horarios LIKE '%$data_1%'  ORDER BY profissional DESC";
-  $sql3 = "SELECT * FROM tbartigos WHERE id LIKE '%$data_2%' or titulo LIKE '%$data_2%' or conteudo LIKE or '%$data_2%' ORDER BY titulo DESC";
+  $sql3 = "SELECT * FROM tbartigos WHERE id LIKE '%$data_2%' or titulo LIKE '%$data_2%' or conteudo LIKE  '%$data_2%' ORDER BY titulo DESC ";
 }
 else
 {
@@ -19,7 +19,7 @@ else
 }
 $resultA = $conexao -> query($sql);
 $result2 = $conexao -> query($sql2);
-$resulth = $conexao -> query($sql3);
+$result3 = $conexao -> query($sql3);
 
   ?>
 
@@ -178,6 +178,7 @@ $resulth = $conexao -> query($sql3);
      <th class="tdDark">Ação</th>
 
      <?php 
+    
      while($user = mysqli_fetch_assoc($resultA)) {
       echo "<tr>";
       echo "<td>".$user['arquivo']."</td>";
@@ -211,7 +212,8 @@ $resulth = $conexao -> query($sql3);
 
 
 <?php
-     while($user = mysqli_fetch_assoc($resulth)) {
+  
+     while($user = mysqli_fetch_assoc($result3)) {
         echo "<tr>";
         echo "<td>".$user['titulo']."</td>";
         echo "<td>".$user['conteudo']."</td>";
@@ -219,7 +221,7 @@ $resulth = $conexao -> query($sql3);
         echo "<td>
 
        
-        <a  class='btn btn-sm btn-danger' href='../PHP/alterar.php?Id=$user[id]' title='Deletar'>
+        <a  class='btn btn-sm btn-danger' href='../PHP/alterar.php? 1d=$user[id]' title='Deletar'>
         <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash-fill' viewBox='0 0 16 16'>
             <path d='M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z'/>
         </svg>

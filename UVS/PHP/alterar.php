@@ -41,6 +41,19 @@
             $resultDelete3 = $conexao->query($sqlDelete3);
         }
 
+    }else if(!empty($_GET['1d'])){
+
+        $id = $_GET['1d'];
+      
+        $sqlSelect4 = "SELECT *  FROM tbartigos WHERE  id=$id";
+        $result4 = $conexao->query($sqlSelect4);
+
+        if($result4->num_rows > 0)
+        {
+            $sqlDelete4 = "DELETE FROM tbartigos WHERE id=$id";
+            $resultDelete4 = $conexao->query($sqlDelete4);
+        }
+
     }
     header('Location:../admin_pages/administrador.php');
    
